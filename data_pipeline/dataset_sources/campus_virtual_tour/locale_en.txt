@@ -1,0 +1,475 @@
+#: locale=en
+
+## Action
+
+### URL
+LinkBehaviour_97916DF7_B225_4B76_41D2_3F991D00F56F.source = https://maps.app.goo.gl/YibwHGmYqREqz5En7
+LinkBehaviour_9A830578_B22D_3B7A_41DB_CEF5C3E07026.source = https://maps.app.goo.gl/YibwHGmYqREqz5En7
+LinkBehaviour_9425C1C2_B22B_3B8E_41C4_C54DC089831E.source = https://presidencyuniversity.in/
+LinkBehaviour_9B3D5018_B22D_38BA_41E2_581EAB7386A4.source = https://presidencyuniversity.in/
+LinkBehaviour_BBA4C898_A1B5_BEC4_41C7_1F179A104B46.source = https://www.immersivetourz.com/
+LinkBehaviour_80E23470_A1D5_D644_41C4_FAC0AC3DA771.source = https://www.immersivetourz.com/
+
+## E-Learning
+
+### Question Screen
+quizQuestion_BE6671ED_A0EC_2507_41D1_AFD46B5A0DD7.ok = OK
+
+### Report Screen
+quizScore_BE6411EE_A0EC_2505_41C8_59A3784B6427.title = - SCORE -
+quizScore_BE6411EE_A0EC_2505_41C8_59A3784B6427.completion = Completed
+quizScore_BE6411EE_A0EC_2505_41C8_59A3784B6427.questionsCorrect = Correct
+quizScore_BE6411EE_A0EC_2505_41C8_59A3784B6427.downloadCSV = Download .csv
+quizScore_BE6411EE_A0EC_2505_41C8_59A3784B6427.questionsIncorrect = Incorrect
+quizScore_BE6411EE_A0EC_2505_41C8_59A3784B6427.items = Items Found
+quizScore_BE6411EE_A0EC_2505_41C8_59A3784B6427.questions = Questions
+quizScore_BE6411EE_A0EC_2505_41C8_59A3784B6427.repeat = Repeat
+quizScore_BE6411EE_A0EC_2505_41C8_59A3784B6427.submitToLMS = Submit
+quizScore_BE6411EE_A0EC_2505_41C8_59A3784B6427.elapsedTime = Time
+
+### Score Name
+score1.label = Score 1
+
+### Timeout Screen
+quizTimeout_BE6761ED_A0EC_2507_41B3_36291BC0E26D.title = - TIMEOUT -
+quizTimeout_BE6761ED_A0EC_2507_41B3_36291BC0E26D.repeat = Repeat
+quizTimeout_BE6761ED_A0EC_2507_41B3_36291BC0E26D.score = View Score
+
+## Hotspot
+
+### Text
+HotspotPanoramaOverlayTextImage_E18C3552_AC81_1192_41E0_6986F1B091C4.text = MAIN ENTRANCE
+
+### Tooltip
+HotspotPanoramaOverlayArea_C79F9057_D3A3_A467_41E9_B5F6551476E9.toolTip = Admin Block
+HotspotPanoramaOverlayArea_C7B3DE22_D3AF_5FD9_41E4_CDC359E23EB4.toolTip = Admin Block
+HotspotPanoramaOverlayArea_FCB4EC1A_AD9F_1792_41C2_2FFD53697D64.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_FCDCD223_AD81_13B3_41CC_C6D7BB6C491C.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_FCCA00BD_AD83_F096_41E5_7183646BB3A1.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_FCB6A14D_AD81_F1F6_41E0_1F288EED90B1.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_FCD27521_AD86_F1AE_41E4_8AD5B04D5009.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_8F731360_AFDF_91F2_41E4_DEBF13A7222D.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_8F33DE1F_AFDE_734E_41D2_A4E09B7A1182.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_8F7E2498_AFA2_9752_41B1_C052F4FD7F49.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_FC9685EF_AD83_70B3_41DB_3285FC59A471.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_8F5BE576_AFA3_91DE_41D6_0FCECE94A2B3.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_8F52FBE7_AFA5_90FE_41D4_0B000944B560.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_FCD3E328_AD81_11BE_41AB_7C3F58EA770B.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_8F56C435_AFA7_9752_41E0_DABD8122F069.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_8F0373FB_AFA5_F0D6_41E2_FD2A0370955F.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_FC9F21C5_AD81_10F6_41C5_807DD6CC38D7.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_8F6C0EE7_AFA3_90FE_41D6_B3225B2AD955.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_8F280131_AFAD_9153_41E3_E722D6E74178.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_8F154510_AFBF_B152_41E2_DF2FCB15AD98.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_8F07F774_AFA2_71D2_41C4_DC5FA01764C0.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_8F18DB5F_AFBE_B1CE_41D7_0D2B72F01E11.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_8FCC425F_AFA6_F3CE_41E2_BC99B3C7E56F.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_FCF2284A_AC81_1FF3_41D8_F5165BCB529A.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_E0A9943A_AC86_F79D_41C7_13AFC021E230.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_E167BC68_AC81_77BE_41D6_0F596F257225.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_E11075CF_AC83_10F3_41E3_94DFFA92F322.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_E15BCB70_AC81_11AD_41D3_27E9AB87A06B.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_E0A41DDC_ACBF_3096_41C7_7296C52D770F.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_E09FC264_AC81_13B6_41E5_54BADDE1CCC6.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_E1460BA4_AC87_10B6_41E4_27184104E7D3.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_E147036A_AC81_31BD_41E0_3F3064B0239B.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_E098FD53_AC83_3192_41D0_92E236927D22.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_E1202027_AC81_0FB3_41E2_EE61BF650533.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_E13B811D_AC8F_1191_41C2_B81DBA60D4EE.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_E16A1AB9_AC8E_F09F_41C1_AFF2829D7F74.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_E17EAE54_AC81_3396_41E1_428B3E497F34.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_E2D318B8_AC81_109E_41A6_D7F0DAAB998F.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_E2E1D13B_AC87_3193_41E2_7532FED74E8E.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_E2D7EB45_AC81_31F7_41D4_5342CFB9F32C.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_E2B5B6CD_AC81_30F7_41D0_3AF62A029ABB.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_E2F32304_AD7F_7175_41E1_5A373EEEDB75.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_E24EED30_AD81_11AE_41E4_B07A945CB5D5.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_E2111A0F_AD83_1373_41CE_5092D3F7DB26.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_E24F175B_AD83_3192_41C9_94B9C7F4055E.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_E25F1C22_AD81_17AD_41D9_F323D56BBCD5.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_E21EA8B6_AD87_1092_41DE_713EAED46F5C.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_E24568A3_AD81_70B3_41C2_FCC50B0EA1C1.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_E2179591_AD81_116E_4165_CBDF6D9A458C.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_8FC96B94_AFA7_9152_41DC_3035F7D3ED36.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_8F13EAFE_AFAE_F0CE_41D2_90FD9C61D78D.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_F80F437F_AD81_1192_41DD_C90653A37602.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_8F3EC272_AFAD_B3D6_41C1_26D8B850F055.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_8F3FD5E3_AFA3_F0F6_41C4_B50A9127B9AC.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_8FDE28D2_AFA2_B0D1_41D6_B19646E416C2.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_8FA33873_AFA2_9FD6_41DE_9EB47F98C6E3.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_8FC12510_AFA3_9152_41E2_204DC28CE5DD.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_FC8D31F2_AD81_1092_41CE_04BC1640C375.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_FCAFFC53_AD8F_1792_41E2_630FDE6BBE31.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_FCC80C5D_AD81_1796_41D2_140F8B6A71AD.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_FCAAE2CE_AD83_70F2_41C9_E7CE83069647.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_FCB073E9_AD82_F0BE_41DD_56AC90A5F5F2.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_FCA9257E_AD81_7192_41D0_C7D47806E799.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_FCEF3272_AD87_F3AD_41BE_8F44D5555524.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_FCA9D3FC_AD81_7096_41DF_B0254B33634C.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_FCAA9560_AD81_11AD_41AB_ACCBFC6DA8BC.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_FCA53901_AD83_316F_41C5_A573AE7D95A7.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_FCC846C5_AD81_70F7_41DC_B46AC992B360.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_FCF78167_ADBF_11B2_41D4_DDF7CF007924.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_FFD8BEAB_AD81_70B2_41D1_2FEAE40D68FA.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_FFC5F758_AD81_319E_41DD_6043230030F8.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_FFB67FDE_AD83_1095_41D1_EB0C7CF940C5.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_FF673B20_AD81_11AD_41B4_48A4313A28DA.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_FFD2B9FC_AD87_3096_41D1_FDCAFBE760F4.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_FFA8D6F2_AD81_10AD_41C4_462EE6D441A0.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_FF6AB5CE_AD81_10F2_41BE_BDE61FF8AB76.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_FFD6BCAC_AD8F_30B5_41A6_5061FF24549E.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_F85DB3F7_AD83_3093_41D4_0E7830CB0DA1.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_F8275200_AD81_336F_41D3_CE1B2797E74A.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_F83F0AAB_AD87_30B3_41DE_179D25120CD9.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_F83FDB9D_AD81_3096_41E3_BE6CD27A2ECE.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_F82E4F11_AD82_F16F_41C6_7044F6D1A65D.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_F83F8E24_AD83_73B5_41C5_C3B80645E1B2.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_F8242741_AD81_71EF_41DE_0F6F57C4E4F6.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_F9F8025D_AD9F_1396_41DF_57CF287A20DE.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_F80715A3_AD81_70B3_41B4_902346B2356E.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_F82A97FF_AD83_1092_41DC_3F29E6C0A0AA.toolTip = Back to Menu
+HotspotPanoramaOverlayArea_C724BDA5_D3AC_BCDB_41D6_8D81ED5A6769.toolTip = Basketball Court
+HotspotPanoramaOverlayArea_C784D02B_D3AC_E42F_41D4_EB8983821DA3.toolTip = Boys Hostel
+HotspotPanoramaOverlayArea_C659E17A_D3AD_A429_41D1_6388CCEBCEF1.toolTip = Football Ground
+HotspotPanoramaOverlayArea_C7D03CD3_D3AF_DC7F_4188_B7A841C2F42F.toolTip = Football Ground
+HotspotPanoramaOverlayArea_C7FE867A_D3AF_AC2E_41DB_B89EB1E9EE5E.toolTip = Garden Area
+HotspotPanoramaOverlayArea_C745D50E_D3AD_6DE6_41BD_D71C08E3D6A4.toolTip = Garden Area
+HotspotPanoramaOverlayArea_C7B80314_D3AC_E5FA_41B6_700190682B97.toolTip = Girls Hostel
+HotspotPanoramaOverlayArea_C6D9353C_D3AD_EC29_41E9_735D493F7A5E.toolTip = Main Entrance
+HotspotPanoramaOverlayArea_C737B059_D3AF_E46A_41D0_D0CEA059988F.toolTip = Parking Area
+HotspotPanoramaOverlayArea_C61E6BE4_D3AD_E459_41E6_0F4F1CB27EE5.toolTip = Parking Area
+HotspotPanoramaOverlayArea_C7914290_D3AF_64F9_41E3_034A25978C0E.toolTip = SCHOOL OF COMPUTER SCIENCE ENGINEERING,  \
+SCHOOL OF ENGINEERING,
+HotspotPanoramaOverlayArea_C7FE1FAC_D3AC_FC2A_41D8_3AC66F480775.toolTip = SCHOOL OF COMPUTER SCIENCE ENGINEERING,  \
+SCHOOL OF ENGINEERING,
+HotspotPanoramaOverlayArea_C0430C32_D3A3_7C39_41E5_6F0EF93AD1DD.toolTip = SCHOOL OF MANAGEMENT, \
+ SCHOOL OF LAW, SCHOOL OF DESIGN,  \
+SCHOOL OF MEDIA STUDIES
+HotspotPanoramaOverlayArea_C7B2A93C_D3AC_A429_41E5_D02661EA2006.toolTip = SCHOOL OF MANAGEMENT, \
+SCHOOL OF LAW,  \
+SCHOOL OF DESIGN,  \
+SCHOOL OF MEDIA STUDIES
+HotspotPanoramaOverlayArea_C7871704_D3AC_ADD9_41E2_316479A2E835.toolTip = Sports Area
+HotspotPanoramaOverlayArea_C7B440A3_D3AC_A4DF_41E9_1215708451AB.toolTip = Staff Parking
+HotspotPanoramaOverlayArea_C6998864_D3AF_6459_41E9_4BF62D57F480.toolTip = Towards Admin Block
+HotspotPanoramaOverlayArea_C7CD82E3_D3AD_645F_41CD_F7D2CB7FE13B.toolTip = Towards College
+HotspotPanoramaOverlayArea_C5F7664F_D3AD_6C66_41E1_DB3604CF26A3.toolTip = Towards Hostel
+HotspotPanoramaOverlayArea_C7FC6854_D3AC_A479_41E2_72538F056376.toolTip = Towards Main Entrance
+HotspotPanoramaOverlayArea_C68EB9AC_D3AD_A429_41D9_82D46F6FC409.toolTip = Transport
+
+## Media
+
+### Audio
+audiores_BE23E14F_A0F5_E504_41D4_4E2C7DE0B0D6.mp3Url = media/audio_812E3A66_A0F4_2704_41D6_FF442619B541_en.mp3
+
+### Audio Subtitles
+
+### Image
+imlevel_E156A5A9_AC81_10BE_41D0_1827DB1E3EA7.url = media/panorama_BA01F632_A6AE_AC41_41DC_7E1D0219E887_HS_sv5kel1b_en.webp
+
+### Title
+panorama_855C9B61_A7FA_E4C3_41E3_82E84D8BEF76.label = 113
+panorama_E1B17FA5_A56B_9C43_41DE_82F111B76BAC.label = 117 Food Court Open seating
+panorama_855DC77F_A7FA_ACBF_41C4_B8741B51F86D.label = 12
+panorama_855D82A5_A7FA_E443_41B8_DCB89F7ED551.label = 14
+panorama_855C0051_A7FA_E4C3_41E3_6578A2808B74.label = 15
+panorama_85525EC5_A7FA_9DC3_41DF_22324BA51D29.label = 16
+panorama_855DEC82_A7FA_BC41_41BC_E199498CECA8.label = 17
+panorama_855C27E2_A7FB_6BC1_41E1_BDA48CA6DCCB.label = 19
+panorama_855239E5_A7E5_67C3_41DF_DE2C9A7B6AD4.label = 2
+panorama_E05689CA_A56D_67C1_41E3_609A3823EFAA.label = 2 Sharing Room
+panorama_EDAB65CE_A55E_EFC1_41D9_EB0A91C11F0E.label = 2 Sharing Room
+panorama_855C649F_A7FB_AC7F_41D3_5051654C8512.label = 24
+panorama_855C62DA_A7FB_A5C1_41E3_3A998C9AEBE7.label = 25
+panorama_D3B7EEEE_AFA2_90CE_41E2_1BF61066DCCD.label = 29
+panorama_855DA770_A7E5_ACC1_41B2_38E74FE56BE3.label = 3
+panorama_EDAB7421_A55E_AC43_41D7_8619EF3BF418.label = 3 Sharing Room
+panorama_E05578B4_A56D_6442_41D7_55BFE378C713.label = 3 Sharing Room
+panorama_855C3F88_A7FB_FC41_41CF_40B6FD13C362.label = 30
+panorama_855C3D54_A7FB_9CC1_41D1_6902D0E1727E.label = 31
+panorama_855C0B86_A7FB_A441_41DA_768F192E9FC6.label = 32
+panorama_855DD446_A7E5_ECC1_41D6_9C29155CBCF1.label = 5
+panorama_E2D06319_A57D_A443_41C9_23FB360A5A18.label = 55 Launch pad
+panorama_9E718C20_A6E7_BC41_41DD_7A43EED1EC82.label = 86 Admissions office
+panorama_855C5A5F_A7FB_A4FF_41D3_F811A7AA2167.label = 88
+panorama_855D0DA2_A7E5_9C41_41D2_B35FDB250967.label = 9
+panorama_E1B09418_A56B_6C41_41D2_BD9A92AAE70C.label = 95
+panorama_E1B17312_A56B_A441_41BC_530664436D8B.label = 96
+panorama_855DE543_A7FA_ACC7_41C9_246A9614CE06.label = Admin Block Entrance
+panorama_9DCF5F17_A6E7_FC4F_41E2_8EA89AB19EB3.label = Admission Office Entrance
+panorama_9E7079BA_A6E7_A441_41D8_C523C2704993.label = Admission Office Reception & Lobby
+panorama_9E704E30_A6E7_9C41_4166_CEE86BC52C2C.label = Admissions Office
+panorama_BA01F632_A6AE_AC41_41DC_7E1D0219E887.label = Aerial View  Main Entrance
+panorama_855948AE_A7EE_A441_41C1_1180FEA03045.label = Aerial View Hostel
+panorama_BE2E0447_A6AF_6CCF_41E0_D83FF00CBEC8.label = Aerial View Inside View
+panorama_E2D11456_A57D_ACC1_41DB_AAA45CC75BD2.label = Auditorium
+panorama_E2D090BE_A57E_A441_41A9_1883269940A8.label = Auditorium Entrance
+panorama_EC799C1B_A5A6_9C47_41DC_D381647DDE53.label = Badminton Court
+panorama_EC753BDD_A5A5_7BC3_41D1_5445353029BC.label = Basketball Court
+panorama_E05589B1_A56D_A442_41C8_3AA28561FE13.label = Basketball Court
+panorama_EDAB767E_A55E_ACC1_41CF_F1A9EE7F8CF4.label = Basketball Court
+panorama_E056B834_A56E_A441_41D6_115BB044A0FA.label = Boys Hostel Entrance
+panorama_99846C41_A6EB_7CC3_41BB_8F5110E079F2.label = CapGemini Engineering  VLSI Centre
+panorama_E62144E6_A6E5_ADC1_41C7_95FFA848D9BF.label = Chemistry Lab
+panorama_9DF5A254_A6FA_A4C1_41DC_9AAE9D278AB6.label = Class Room 1
+panorama_9DF4611A_A6FA_A446_41D1_C6B336D6F9D6.label = Class Room 2
+panorama_9D95C48D_A6EF_AC43_41E0_6C48B82A5BA3.label = Cntral Lbrary Digital Reading Area
+panorama_9D948593_A6EF_AC47_41B6_66B99AB73950.label = Cntral Lbrary Reading Area
+panorama_9ABB461D_A6EF_6C43_41D3_0D31C9437359.label = Cntral Lbrary Reception
+panorama_E47F60F1_A6A5_E5C3_41D5_227BF36422A2.label = Communication Design
+panorama_D1B06AEA_AFA2_90F6_41B7_9B9204684F59.label = Computer Lab
+panorama_9C3D968E_A6FB_AC41_41CF_61664FDDED78.label = Concrete and Hghway Mterials Lab
+panorama_EC756B5C_A5A5_64C1_41C1_B44360D393A1.label = Cricket Ground
+panorama_EC756B93_A5A5_A447_41A3_CBA2E8E577F3.label = Cricket Nets
+panorama_E2D0142F_A57D_AC5F_41BD_3D31BA70CD64.label = Dept of Student Affairs
+panorama_EDAB2390_A55E_A441_41CF_D41DB7A1DD18.label = Dining Area
+panorama_E056B963_A56E_A4C7_41B6_934980CD55D3.label = Dining Area
+panorama_EB6B458A_A56B_6C41_41E2_D154B60061A8.label = Dining Area
+panorama_E0569967_A56E_E4CE_41CE_054844A4EA14.label = Dining Area 1
+panorama_EDA8A2DE_A55D_65FE_41D3_AC3C7F0F961D.label = Dining Area 1
+panorama_EDA8C182_A55D_6441_41E4_BFA2B5D55AFA.label = Dining Area 2
+panorama_E056F8D2_A56E_E5C1_41D7_4C822B6ECF3B.label = Dining Area 2
+panorama_E414935B_A6E5_64C6_41C7_3F966D7AF9FE.label = Electrical Machines Lab
+panorama_99E7B814_A6EA_A441_41C2_DFF5D409F4D6.label = Energy Conservation Engg Lab
+panorama_9B569CAD_A6FA_BC43_41CC_55EBAC139946.label = Environmental Engineering Lab
+panorama_E2D0F1B4_A57E_A441_41CD_C3C2F1A5645C.label = Examinations Department
+panorama_E47F4051_A6A5_A4C2_41D4_09D6248021EA.label = Fashion Design Lab
+panorama_E4798FF2_A6A5_BBC1_41D4_7224569E3DAF.label = Fashion Design Lab 2
+panorama_E47F4EFC_A6A5_9DC1_41E2_65660943DE9C.label = Fashion Design Lab 3
+panorama_99737FDE_A6EE_9BC1_4186_9D930800A2CA.label = Fluid Mechanics Lab
+panorama_9C3D7761_A6FB_6CC3_4182_7CC4070B19A6.label = Fluid Mechanics Lab
+panorama_9BF1D25F_A6EA_A4FF_41D3_F2F322100E12.label = Fluid Mechanics Lab
+panorama_855C18AC_A7FA_A441_41D8_FD593D26D96B.label = Food Court 1
+panorama_E1B1B142_A56B_A4C1_418C_4CB6F7F9776C.label = Food Courts 2
+panorama_85522FA2_A7E5_BC41_41B3_FC46F809F070.label = Football Court
+panorama_E479C2B0_A6A5_A441_41E2_899321E6673E.label = Foundation Design
+panorama_E47E87A1_A6AA_AC43_41E3_5B97CB3DD8C1.label = Game Design Lab
+panorama_855DE224_A7E5_E441_41DD_19FBF34E12EC.label = Garden Area
+panorama_E9DD5D01_A55F_FC42_41C0_94CF758BE45C.label = Girls Hostel Entrance
+panorama_F6B8CE6D_A5A6_FCC3_41D9_B9922AB8366C.label = Gym
+panorama_EDA76C95_A55F_9C43_41D7_6490C146F241.label = Gym
+panorama_EB1971C7_A56D_67CE_41D1_BC2BB848B8F9.label = Gym
+panorama_9BF1463A_A6EA_AC41_41C9_C434A59C9152.label = Heat and Mass Tansfer Lab
+panorama_E055CA13_A56D_E447_41CF_52B9C35267B7.label = Indoor Badminton Court
+panorama_EDAB366E_A55E_ACDE_41BB_2FD760255406.label = Indoor Badminton Court
+panorama_EC76FCD1_A5A6_BDC3_41DE_0911B57569E6.label = Indoor Kabaddi Court
+panorama_EC79EDF0_A5A6_9FC1_41CC_B2370CB66B6C.label = Indoor Sports
+panorama_EDABEAA6_A55F_A441_41DD_4197A623CB84.label = Indoor Sports
+panorama_E050A0C7_A56D_A5CF_41C2_64F605219520.label = Indoor Sports
+panorama_9DF442F5_A6E5_65C3_41E0_98E770CE0631.label = Innovation Lab
+panorama_855D95D3_A7E5_AFC7_41B4_B41E84696E27.label = Inside Entrance
+panorama_E2D0B2D9_A57D_65C3_41DA_687C6648148D.label = LaunchPad Entrance
+panorama_E3669410_A6DA_AC41_41E1_947403CBB315.label = Library
+panorama_E70F032F_A6DD_A45F_41AF_80109075E420.label = Library
+panorama_E6DA71FE_A6DA_A7C1_41B3_169EDFFC8BA8.label = Library 1
+panorama_98499588_A6E6_AC42_41DC_3A10747BEA22.label = Linear Integrated Circuits Lab & Analog Electronics lab
+panorama_E4A433BF_A6DD_EBBF_41D3_252012892DB6.label = MBA Class Room 1
+panorama_E708F3E1_A6DD_EBC2_41E1_FF6ECC8F8FB6.label = MBA Class Room 2
+panorama_9BF18376_A6EA_E4C1_41E3_E7C2605644F9.label = Machine Shop
+panorama_841B39E1_AFE6_90F2_41C3_244E7A6065BB.label = Main Entrance
+panorama_E6ACE25E_A6EB_E4C1_41C3_30F90DF552EE.label = Makers Space
+panorama_998290F7_A6EB_A5CF_41C0_77E9D0BD9B22.label = Makers Space 1
+panorama_E2D0E63B_A57D_6C47_41DF_90A117488A02.label = Manipal Clinic Entrance
+panorama_E2D10559_A57D_6CC2_41A3_800A8403D6F7.label = Manipal clinic Inside
+panorama_9BF1E0A0_A6EA_A441_41D4_B66733D3FB37.label = Materials science & Metallurgy lab
+panorama_9C3D5586_A6FB_AC4E_41BA_5384F3666A3E.label = Materials science & Metallurgy lab
+panorama_9BF1F4E0_A6EA_EDC1_41CB_40BBF9FDED10.label = Mechanisms, Material & Design Lab
+panorama_EB0C88A4_A56B_E441_41D1_076C356783CA.label = Media Studio
+panorama_E0559C25_A56D_FC43_41E4_995C151CAA47.label = Medical Room
+panorama_EDAB272C_A55F_6C41_41B3_0D2C8B164596.label = Medical Room
+panorama_E6A382AD_A6DA_E443_41E4_47C58D9E0CB6.label = Moot Court
+panorama_E4795A26_A6AA_A441_41DE_3357CDBEF7C5.label = Multimedia Studio
+panorama_855CB60B_A7FB_6C47_41E1_5AE0A5BCEBB6.label = Office of International Affairs Entrance
+panorama_EDC836AB_A57A_AC47_41A9_3C2F0A01999D.label = Office of International Affairs Inside
+panorama_855D50EC_A7E5_A5C1_41E3_42DF5E776F6B.label = Parking Area
+panorama_997001DF_A6EF_67FF_41E1_C07FC16A5579.label = Petroleum Geology Lab
+panorama_987F753E_A6EF_ACBE_41C8_06B9A5FD30CE.label = Petroleum Testing Lab
+panorama_9DF553CB_A6E5_6BC7_41DA_91B40ADF9AC6.label = Physics Lab
+panorama_E2D09212_A57D_6441_41B8_D2EC557DD0C1.label = Placements Office Reception
+panorama_E4797DB2_A6A5_7C41_41E3_16D9B873E20F.label = Product Design Classroom
+panorama_E479B0D4_A6A5_E5C2_41E3_6F4598BD9F2C.label = Product Design Lab
+panorama_99739401_A6EF_6C43_41B3_EEC4982F507E.label = Reservoir Engineering Lab
+panorama_E055C951_A56D_A4C3_41D2_C1E59CE35378.label = Salon
+panorama_EDAB5535_A55E_EC43_41E2_C875F657A151.label = Salon
+panorama_9984DE93_A6EB_9C46_41E3_8A21FC6D416B.label = Samsung Innovation Campus
+panorama_9984BFD4_A6EB_BBC1_41E1_FD5BB5DA7E8A.label = Samsung Innovation Campus Entrance
+panorama_E07AD459_A6A5_6CC3_41B3_3FE9A4A4AD72.label = School of Design Entrance
+panorama_E47D4374_A6A5_A4C1_41DD_AE743CF1C2F7.label = School of Design Inside
+panorama_E2D053D7_A57D_EBCF_41E0_898D8E1754C2.label = Seminar Hall 1
+panorama_E2D02377_A57D_A4CF_41E2_4446444FFFA6.label = Seminar Hall 2
+panorama_9C3C7A15_A6FA_A443_41E4_391BCADF3E05.label = Soil Mechanics Lab
+panorama_E47EBB70_A6A5_64C1_41DC_CE66C0AB7450.label = Space Design Classroom
+panorama_E47EC614_A6AA_EC41_41D5_E72BC813D64A.label = Space Design Workshop
+panorama_855C929F_A7FA_A47F_41D8_47CE5EC9942B.label = Staff Parking
+panorama_E20035A4_A56B_AC42_41DB_830D62A40B62.label = Studio
+panorama_9C3D98CD_A6FB_65C3_41DE_87AEF1127DD3.label = Survey Lab
+panorama_EDAB08DA_A55F_65C1_41E2_B53FD4F4BFD5.label = TV Room
+panorama_E055AE25_A56D_9C43_41CC_B85F7AD19B48.label = TV Room
+panorama_855CDDCE_A7FA_FFC1_41DB_9AD92BD8343C.label = Transport
+panorama_855B76BB_A7FD_6C47_41C6_73112EC19963.label = Udaya Upahara Canteen
+panorama_9B8CF306_A6E6_A441_41E0_2A08CEDCD55A.label = VLSI Design Lab
+panorama_EC754D38_A5A5_9C41_41D1_00B575155DB2.label = Volleyball Court
+panorama_855DFC0E_A7E5_7C41_41DA_BB51B3943B60.label = Water Fountain Area
+photo_9FC271F4_A6BA_A7C1_41E4_8E80858A5146.label = footer_logo
+
+## Popup
+
+### Body
+htmlText_9F0179BE_A6BA_E441_41E2_DA9DE7DEF9DA.html = <div style="text-align:left; color:#000; "><HTML><BODY><DIV STYLE="text-align:left;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"/></DIV><DIV STYLE="text-align:left;font-size:16px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:16px;font-family:Arial, Helvetica, sans-serif;"><B>Contact</B></SPAN></DIV><DIV STYLE="text-align:left;font-size:16px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:16px;font-family:Arial, Helvetica, sans-serif;"><B>REACH US</B></SPAN></DIV><DIV STYLE="text-align:left;font-size:14px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:14px;">University Board Line :  080-23093500</SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:14px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:14px;">Admission Inquiries :  9022092222, +91 9024060000</SPAN></SPAN></DIV><DIV STYLE="text-align:left;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN/></SPAN></DIV><DIV STYLE="text-align:left;font-size:14px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:14px;">Admission Email : admission@presidencyuniversity.in</SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:14px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:14px;">University Address : anukunte, Yelahanka, Bengaluru, Karnataka, Pin: 560119, India</SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:14px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:14px;">Email : info@presidencyuniversity.in</SPAN></SPAN></DIV></BODY></HTML></div>
+htmlText_9BFF4638_A6AD_AC41_41E1_1D6A7495EA51.html = <div style="text-align:left; color:#000; "><HTML><BODY><DIV STYLE="text-align:left;font-size:16px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:16px;font-family:Arial, Helvetica, sans-serif;"><B>Contact</B></SPAN></DIV><DIV STYLE="text-align:left;font-size:16px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-size:16px;font-family:Arial, Helvetica, sans-serif;"><B>REACH US</B></SPAN></DIV><DIV STYLE="text-align:left;font-size:14px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:14px;">University Board Line :  080-23093500</SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:14px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:14px;">Admission Inquiries :  9022092222, +91 9024060000</SPAN></SPAN></DIV><DIV STYLE="text-align:left;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN/></SPAN></DIV><DIV STYLE="text-align:left;font-size:14px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:14px;">Admission Email : admission@presidencyuniversity.in</SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:14px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:14px;">University Address : anukunte, Yelahanka, Bengaluru, Karnataka, Pin: 560119, India</SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:14px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="font-size:14px;">Email : info@presidencyuniversity.in</SPAN></SPAN></DIV></BODY></HTML></div>
+
+### Title
+window_9F01A9BE_A6BA_E441_41DA_49F97951E7C8.title = {{style:basic-fullyrounded-dark}}
+window_9BFD3634_A6AD_AC4D_41D1_B55BF4F25422.title = {{style:basic-fullyrounded-dark}}
+
+## Skin
+
+### Button
+Button_0B73474A_2D18_CB95_41B5_180037BA80BC.label = ADMISSIONS OFFICE >
+Button_0B73474A_2D18_CB95_41B5_180037BA80BC_mobile.label = ADMISSIONS OFFICE >
+Button_0AEB5577_2D08_CE7B_41B6_192923248F4E_mobile.label = AERIAL VIEW >
+Button_0AEB5577_2D08_CE7B_41B6_192923248F4E.label = AERIAL VIEW >
+Button_963F0C88_A76A_9C42_41BF_A0AA723571AD_mobile.pressedLabel = AMENITIES >
+Button_0B73474A_2D18_CB95_41B5_180037BA80BC_mobile.pressedLabel = AMENITIES >
+Button_9EDCEBB1_A765_A443_41E2_941D2926AB6F_mobile.label = BACK
+Button_89504E76_A765_9CC1_41D7_9A20567EF9C4_mobile.label = BACK
+Button_894C308E_A765_E441_41C2_A23334F80160_mobile.label = BACK
+Button_895DC29F_A765_E47F_41E1_321174EE5C10_mobile.label = BACK
+Button_EBCE72FA_AC83_1092_41E3_8206A9B02B96_mobile.label = BACK
+Button_92B21279_B264_3DCF_41E1_AEA400BCA8AC.label = BACK
+Button_B326BDF6_A6BF_9FCE_41B0_F70426DD1736.label = BACK
+Button_CB1D9ABF_A814_E728_41DE_5BBB6C959EBE_mobile.label = BACK
+Button_893EC4C9_A765_EDC3_41D7_00BDBA8B433C_mobile.label = BACK
+Button_2A2DA53B_310E_001C_41C7_8885E712C50B.label = BACK
+Button_AE56611E_D5B7_CE36_41D9_26D0B3D64B8D.label = BACK
+Button_2A2DA53B_310E_001C_41C7_8885E712C50B_mobile.label = BACK
+Button_7DA91B6B_D5A2_9F41_41DD_01EA3B11ADA2_mobile.label = BACK
+Button_96302B91_A765_6442_41D7_95926988D895_mobile.label = BACK
+Button_4806D1FA_D5A2_EB43_41E0_EB8FB8E99293_mobile.label = BACK
+Button_9D8F0CF7_B224_C6C3_41DB_CF12595D7EDD_mobile.label = BACK
+Button_B0FE63D1_A6BA_ABC2_41CB_834D66CB093B.label = BACK
+Button_4489B75F_D5B7_B236_41CD_1181AFABA4AB.label = BACK
+Button_5BE5F50D_D5B7_B61A_41EA_694EB765DB51.label = BACK
+Button_5E7072B7_D5B7_B276_4195_5CA90752BD82.label = BACK
+Button_5CB0F05C_D5B7_CE3A_41BD_E8FF93E0629B.label = BACK
+Button_53042DCC_D5B7_D61A_41E0_D9B11C0848E4.label = BACK
+Button_51A4AB65_D5B7_D215_41AD_197BDF1F076F.label = BACK
+Button_579FA8F9_D5B7_DFFA_41BC_19A8B4080B7B.label = BACK
+Button_AA42A664_D5B7_D20A_41E7_48A2EF2C9734.label = BACK
+Button_A85C63E9_D5B7_D21A_41E3_9DFF1B5473D3.label = BACK
+Button_FE898D8A_A814_DDE8_41DF_572F71F28F56_mobile.label = BACK
+Button_FA5E2080_A82D_63D8_41DB_793AC4636712.label = BACK
+Button_FC423C18_A82D_62E8_41B4_513390B1A1D3.label = BACK
+Button_777C969C_D5A2_E9C7_41E6_AC8C0767D49C_mobile.label = BACK
+Button_B2667559_A6BF_ECC2_41E4_3D78645750B6.label = BACK
+Button_9A98E6F2_AC81_1092_41AE_FA57B0A8F2DD.label = BACK
+Button_B26A23F0_A6BF_EBC1_41E3_EBE7B54BDDF5.label = BACK
+Button_B269A1C2_A6BF_E7C1_41AB_09C790F94232.label = BACK
+Button_B26EEFD8_A6BF_9BC1_41CA_E831D12AF4DF.label = BACK
+Button_7597D447_D5A2_E941_41D8_69D7C6A580F4_mobile.label = BACK
+Button_4E910FBE_D5A2_F7C3_41D0_F1F584039EE4_mobile.label = BACK
+Button_70C01900_D5A2_98BF_41D1_2BCEE2F57EBF_mobile.label = BACK
+Button_4D5DCD7E_D5A2_FB43_41D2_13B989014785_mobile.label = BACK
+Button_43014B1E_D5A2_F8C3_41D0_E57B93261656_mobile.label = BACK
+Button_412888C7_D5A2_F941_41E4_831213A44A6B_mobile.label = BACK
+Button_47D2C637_D5A2_E8C1_41D6_15416B343379_mobile.label = BACK
+Button_9046135F_B264_43C2_41E5_0F1086784ACB.label = BOYS HOSTEL >
+Button_F6B36F62_A814_DD58_41D0_7C4A534DD2A2_mobile.label = BOYS HOSTEL >
+Button_1D2C4FDF_2D7F_BAAB_4198_FBD1E9E469FF_mobile.label = CENTRAL LIBRARY >
+Button_1D2C4FDF_2D7F_BAAB_4198_FBD1E9E469FF.label = CENTRAL LIBRARY >
+Button_561243E1_A672_44C1_41B7_5817AC56297E_mobile.label = CENTRE OF EXCELLENCE >
+Button_2CB15B38_A677_C54F_419D_9477C325DDB2.label = CENTRE OF EXCELLENCE >
+Button_EA186839_AC81_1F9F_41E4_FCE243626B67_mobile.label = CIVIL >
+Button_9BE5EB53_AC81_1192_41B7_30A875388D26.label = CIVIL >
+Button_B180E8A1_A6BB_A443_41DD_666B0B3FE083.label = ECE >
+Button_963F0C88_A76A_9C42_41BF_A0AA723571AD_mobile.label = ECE >
+Button_963E7C86_A76A_9C4E_41C2_4195FF811E7A_mobile.label = EEE >
+Button_B18048A0_A6BB_A441_41E3_E2CFBD9BDFBF.label = EEE >
+Button_907D5F96_B263_C345_41E6_2A1258D3D2EA.label = GIRLS HOSTEL >
+Button_80056669_B22C_C5CF_4197_534C17DB104C_mobile.label = GIRLS HOSTEL >
+Button_FCBE6D82_A82D_FDD8_41D3_02CCFC67A5E7.label = INFRASTRUCTURE >
+Button_F68FD1FC_A815_2528_41E0_9648AEF1BE31_mobile.label = INFRASTRUCTURE >
+Button_B18718A2_A6BB_A441_41AF_568EA74F0762.label = MECHANICAL ENGINEERING >
+Button_963C8C89_A76A_9C42_419B_9BF41EBCB30B_mobile.label = MECHANICAL ENGINEERING >
+Button_80E56471_A1D5_D644_41D7_682290A88B57.label = OK
+Button_BBA5A898_A1B5_BEC4_41E1_6ABB39D62ECB.label = OK
+Button_963EBC85_A76A_9C42_41D8_E4B5457BB393_mobile.label = OVER VIEW >
+Button_B181E89E_A6BB_A441_41CA_35DDA3F4B84E.label = OVER VIEW >
+Button_0A054365_2D09_CB9F_4145_8C365B373D19.label = OVERVIEW >
+Button_0A054365_2D09_CB9F_4145_8C365B373D19_mobile.label = OVERVIEW >
+Button_B18798A4_A6BB_A441_41B2_9923B416B2AD.label = PETROLEUM ENGINEERING >
+Button_963C1C8A_A76A_9C46_41C5_C3ABB48A0650_mobile.label = PETROLEUM ENGINEERING >
+Button_0399826A_2D79_4594_41BA_934A50D0E6B4.label = SCHOOL OF CSE >
+Button_0399826A_2D79_4594_41BA_934A50D0E6B4_mobile.label = SCHOOL OF CSE >
+Button_2DE35203_A677_C741_41C6_3FF9222F448A.label = SCHOOL OF DESIGN >
+Button_5763BD52_A672_BDC3_41BE_7A98464D44A1_mobile.label = SCHOOL OF DESIGN >
+Button_1D0C50DE_2D07_C6AD_41C1_CF4547A6CFAB_mobile.label = SCHOOL OF ENGINEERING >
+Button_2B31203F_A677_C341_413B_0E3AB0913990.label = SCHOOL OF ENGINEERING >
+Button_2C7B152B_A677_CD41_41DA_F0CA70D5D006.label = SCHOOL OF LAW >
+Button_56D87F71_A672_BDC1_41D7_D7D46474D27A_mobile.label = SCHOOL OF LAW >
+Button_56B9420E_A672_4743_41E0_C1001E93C021_mobile.label = SCHOOL OF MANAGEMENT >
+Button_2CDAD7FB_A677_CCC1_41D8_90EBE5F02481.label = SCHOOL OF MANAGEMENT >
+Button_578E3B35_A672_C541_41D8_490C3703E825_mobile.label = SCHOOL OF MEDIA STUDIES >
+Button_FC43524B_A82D_E768_41E1_6F924B2D13D2.label = SCHOOL OF MEDIA STUDIES >
+Button_80728484_B22C_C545_41E4_F97359BE644B_mobile.label = SPORTS >
+Button_9013ED55_B263_C7C7_41AD_115A67223B82.label = SPORTS >
+Button_80E20470_A1D5_D644_41E4_28425B2CF291.label = START IMMERSIVE VIRTUAL TOUR
+Button_BBA4B898_A1B5_BEC4_41D0_3CDE9F8D8E57.label = START IMMERSIVE VIRTUAL TOUR
+
+### Image
+Image_0435F73B_2D0F_4BF4_4181_65F86A8DAC19.url = skin/Image_0435F73B_2D0F_4BF4_4181_65F86A8DAC19_en.png
+Image_0435F73B_2D0F_4BF4_4181_65F86A8DAC19_mobile.url = skin/Image_0435F73B_2D0F_4BF4_4181_65F86A8DAC19_mobile_en.png
+Image_80E22470_A1D5_D644_41C9_C2774E73504D.url = skin/Image_80E22470_A1D5_D644_41C9_C2774E73504D_en.png
+Image_80E24470_A1D5_D644_41D6_6B51766D0898.url = skin/Image_80E24470_A1D5_D644_41D6_6B51766D0898_en.png
+Image_80E58471_A1D5_D644_41A4_4111724B0FE8.url = skin/Image_80E58471_A1D5_D644_41A4_4111724B0FE8_en.png
+Image_80E5B471_A1D5_D644_4180_A85AEDF60E4A.url = skin/Image_80E5B471_A1D5_D644_4180_A85AEDF60E4A_en.png
+Image_80E5D471_A1D5_D644_4199_492067466804.url = skin/Image_80E5D471_A1D5_D644_4199_492067466804_en.png
+Image_BBA43898_A1B5_BEC4_41D9_D65CED967D00.url = skin/Image_BBA43898_A1B5_BEC4_41D9_D65CED967D00_en.png
+Image_BBA44898_A1B5_BEC4_41BB_77D68A35DCA1.url = skin/Image_BBA44898_A1B5_BEC4_41BB_77D68A35DCA1_en.png
+Image_BBA45898_A1B5_BEC4_41DC_E44F757AE3E2.url = skin/Image_BBA45898_A1B5_BEC4_41DC_E44F757AE3E2_en.png
+Image_BBA4D898_A1B5_BEC4_41B8_5CD4140C2A00.url = skin/Image_BBA4D898_A1B5_BEC4_41B8_5CD4140C2A00_en.png
+Image_BBA5E897_A1B5_BECC_41C3_0C7FCDD60332.url = skin/Image_BBA5E897_A1B5_BECC_41C3_0C7FCDD60332_en.png
+
+### Label
+Label_BBA47898_A1B5_BEC4_41D1_D64448694B1F.text = Immersive Virtual Tour Insturction
+Label_80E5F471_A1D5_D644_41D0_1C9CB5B50120.text = Immersive Virtual Tour Insturction
+
+### Multiline Text
+HTMLText_29DD1615_3597_79DF_41C4_7593739E5260.html = <div style="text-align:left; color:#000; "><DIV STYLE="text-align:left;font-size:14px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#ffffff;font-size:14px;font-family:Oswald Regular;"><I>Company Name</I></SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:14px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#ffffff;font-size:14px;font-family:Oswald Regular;"><I>www.loremipsum.com</I></SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:14px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#ffffff;font-size:14px;font-family:Oswald Regular;"><I>info@loremipsum.com</I></SPAN></SPAN></DIV><DIV STYLE="text-align:left;font-size:14px;"><SPAN STYLE="display:inline-block; letter-spacing:0px; white-space:pre-wrap;color:#000000;font-family:Arial, Helvetica, sans-serif;"><SPAN STYLE="color:#ffffff;font-size:14px;font-family:Oswald Regular;"><I>Tlf.: +11 111 111 111</I></SPAN></SPAN></DIV></div>
+
+### Tooltip
+IconButton_24EB2188_68B3_324F_41D2_FD985F21ADB2.toolTip = Aerial View
+IconButton_5EDC07A6_604A_587C_41C2_357C4E1573AC.toolTip = Contact Us
+IconButton_A824A9ED_B1E5_4B9A_41E0_8F60B41900DF.toolTip = Contact Us
+IconButton_EEFF957A_E389_9A06_41E1_2AD21904F8C0.toolTip = Fullscreen
+IconButton_261496EF_68B1_1FC1_41D6_86722FAAEE0D.toolTip = Fullscreen
+IconButton_3A91DBE0_6891_35FF_419C_869AFDFECE90.toolTip = Gallery
+IconButton_261436EE_68B1_1FC3_41D6_8787492B3503.toolTip = Gyroscope
+IconButton_261476EE_68B1_1FC3_4190_31B578903B0B.toolTip = Hide Hotspot
+IconButton_EEEB3760_E38B_8603_41D6_FE6B11A3DA96.toolTip = Hide Hotspot
+IconButton_22710401_68B3_3241_419B_DAF6D2A7BEFA.toolTip = Home
+IconButton_24B51892_6891_1243_41B5_67A9F9277C8F.toolTip = Home
+IconButton_A824E9ED_B1E5_4B9A_41B3_57EE02744B31.toolTip = Location
+IconButton_5EDC17A6_604A_587C_41CE_0915E511670B.toolTip = Location
+IconButton_2617F6ED_68B1_1FC1_41B4_2951951C6BAC.toolTip = Mute
+IconButton_EED073D3_E38A_9E06_41E1_6CCC9722545D.toolTip = Mute
+IconButton_5EDC67A6_604A_587C_41C7_32F9359597C5.toolTip = Share Email
+IconButton_A82189EF_B1E5_4B96_41DD_A24E1510B6D5.toolTip = Share Email
+IconButton_A82769EE_B1E5_4B96_41DA_089F62914FA1.toolTip = Share Facebook
+IconButton_5EDC37A6_604A_587C_41CA_01B8B7F60025.toolTip = Share Facebook
+IconButton_5EDC47A6_604A_587C_41D0_DF268FD7FC10.toolTip = Share Twitter
+IconButton_A82609EE_B1E5_4B96_41B8_B52F8E0F7A18.toolTip = Share Twitter
+IconButton_A821A9EE_B1E5_4B96_41C9_EA00435DC17D.toolTip = Share Whatsapp
+IconButton_5EDC57A6_604A_587C_41D4_05C457E99023.toolTip = Share Whatsapp
+IconButton_248470BA_6891_1243_41D6_BAA853073CEE.toolTip = Take Screenshot
+IconButton_22782EA5_689F_2E41_41D5_4C735AB113E3.toolTip = Take Screenshot
+IconButton_5EDC27A6_604A_587C_41C8_D1CC8B401FB7.toolTip = Website
+IconButton_A82449ED_B1E5_4B9A_41E0_3E308C8CA502.toolTip = Website
+
+## Tour
+
+### Description
+tour.description = Immersive Virtual Tour
+
+### Title
+tour.name = Presidency University

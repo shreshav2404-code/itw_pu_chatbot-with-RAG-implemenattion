@@ -1,0 +1,18 @@
+[
+  {
+    "url": "http://182.72.188.195/opac-tmpl/bootstrap/images/databaseimages/$%7Bd.manual%7D",
+    "status": 404
+  },
+  {
+    "url": "http://182.72.188.195/opac-tmpl/bootstrap/images/databaseimages/$%7Bd.url%7D",
+    "status": 404
+  },
+  {
+    "url": "http://182.72.188.195/opac-tmpl/bootstrap/images/RS3/$%7Btool.url%7D",
+    "status": 404
+  },
+  {
+    "url": "http://182.72.188.195/opac-tmpl/bootstrap/images/RS3/$%7Bt.url%7D",
+    "status": 404
+  }
+]

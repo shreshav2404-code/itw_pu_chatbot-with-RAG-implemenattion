@@ -1,0 +1,61 @@
+{
+  "source": "Presidency University Library public Koha OPAC",
+  "source_url": "http://182.72.188.195/",
+  "catalog_features": [
+    "Search by title",
+    "Search by author",
+    "Search by subject",
+    "Search by ISBN",
+    "Search by ISSN",
+    "Search by series",
+    "Search by call number",
+    "Advanced search",
+    "Course reserves",
+    "Browse by hierarchy",
+    "Authority search",
+    "Tag cloud"
+  ],
+  "library_filters": [
+    "All libraries",
+    "Engineering Library",
+    "Law Library",
+    "Library and Knowledge Resource Centre",
+    "Management Library"
+  ],
+  "borrowing_privileges": [
+    {
+      "user_group": "Faculty Members",
+      "books": 10,
+      "period": "1 Month"
+    },
+    {
+      "user_group": "Staff",
+      "books": 2,
+      "period": "1 Month"
+    },
+    {
+      "user_group": "Research Scholars",
+      "books": 5,
+      "period": "1 Month"
+    },
+    {
+      "user_group": "UG & PG Students",
+      "books": 3,
+      "period": "14 Days"
+    }
+  ],
+  "contact_email": "library.services@presidencyuniversity.in",
+  "opening_hours": "No opening hours found in the crawled public OPAC pages.",
+  "physical_wayfinding": "No building floor plan, room directory, or indoor route instructions found in the crawled public OPAC pages.",
+  "e_resources_visible": [
+    "Subscribed databases",
+    "Open access databases",
+    "National initiatives",
+    "Research tools",
+    "Petroleum e-books",
+    "Remote access",
+    "IRINS faculty profiles"
+  ],
+  "facts_source_page": "http://182.72.188.195/",
+  "limitations": "The OPAC provides search/browse entry points and sample public item records. This crawl does not enumerate every bibliographic record or private patron data."
+}

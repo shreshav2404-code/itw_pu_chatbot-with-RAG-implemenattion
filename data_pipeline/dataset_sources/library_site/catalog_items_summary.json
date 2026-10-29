@@ -1,0 +1,25 @@
+{
+  "source": "Koha public OPAC at http://182.72.188.195",
+  "public_report_url": "http://182.72.188.195/cgi-bin/koha/svc/report?id=180&public=1",
+  "public_report_rows": 20,
+  "unique_public_records_exported": 26,
+  "records_with_item_holdings": 26,
+  "records_with_subjects": 26,
+  "detail_fetch_failures": 0,
+  "fields": [
+    "biblionumber",
+    "title",
+    "author",
+    "authors",
+    "isbn",
+    "subjects",
+    "total_issues",
+    "holdings (item type, current library, collection, shelving location, call number, sanitized status)",
+    "source URLs"
+  ],
+  "privacy_note": "Patron names/IDs, barcodes, and due dates are omitted.",
+  "catalog_exhaustive": false,
+  "exhaustiveness_reason": "The OPAC browse hierarchy page reports that it is empty/not configured; free-text/ISBN/title search requests returned a 54-byte “No search result found” response; /api/v1/biblios requires authentication (401); the only confirmed anonymous record-list API is public report 180, which exposes a small most-checked-out sample. No public full-catalog export or pagination was exposed.",
+  "book_files_downloaded": 0,
+  "output": "catalog_items.jsonl"
+}

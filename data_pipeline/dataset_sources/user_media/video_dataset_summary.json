@@ -1,0 +1,12 @@
+{
+  "scene_caption_rows": 96,
+  "rag_video_chunks": 136,
+  "transcript_segments": 40,
+  "caption_file": "D:\\pu_bot\\dataset_sources\\user_media\\video_scene_captions.jsonl",
+  "chunk_file": "D:\\pu_bot\\dataset_sources\\user_media\\video_chunks.jsonl",
+  "limitations": [
+    "Scene captions are broad descriptions reviewed from sampled contact sheets, not a frame-by-frame visual model output.",
+    "Whisper speech text is automatic and may be inaccurate; verify names, directions and academic facts before relying on it.",
+    "A 2-second frame sampling interval can miss short-lived signs or events."
+  ]
+}

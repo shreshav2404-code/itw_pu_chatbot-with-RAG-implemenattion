@@ -1,0 +1,436 @@
+{
+  "catalog_items": 14145,
+  "metadata_records": 14145,
+  "items_with_abstract": 392,
+  "bitstream_references": 13768,
+  "makeup_related_items": 1694,
+  "exam_question_paper_related_items": 13451,
+  "collection_paths": 200,
+  "top_collection_paths": [
+    {
+      "path": "Presidency university academic archive > Question Papers > Make Up Examinations > July 2024 - Makeup Examinations",
+      "item_count": 990
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Engineering > End Term Examinations - SOE - August 2024",
+      "item_count": 542
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Engineering > SOE-2022 - 2023 II/IV/VI/VIII - Even Semester",
+      "item_count": 519
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Computer Science > SOCSE - 2025 - 2026 - Mid term",
+      "item_count": 316
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Engineering > SOE - 2023 - 2024 I/III/V/VII - Odd Semester (Mid Term)",
+      "item_count": 286
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Make Up Examinations > January 2023",
+      "item_count": 280
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Engineering > SOE - 2024 - 2025 I/III/V/VII - Odd Semester(End Term)",
+      "item_count": 264
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Engineering > SOE 2025 - 2026 I/III/V/VII - End Term (December - 2025)",
+      "item_count": 258
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Computer Science > SOCSE 2025 - 2026 I/III/V/VII - End Term (December - 2025)",
+      "item_count": 248
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Engineering > SOE-2025 - 2026 II/IV/VI/VIII - Even Semester (End Term)",
+      "item_count": 242
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Engineering > 2022 - 2023 I/III/V/VII - Odd Semester (End Term)",
+      "item_count": 241
+    },
+    {
+      "path": "Presidency university academic archive > Petroleum E-Books & IEEE Papers > Petroleum Engineering",
+      "item_count": 239
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Management > SOM - 2023 - 2024 I/III/V/VII - Odd Semester (Mid Term)",
+      "item_count": 218
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Computer Science > SOCSE - 2024 - 2025 I/III/V/VII - End Term (January 2025)",
+      "item_count": 209
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Management > SOM-2024 - 2025 I/III/V/VII - Odd Semester (End Term)",
+      "item_count": 208
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Engineering > SOE - 2024 - 2025 I/III/V/VII - Odd Semester (Mid Term - November)",
+      "item_count": 206
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Ph.D. Examinations > School of Engineering - SOE > SOE- Ph. D. Question Papers (End Term) - Jan - Feb 2025",
+      "item_count": 206
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Make Up Examinations > DES2023 - Makeup Examination",
+      "item_count": 204
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Engineering > SOE - 2024 - 2025 II/IV/VI/VIII- Even Semester(May 2024)",
+      "item_count": 204
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Design > DES-2022 - 2023 II/IV/VI/VIII - Even Semester (End Term)",
+      "item_count": 200
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Ph.D. Examinations > School of Engineering - SOE > SOE- Ph. D. Question Papers (Midterm) - September 2024",
+      "item_count": 200
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Engineering > PSOE-2025 - 2026 - Mid Term",
+      "item_count": 197
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Commerce and Economics > 2024 - 2025 I/III/V/VII - End Term (January - 2025)",
+      "item_count": 194
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Law > SOL - 2023 - 2024 I/III/V/VII/IX - Odd Semester (Mid Term)",
+      "item_count": 169
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Design > 2022 - 2023 I/III/V/VII - Odd Semester (End Term)",
+      "item_count": 162
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Law > SOL-2022 - 2023 II/IV/VI/VIII - Even Semester",
+      "item_count": 160
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Commerce and Economics > SOC October 2025 Semester I/III/V Mid - Term Examinations –",
+      "item_count": 156
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Engineering > SOE - 2024 - 2025 I/III/V/VII - Odd Semester(End Term Jan - 2024)",
+      "item_count": 156
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Commerce and Economics > End Term Examinations - SOC - August 2024",
+      "item_count": 146
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Computer Science > SOCSE - 2023 - 2024 I/III/V/VII - Odd Semester (Mid Term)",
+      "item_count": 142
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Engineering > 2019 - 2020 I/III/V/VII - Odd Semester",
+      "item_count": 136
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Engineering > 2018 - 2019 II/IV/VI/VIII - Even Semester",
+      "item_count": 134
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Law > PSOL - 2025 - 2026 Mid Term",
+      "item_count": 126
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Engineering > 2021 - 2022 II/IV/VI/VIII - Even Semester",
+      "item_count": 126
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Computer Science > SOCSE - 2024 - 2025 I/III/V/VII - Odd Semester(End Term)",
+      "item_count": 123
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Law > End Term Examinations - SOL - August 2024",
+      "item_count": 122
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Engineering > SOE - 2024 - 2025 I/III/V/VII - End Term (January - 2025)",
+      "item_count": 121
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Management > SOM-2024 - 2025 - I/III/V/VII - End Term (January - 2025)",
+      "item_count": 111
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Law > SOL - 2024 - 2025 I/III/V/VII/IX - Odd Semester (End term)",
+      "item_count": 110
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Computer Science > SOCSE - 2024 - 2025 I/III/V/VII - Odd Semester (Mid Term - November)",
+      "item_count": 110
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Law > 2022 - 2023 I/III/V/VII/IX - Odd Semester (Mid Term)",
+      "item_count": 108
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Management > End Term Examinations - SOM - August 2024",
+      "item_count": 104
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Engineering > B-Tech Examinations > B-Tech Examinations - August 2024",
+      "item_count": 100
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Computer Science > SOCSE - MAR 2026 II/II/IV/VI/VIII - Eeven Semester(Mid Term)",
+      "item_count": 91
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Engineering > SOE May/June 2026 II/IV/VI/VIII - Even Semester (End Term Examination)",
+      "item_count": 91
+    },
+    {
+      "path": "Presidency university academic archive > Faculty Research Papers > Mechanical Department",
+      "item_count": 90
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Law > SOL-2025 - 2026 II/IV/VI/VIII - Even Semester (End Term)",
+      "item_count": 90
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Law > SOL-2024 - 2025 I/III/V/VI - Odd Semester (Mid Term - November)",
+      "item_count": 88
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Engineering > 2018 - 2019 I/III/V/VII - Odd Semester",
+      "item_count": 85
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Management > SOM-UG-2022 - 2023 II/IV/VI/VIII - Even Semester",
+      "item_count": 85
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Make Up Examinations > December 2025 - Make Up Examinations > SOE - Make Up Examinations - December 2025",
+      "item_count": 83
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Management > SOM-2024 - 2025 II/IV- Even Semester (May - 2024)",
+      "item_count": 81
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Engineering > SOE - MAR 2026 II/IV/VI/VIII- Eeven Semester(Mid Term)",
+      "item_count": 81
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Commerce and Economics > 2025 - 2026 I/III/V/VII - End Term (December - 2025)",
+      "item_count": 78
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Management > SOM-2025 - 2026 II/IV/VI/VIII - Even Semester (End Term)",
+      "item_count": 78
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Management > SOM-PG May/June 2026 II/IV - Even Semester (End Term Examination)",
+      "item_count": 78
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Commerce and Economics > 2025 - 2026 II/IV/VI/VIII - Even Semester (End Term)",
+      "item_count": 77
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Computer Science > SOCSE - 2025 - 2026 II/II/IV/VI/VIII - Odd Semester(End Term)",
+      "item_count": 77
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Computer Science > SOCSE May/June 2026 II/IV/VI/VIII - Even Semester (End Term Examination)",
+      "item_count": 74
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Management > SOM - MAR 2026 II/IV/VI- Eeven Semester (Mid Term)",
+      "item_count": 73
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Commerce and Economics > 2024 - 2025 I/III/V/VII - Odd Semester(End Term)",
+      "item_count": 72
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Commerce and Economics > SOC-2022 - 2023 II/IV/VI/VIII - Even Semester (End Term)",
+      "item_count": 71
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Commerce and Economics > 2023 - 2024 I/III/V/VII - Odd Semester(Mid Term)",
+      "item_count": 70
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Law > SOL 2025 - 2026 I/III/V/VII - End Term (December - 2025)",
+      "item_count": 64
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Information Science > SOIS - 2024 - 2025 I/III/V/VII - End Term (January - 2025)",
+      "item_count": 64
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Engineering > 2017 - 2018 II/IV/VI/VIII - Even Semester",
+      "item_count": 64
+    },
+    {
+      "path": "Presidency university academic archive > Faculty Research Papers > Computer Science Engineering Department",
+      "item_count": 62
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Law > SOL-2024 - 2025 I/III/V/VI - End Term (January - 2025)",
+      "item_count": 61
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Commerce and Economics > SOC - 2024 - 2025 I/III/V/VII - Odd Semester (Mid Term - November)",
+      "item_count": 60
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Management > PSOM- 2025 - 2026 Mid Term",
+      "item_count": 60
+    },
+    {
+      "path": "Presidency university academic archive > Faculty Research Papers > Mathematics Department",
+      "item_count": 59
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Information Science > 2022 - 2023 I/III/V/VII - Odd Semester (Mid Term)",
+      "item_count": 59
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Ph.D. Examinations > School of Engineering - SOE > SOE- Ph. D. Question Papers - August 2024",
+      "item_count": 59
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Management > SOM-2024 - 2025 I/III/V/VII - Odd Semester (Mid Term - November)",
+      "item_count": 58
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Information Science > SOIS-2022 - 2023 II/IV/VI/VIII - Even Semester (End Term)",
+      "item_count": 58
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Commerce and Economics > 2022 - 2023 I/III/V/VII - Odd Semester (End Term)",
+      "item_count": 56
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Engineering > 2017 - 2018 I/III/V/VII - Odd Semester",
+      "item_count": 55
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Ph.D. Examinations > School of Commerce - SOC > SOC- Ph. D. question papers (End Term) - Jan - Feb 2025",
+      "item_count": 54
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Information Science > SOIS 2025 - 2026 I/III/V/VII - End Term (December - 2025)",
+      "item_count": 52
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Engineering > SOE - 2023 - 2024 I/III/V/VII - Odd Semester",
+      "item_count": 52
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Engineering > M-Tech Examinations > M-Tech Examinations - August 2024",
+      "item_count": 51
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Information Science > SOIS - 2023 - 2024 I/III/V/VII - Odd Semester (Mid Term)",
+      "item_count": 48
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Make Up Examinations > December 2025 - Make Up Examinations > SOCSE - Make Up Examinations - December 2025",
+      "item_count": 48
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Management > SOM-PG 2025 - 2026 I/III - Odd Semester (End Term – December 2025)",
+      "item_count": 47
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Law > SOL-UG May/June 2026 II/IV/VI/VIII/X - Even Semester (End Term Examination)",
+      "item_count": 46
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Law > SOL-UG MAR 2026 II/IV/VI/VIII/X- Eeven Semester (Mid Term)",
+      "item_count": 46
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Law > SOL - 2024 - 2025 II/IV/VI/VIII - Even Semester (End term May - 2024)",
+      "item_count": 45
+    },
+    {
+      "path": "Presidency university academic archive > Faculty Research Papers > Chemistry Department",
+      "item_count": 43
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Management > SOM-2024 - 2025 I/III/V/VII - Odd Semester (End Term Jan - 2024)",
+      "item_count": 42
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Law > 2017 - 2018 II/IV/VI/VIII/X - Even Semester (End Term)",
+      "item_count": 41
+    },
+    {
+      "path": "Presidency university academic archive > Faculty Research Papers > Management Department",
+      "item_count": 41
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Ph.D. Examinations > School of Management - SOM > SOM - Ph. D. Question Papers (Midterm) - August 2024",
+      "item_count": 40
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Engineering > 2016 - 2017 II/IV/VI/VIII - Even Semester",
+      "item_count": 38
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Media Studies > SOMS-2022 - 2023 II/IV/VI/VIII - Even Semester",
+      "item_count": 37
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Law > 2019 - 2020 I/III/V/VII/IX - Odd Semester (Mid Term)",
+      "item_count": 36
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Design > SOD-2023 - 2024 I/III/V/VII - Odd Semester(Mid Term)",
+      "item_count": 36
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Information Science > SOIS - 2024 - 2025 I/III/V/VII - Odd Semester (End Term)",
+      "item_count": 36
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Law > 2018 - 2019 I/III/V/VII/IX - Odd Semester (Mid Term)",
+      "item_count": 34
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Commerce and Economics > PSOC - 2025 - 2026 - Mid term",
+      "item_count": 34
+    },
+    {
+      "path": "Presidency university academic archive > Question Papers > Presidency School of Management > SOM-UG May/June 2026 II/IV/VI - Even Semester (End Term Examination)",
+      "item_count": 34
+    }
+  ],
+  "metadata_field_counts": {
+    "dc.contributor.author": 14818,
+    "dc.date.accessioned": 14145,
+    "dc.date.available": 14145,
+    "dc.date.issued": 14132,
+    "dc.identifier.uri": 14146,
+    "dc.subject": 5011,
+    "dc.title": 34488,
+    "Appears in Collections": 14145,
+    "dc.language.iso": 461,
+    "dc.type": 13115,
+    "dc.publisher": 1242,
+    "dc.identifier.citation": 327,
+    "dc.description.abstract": 392,
+    "dc.format.extent": 340,
+    "dcterms.relation.journal": 63,
+    "dc.source": 13,
+    "dc.identifier.url": 13,
+    "dc.rights": 208,
+    "dc.date.copyright": 1,
+    "dc.subject.ddc": 2,
+    "dc.title.alternative": 7,
+    "dc.identifier.issn": 2
+  },
+  "files_not_downloaded": "Repository item pages state all rights reserved unless item says otherwise; these outputs keep source links and metadata only."
+}

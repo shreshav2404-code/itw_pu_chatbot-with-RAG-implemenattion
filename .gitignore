@@ -1,0 +1,31 @@
+# Python / Jupyter
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Built or downloaded at run time (big)
+rag_index/
+upload/rag_index/
+hf_models/
+media_work/
+frames/
+
+# Raw files kept out of git (see README: Raw files not in this repo)
+data_pipeline/dataset/documents/
+data_pipeline/dataset_sources/user_media/compressed_videos/
+data_pipeline/keshavs_input/V1.mp4
+data_pipeline/keshavs_input/V2.mp4
+
+# Recreated by `python data_pipeline/unpack_data.py`
+data_pipeline/dataset/chunks.jsonl
+data_pipeline/dataset/document_chunks.jsonl
+data_pipeline/dataset/documents_text.jsonl
+data_pipeline/dataset/focused_chunks.jsonl
+data_pipeline/dataset/media_manifest.jsonl
+data_pipeline/dataset/pages.jsonl
+data_pipeline/dataset_sources/jspui/bitstreams_manifest.jsonl
+data_pipeline/dataset_sources/jspui/exam_and_question_paper_items.jsonl
+data_pipeline/dataset_sources/jspui/item_chunks.jsonl
+data_pipeline/dataset_sources/jspui/item_records.jsonl

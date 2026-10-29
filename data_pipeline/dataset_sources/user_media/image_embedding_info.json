@@ -1,0 +1,11 @@
+{
+  "model": "sentence-transformers/all-MiniLM-L6-v2",
+  "dimensions": 384,
+  "vectors": 80,
+  "normalized": true,
+  "input": "caption_text from visually reviewed image_captions.jsonl",
+  "retrieval_mode": "text-to-image-caption semantic retrieval; not raw-image embeddings",
+  "matrix_file": "image_caption_embeddings.npy",
+  "metadata_file": "image_vector_metadata.jsonl",
+  "device": "cpu"
+}

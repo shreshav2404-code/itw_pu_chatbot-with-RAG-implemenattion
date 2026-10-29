@@ -1,0 +1,24 @@
+{
+  "records": 166180,
+  "read": 231591,
+  "removed_duplicate_ids": 0,
+  "removed_duplicate_text": 65361,
+  "removed_too_short": 78,
+  "focused_ids_not_in_sources": 0,
+  "by_source_class": {
+    "official_document": 140273,
+    "repository_metadata": 14145,
+    "official_website": 10610,
+    "official_program_regulation": 660,
+    "user_video": 160,
+    "campus_tour": 139,
+    "user_photo": 80,
+    "user_interview": 68,
+    "library_catalog": 26,
+    "external": 8,
+    "campus_map": 7,
+    "teacher_audio": 4
+  },
+  "size_mb": 47.7,
+  "added_media_chunks": 28
+}

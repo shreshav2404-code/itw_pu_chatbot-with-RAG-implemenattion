@@ -1,0 +1,22 @@
+# PU Assist – Python packages for the notebooks (upload/) and the tools (tools/).
+#
+# PyTorch is NOT listed: install the CUDA build for your GPU from https://pytorch.org first.
+# On the Data Lab hub keep the preinstalled torch 2.9.1 (CUDA 12.8) and add the matching torchvision:
+#   pip install "torchvision==0.24.1" --index-url https://download.pytorch.org/whl/cu128
+# (notebook 01, step 2 does this for you)
+
+transformers>=4.57          # Qwen3-VL support
+accelerate
+huggingface_hub
+sentence-transformers       # embedding model + reranker
+faiss-cpu                   # vector index (the Data Lab hub already has faiss 1.13)
+av                          # decodes voice notes / video audio without system ffmpeg
+pillow
+numpy
+ipywidgets                  # chat box inside the notebook
+
+# optional: Gradio web page (only on hubs with jupyter-server-proxy)
+gradio
+
+# data pipeline (data_pipeline/) – also needs Node.js 18+ and ffmpeg
+pypdf

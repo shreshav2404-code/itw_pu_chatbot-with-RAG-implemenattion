@@ -1,0 +1,50 @@
+{
+  "origin": "https://presidencyuniversity.in",
+  "generated_at": "2026-10-29T06:42:27.676187+00:00",
+  "sitemap_url_count": 4082,
+  "sitemap_html_pages": 3939,
+  "additional_first_party_paths_discovered": 446,
+  "additional_first_party_html_pages": 394,
+  "unique_html_pages_saved": 4333,
+  "page_records": 4333,
+  "text_chunks": 73967,
+  "media_reference_records": 118749,
+  "document_references": 2537,
+  "documents_downloaded": 2522,
+  "document_bytes_downloaded": 3818336818,
+  "document_text_records": 2522,
+  "document_chunks": 142313,
+  "focused_chunks": 165301,
+  "failures_total": 193,
+  "failure_statuses": {
+    "500": 18,
+    "404": 175
+  },
+  "categories": {
+    "general_academic_context": 2923,
+    "program": 106,
+    "campus_facility": 63,
+    "school": 144,
+    "governance": 74,
+    "research": 82,
+    "accreditations": 8,
+    "admissions": 5,
+    "academic_operations": 15,
+    "department": 54,
+    "placements": 20,
+    "faculty": 798,
+    "student_life": 28,
+    "faculty_department": 13
+  },
+  "media_tag_counts": {
+    "iframe": 4371,
+    "img": 114359,
+    "source": 9,
+    "video": 10
+  },
+  "notes": [
+    "The full public sitemap was attempted, plus first-party page links not listed in the sitemap.",
+    "Date-sensitive pages such as fees, notices, calendars, and schedules should be refreshed regularly.",
+    "Images/audio/video are inventoried as source references; binaries are not bulk downloaded."
+  ]
+}

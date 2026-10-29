@@ -1,0 +1,32 @@
+{
+  "url": "https://www.immersivetourz.com/presidencyuniversity/index.html",
+  "retrieved_at": "2026-10-29T05:51:52.338Z",
+  "files": {
+    "index.html": {
+      "url": "https://www.immersivetourz.com/presidencyuniversity/index.html",
+      "bytes": 4490
+    },
+    "script.js": {
+      "url": "https://www.immersivetourz.com/presidencyuniversity/script.js?v=1751605676358",
+      "bytes": 159071
+    },
+    "script_general.js": {
+      "url": "https://www.immersivetourz.com/presidencyuniversity/script_general.js?v=1751605676358",
+      "bytes": 1259183
+    },
+    "locale_en.txt": {
+      "url": "https://www.immersivetourz.com/presidencyuniversity/locale/en.txt?v=1751605676358",
+      "bytes": 37286
+    }
+  },
+  "scene_label_count": 142,
+  "hotspot_label_count": 109,
+  "external_link_count": 6,
+  "unique_scene_labels": 122,
+  "unique_hotspot_labels": 19,
+  "tour_chunks": 166,
+  "virtual_tour_assets_referenced": 949,
+  "scene_thumbnails_downloaded": 142,
+  "scene_thumbnail_failures": 0,
+  "limitations": "The tour is a third-party hosted 360-degree interactive viewer. Low-resolution scene thumbnails are downloaded and the project asset manifest is indexed. Full panorama tiles remain source references, not bulk-downloaded; the extraction does not claim a verified route graph or room-by-room indoor directions."
+}

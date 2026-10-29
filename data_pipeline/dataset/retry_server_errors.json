@@ -1,0 +1,78 @@
+{
+  "requested": 18,
+  "succeeded": 0,
+  "failed": [
+    {
+      "url": "https://presidencyuniversity.in/events/isac-2026",
+      "status": 500
+    },
+    {
+      "url": "https://presidencyuniversity.in/events/dept-of-chemistry-hosts-seminar-on-ai--computational-modelling",
+      "status": 500
+    },
+    {
+      "url": "https://presidencyuniversity.in/events/amrutha-vishwa-vidyapeetham-inter-college-sports-fest",
+      "status": 500
+    },
+    {
+      "url": "https://presidencyuniversity.in/events/cubyc-spo-2025-26",
+      "status": 500
+    },
+    {
+      "url": "https://presidencyuniversity.in/events/installation-ceremony",
+      "status": 500
+    },
+    {
+      "url": "https://presidencyuniversity.in/events/inter-college-sports-fest",
+      "status": 500
+    },
+    {
+      "url": "https://presidencyuniversity.in/events/linkers-meeting-with-amazon-bangalore-toastmasters-club",
+      "status": 500
+    },
+    {
+      "url": "https://presidencyuniversity.in/events/outstanding-sporting-achievement",
+      "status": 500
+    },
+    {
+      "url": "https://presidencyuniversity.in/events/rnsit-2025-26",
+      "status": 500
+    },
+    {
+      "url": "https://presidencyuniversity.in/events/taekwondo-dasara-games-cm-cup-2025",
+      "status": 500
+    },
+    {
+      "url": "https://presidencyuniversity.in/events/threads-of-hope",
+      "status": 500
+    },
+    {
+      "url": "https://presidencyuniversity.in/happenings/notices-announcements",
+      "status": 500
+    },
+    {
+      "url": "https://presidencyuniversity.in/life-at-presidency/academic-achievements/spanish-ambassador-launches-book-on-ai-and-humanity-at-presidency-university-read-more-at-httpsuniversitycareers360comarticlesspanish-ambassador-launches-book-on-ai-and-humanity-at-presidency-university",
+      "status": 500
+    },
+    {
+      "url": "https://presidencyuniversity.in/life-at-presidency/cultural-achievements/amrutha-cinni-r-gayathri-krishna-savya-norbert-ashmi-ps-and-angel-varghese-secured-1st-place-in-indian-group-dance-at-unite-2025-organised-by-united-international-business-school-on-november-7-2025",
+      "status": 500
+    },
+    {
+      "url": "https://presidencyuniversity.in/life-at-presidency/cultural-achievements/daniyal-zeshan-won-two-prizes-for-various-competitions-held-under-venusta--national-law-and-cultural-fest-organised-by-the-institute-of-law-christ-university-on-april-29-2025--br-runners-up--grama--navodaya",
+      "status": 500
+    },
+    {
+      "url": "https://presidencyuniversity.in/life-at-presidency/cultural-achievements/dhruva-g-gowda-pranav-k-kattimani-g-deeya-shree-nivedhya-b-muhammed-muhsin-an-aadil-muhammed-and-dubba-sri-lakshmi-prasanna-reddy-secured-1st-place-in-the-fashion-walk-event-at-infusion-2025-organised-by-atria-institute-of-technology-on-september-26-2025",
+      "status": 500
+    },
+    {
+      "url": "https://presidencyuniversity.in/life-at-presidency/cultural-achievements/trisha-a-bhuvan-m-lakshminaraya-l-s-rahul-rao-nikhil-prasad-ck-and-pavan-hr-won-1st-place-in-the-group-dance-category-at-infusion-2025-organised-by-atria-institute-of-technology-on-september-26-2025",
+      "status": 500
+    },
+    {
+      "url": "https://presidencyuniversity.in/life-at-presidency/international-engagement/student-exchange-program/taiwan-education-center",
+      "status": 500
+    }
+  ]
+}

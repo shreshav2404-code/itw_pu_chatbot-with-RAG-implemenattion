@@ -1,0 +1,11 @@
+{
+  "videos_processed": 2,
+  "source_bytes": 1215381404,
+  "compressed_bytes": 671775916,
+  "frames_sampled": 96,
+  "frame_interval_seconds": 2,
+  "audio_tracks_extracted": 2,
+  "inventory": "video_inventory.jsonl",
+  "frames_manifest": "video_frames.jsonl",
+  "source_files_preserved": true
+}

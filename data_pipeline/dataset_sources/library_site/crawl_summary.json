@@ -1,0 +1,30 @@
+{
+  "origin": "http://182.72.188.195",
+  "scope": "Public Koha OPAC pages and navigation links; private account/login flows excluded.",
+  "pages": 77,
+  "unique_urls_seen": 81,
+  "queued_urls": 133,
+  "links": 1100,
+  "media_references": 134,
+  "external_links_encountered": 142,
+  "failures": 4,
+  "failures_sample": [
+    {
+      "url": "http://182.72.188.195/opac-tmpl/bootstrap/images/databaseimages/$%7Bd.manual%7D",
+      "status": 404
+    },
+    {
+      "url": "http://182.72.188.195/opac-tmpl/bootstrap/images/databaseimages/$%7Bd.url%7D",
+      "status": 404
+    },
+    {
+      "url": "http://182.72.188.195/opac-tmpl/bootstrap/images/RS3/$%7Btool.url%7D",
+      "status": 404
+    },
+    {
+      "url": "http://182.72.188.195/opac-tmpl/bootstrap/images/RS3/$%7Bt.url%7D",
+      "status": 404
+    }
+  ],
+  "coverage_note": "The catalogue exposes search/browse pages; bulk book-record export was not attempted. Public item detail pages reachable from navigation are crawled; search result pages are not exhaustively enumerated."
+}

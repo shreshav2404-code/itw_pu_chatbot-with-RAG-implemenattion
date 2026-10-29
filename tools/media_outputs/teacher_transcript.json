@@ -1,0 +1,52 @@
+{
+ "text": "Good afternoon sir. We are BTEC students at Presidency University working on an AI chatbot project. Will we take five minutes to ask you a few questions about students' need and campus information sir? Yes, we can. Yes sir. What services does your department provide sir? I am from learning and developing department. So we are teaching students that aptitude and soft skills. so we are giving them basically a I am from learning and development department, so we are teaching students that aptitude and soft skills. So, we are giving them basically a placement training to prepare for the interviews from first semester to seventh semesters. Okay, sir. Your second question is, sir, what are the most frequent questions asked? In classroom, students will ask when classes are attenants and marks marks the three counter questions asked by students what information do we do a new students often struggle to find in our universities new students actually I am taking third or fourth semester so I don't know that much but basically they don't have idea about uh how to uh strategize their career like in the course first semester to eight semester there that we are struggling we are struggling what are the departments working hard and contact channel sir what is the question what are the department's working hours and contact channels, sir? What is the question? What else? What are the department's working hours and contact channels? Basically, we are working from Monday to Friday, 8.50 to 4.15. And even Saturdays, we are working. So, students can contact us in our cubicles. And working hours will be, we are taking class 18 to 20 hours per week working hours. So, students can contact through, directly they come and meet or through WhatsApp we will connect in class groups and they can mail also. One more question sir, final question. What documents or resources are publicly available usually for every course we'll upload the course details in the linways so students of the linways credential they can download it and also they'll share the documents through whatsapp also and sometimes we'll upload it in one drive so depends thank you so much sir",
+ "segments": [
+  {
+   "start": 0.24,
+   "end": 28.3,
+   "text": "Good afternoon sir. We are BTEC students at Presidency University working on an AI chatbot project. Will we take five minutes to ask you a few questions about students' need and campus information sir? Yes, we can. Yes sir. What services does your department provide sir? I am from learning and developing department. So we are teaching students that aptitude and soft skills. so we are giving them"
+  },
+  {
+   "start": 28.3,
+   "end": 26.64,
+   "text": "basically a I am from learning and development department, so we are teaching students that aptitude and soft skills."
+  },
+  {
+   "start": 27.2,
+   "end": 34.16,
+   "text": "So, we are giving them basically a placement training to prepare for the interviews from first semester to seventh semesters."
+  },
+  {
+   "start": 34.48,
+   "end": 35.06,
+   "text": "Okay, sir."
+  },
+  {
+   "start": 35.72,
+   "end": 40.0,
+   "text": "Your second question is, sir, what are the most frequent questions asked?"
+  },
+  {
+   "start": 41.48,
+   "end": 127.02,
+   "text": "In classroom, students will ask when classes are attenants and marks marks the three counter questions asked by students what information do we do a new students often struggle to find in our universities new students actually I am taking third or fourth semester so I don't know that much but basically they don't have idea about uh how to uh strategize their career like in the course first semester to eight semester there that we are struggling we are struggling what are the departments working hard and contact channel sir what is the question what are the department's working hours and contact channels, sir? What is the question? What else? What are the department's working hours and contact channels? Basically, we are working from Monday to Friday, 8.50 to 4.15. And even Saturdays, we are working. So, students can contact us in our cubicles. And working hours will be, we are taking class 18 to 20 hours per week working hours. So, students can contact through, directly they come and meet or through WhatsApp we will connect in class groups and they can mail also. One more question sir, final question. What documents or resources are publicly available usually for every course we'll upload"
+  },
+  {
+   "start": 127.02,
+   "end": 131.9,
+   "text": "the course details in the linways so students of the linways credential they can download it"
+  },
+  {
+   "start": 131.9,
+   "end": 137.78,
+   "text": "and also they'll share the documents through whatsapp also and sometimes we'll upload it"
+  },
+  {
+   "start": 137.78,
+   "end": 141.32,
+   "text": "in one drive so depends thank you so much sir"
+  }
+ ],
+ "model": "openai/whisper-large-v3-turbo",
+ "duration": 141.316625
+}

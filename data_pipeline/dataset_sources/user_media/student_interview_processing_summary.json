@@ -1,0 +1,14 @@
+{
+  "source_audio": "keshavs_input/Interview student.m4a",
+  "source_duration_seconds": 258.01,
+  "sample_rate_hz": 16000,
+  "channels": 1,
+  "transcription_model": "openai/whisper-small",
+  "transcript_segments": 68,
+  "rag_chunks": 68,
+  "transcript_file": "D:\\pu_bot\\dataset_sources\\user_media\\student_interview_transcript.jsonl",
+  "chunk_file": "D:\\pu_bot\\dataset_sources\\user_media\\student_interview_chunks.jsonl",
+  "limitations": [
+    "ASR output is automatic and unverified; check student names, quotations and any factual claim against the recording before reuse."
+  ]
+}

@@ -1,0 +1,2918 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<!-- TEMPLATE FILE: opac-browser.tt -->
+
+
+
+
+
+
+
+
+
+<html lang="en" class="no-js">
+<head>
+
+<title
+    >Browse our catalog &rsaquo; Koha online catalog</title
+>
+
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="generator" content="Koha" />
+<!-- leave this for stats -->
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="csrf-token" content="8ce3b04b4ea44be827a8b6435ca015460714927d,c0dc8428fb310e7453e070d9c9f9dd175896a4ee,1793253179" />
+
+
+<link rel="shortcut icon" href="/opac-tmpl/bootstrap/images/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="/opac-tmpl/bootstrap/images/favicon.ico" type="image/x-icon" />
+
+    
+        
+    
+
+
+    <link href="/opac-tmpl/bootstrap/css/opac_25.0502000.css" rel="stylesheet" type="text/css">
+
+
+
+
+    <link type="text/css" rel="stylesheet" href="/opac-tmpl/bootstrap/css/print_25.0502000.css" media="print">
+
+
+    <!-- prettier-ignore-start -->
+    <style>/* ================================================================
+   PRESIDENCY UNIVERSITY – LIBRARY KNOWLEDGE RESOURCE CENTRE
+   Updated OPACUserCSS  |  Koha OPAC Custom Stylesheet
+   Colour Palette:
+     Navy Primary  : #0B2D6B
+     Blue Mid      : #0d3482 / #1254b0
+     Gold Accent   : #C8922A
+     Green Action  : #1a6b4f / #239469
+     Teal Info     : #1a5a7a / #1a7bb8
+     Background    : #e9edf3
+   ================================================================ */
+
+/* ── Reset / Base ─────────────────────────────────────────── */
+#login { display: none; }
+#logo  { background: url("") }
+
+body {
+  font-family: 'Segoe UI', Calibri, Arial, sans-serif;
+  font-size: 100%;
+  background-color: #e9edf3;
+}
+
+/* ── Page wrapper ─────────────────────────────────────────── */
+#wrapper {
+  border: 3px solid #0B2D6B;
+  margin: 14px;
+  border-radius: 12px;
+  background: #ffffff;
+  box-shadow: 0 4px 20px rgba(11,45,107,0.15);
+  overflow: hidden;
+}
+
+/* ── Top branding / masthead strip ───────────────────────── */
+.mastheadsearch {
+  background: linear-gradient(135deg, #0B2D6B 0%, #0d3482 60%, #1254b0 100%);
+  border-bottom: 3px solid #C8922A;
+  box-shadow: 0 3px 12px rgba(0,0,0,0.25);
+}
+
+/* ── Navigation menu ──────────────────────────────────────── */
+@charset "UTF-8";
+
+#cssmenu > ul,
+#cssmenu > ul li,
+#cssmenu > ul ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#cssmenu > ul {
+  position: relative;
+  z-index: 597;
+  font-family: 'Segoe UI', Calibri, Arial, sans-serif;
+  font-size: 14px;
+  background: #0d3482 !important;
+  width: auto;
+  zoom: 1;
+  border-top: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+}
+#cssmenu > ul:before,
+#cssmenu > ul:after {
+  content: none !important;
+  display: none !important;
+}
+#cssmenu > ul li {
+  float: left;
+  min-height: 0;
+  line-height: 1.3em;
+  vertical-align: middle;
+}
+#cssmenu > ul li.hover,
+#cssmenu > ul li:hover {
+  position: relative;
+  z-index: 599;
+  cursor: default;
+}
+
+/* ── Top-level nav links ──────────────────────────────────── */
+#cssmenu > ul > li > a {
+  display: inline-block;
+  padding: 11px 18px;
+  color: #e8edf8 !important;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 3px solid transparent;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+#cssmenu > ul > li > a:hover,
+#cssmenu > ul > li.hover > a {
+  color: #C8922A !important;
+  background-color: rgba(255,255,255,0.07) !important;
+  border-bottom: 3px solid #C8922A;
+}
+#cssmenu > ul > li.active > a {
+  color: #C8922A !important;
+  border-bottom: 3px solid #C8922A;
+  font-weight: 700;
+}
+#cssmenu > ul li.hover,
+#cssmenu > ul li:hover {
+  background-color: rgba(255,255,255,0.07);
+}
+#cssmenu > ul > li.hover,
+#cssmenu > ul > li:hover {
+  background-color: rgba(255,255,255,0.07);
+  box-shadow: none;
+}
+
+/* ── Dropdown panels — NAVY BG + WHITE TEXT ───────────────── */
+#cssmenu > ul ul {
+  visibility: hidden;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 598;
+  width: 210px;
+  background: #0B2D6B !important;
+  background-color: #0B2D6B !important;
+  border: none !important;
+  border-top: 3px solid #C8922A !important;
+  border-radius: 0 0 10px 10px !important;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.4) !important;
+  padding: 0 !important;
+}
+#cssmenu > ul ul li {
+  float: none !important;
+  background: #0B2D6B !important;
+  background-color: #0B2D6B !important;
+  border-bottom: 1px solid rgba(255,255,255,0.09) !important;
+  font-size: 13px !important;
+  min-height: 0 !important;
+  line-height: normal !important;
+}
+#cssmenu > ul ul li a {
+  display: block !important;
+  padding: 10px 16px !important;
+  color: #e8edf8 !important;
+  background: #0B2D6B !important;
+  background-color: #0B2D6B !important;
+  text-decoration: none !important;
+  font-weight: 400 !important;
+  white-space: nowrap !important;
+  transition: background 0.2s, color 0.2s, padding-left 0.15s !important;
+}
+#cssmenu > ul ul li a:hover,
+#cssmenu > ul ul li a:focus,
+#cssmenu > ul ul li.hover > a {
+  background: rgba(200,146,42,0.22) !important;
+  background-color: rgba(200,146,42,0.22) !important;
+  color: #ffd070 !important;
+  padding-left: 22px !important;
+}
+
+/* Nuclear override — beats any Koha theme variant */
+#cssmenu ul ul            { background: #0B2D6B !important; }
+#cssmenu ul ul li         { background: #0B2D6B !important; background-color: #0B2D6B !important; }
+#cssmenu ul ul li a       { background: #0B2D6B !important; background-color: #0B2D6B !important; color: #e8edf8 !important; }
+#cssmenu ul ul li a:hover { background: rgba(200,146,42,0.22) !important; color: #ffd070 !important; }
+
+#cssmenu > ul ul ul { top: 0; left: 99%; }
+#cssmenu > ul li:hover > ul,
+#cssmenu > ul li.hover > ul { visibility: visible !important; }
+#cssmenu > ul > li.last ul ul { left: auto !important; right: 99%; }
+#cssmenu > ul > li.last ul   { left: auto !important; right: 0 !important; }
+#cssmenu > ul > li.last      { text-align: right; }
+
+/* ── Announcement Ticker ─────────────────────────────────── */
+.lkrc-ticker-wrap {
+  display: flex;
+  align-items: center;
+  background: #C8922A;
+  border-bottom: 2px solid #a87420;
+  overflow: hidden;
+  height: 34px;
+}
+.lkrc-ticker-label {
+  background: #0B2D6B;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  padding: 0 14px;
+  white-space: nowrap;
+  flex-shrink: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  border-right: 2px solid rgba(255,255,255,0.2);
+}
+.lkrc-ticker-overflow {
+  flex: 1;
+  overflow: hidden;
+  height: 100%;
+  position: relative;
+}
+.lkrc-marquee-track {
+  display: inline-block;
+  white-space: nowrap;
+  font-size: 13px;
+  font-weight: 500;
+  color: #ffffff;
+  padding-left: 100%;
+  animation: lkrc-marquee 32s linear infinite;
+  line-height: 34px;
+}
+.lkrc-ticker-overflow:hover .lkrc-marquee-track {
+  animation-play-state: paused;
+}
+@keyframes lkrc-marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
+marquee { display: none !important; }
+
+/* ── Search hero ─────────────────────────────────────────── */
+#searchform,
+.mastheadsearch form,
+#opac-main-search {
+  background: linear-gradient(135deg, #0B2D6B 0%, #1254b0 55%, #1a7bb8 100%);
+  padding: 28px 40px 32px;
+  text-align: center;
+  position: relative;
+}
+
+/* Search pill wrapper */
+.mastheadsearch .form-inline,
+#searchform .form-inline,
+#masthead-search-bar,
+.mastheadsearch form > div {
+  background: #ffffff;
+  border-radius: 50px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.25);
+  display: flex;
+  align-items: center;
+  max-width: 760px;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 3px;
+}
+
+/* Search type selector — solid light bg, dark navy text */
+select#search_field,
+select[name="idx"],
+.mastheadsearch select {
+  background: #f0f4fa !important;
+  color: #0B2D6B !important;
+  border: none !important;
+  border-right: 1px solid #c8d4e8 !important;
+  border-radius: 40px 0 0 40px !important;
+  padding: 10px 14px !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  outline: none !important;
+  min-width: 130px;
+  appearance: auto;
+  -webkit-appearance: auto;
+}
+select#search_field:focus,
+select[name="idx"]:focus {
+  background: #e3ebfb !important;
+  outline: none !important;
+}
+
+/* All libraries selector */
+select[name="limit"],
+select#branchloop,
+select.branch-select {
+  background: #f0f4fa !important;
+  color: #0B2D6B !important;
+  border: none !important;
+  border-left: 1px solid #c8d4e8 !important;
+  padding: 10px 12px !important;
+  font-size: 13px !important;
+  font-weight: 600 !important;
+  cursor: pointer !important;
+  outline: none !important;
+  appearance: auto;
+  -webkit-appearance: auto;
+}
+
+/* Main text input */
+#masthead_search,
+input[name="q"],
+.form-control[name="q"] {
+  flex: 1 !important;
+  background: #ffffff !important;
+  border: none !important;
+  border-radius: 0 !important;
+  padding: 10px 16px !important;
+  font-size: 15px !important;
+  color: #1a1a2e !important;
+  box-shadow: none !important;
+  outline: none !important;
+}
+#masthead_search::placeholder,
+input[name="q"]::placeholder { color: #9aaac4; }
+
+/* Gold search button */
+#searchsubmit,
+.btn-primary[type="submit"],
+input[type="submit"].btn-primary {
+  background: linear-gradient(135deg, #C8922A, #e0a830) !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 40px !important;
+  padding: 10px 26px !important;
+  font-weight: 700 !important;
+  font-size: 14px !important;
+  cursor: pointer !important;
+  box-shadow: 0 3px 10px rgba(200,146,42,0.4) !important;
+  transition: opacity 0.2s !important;
+  margin-left: 4px !important;
+  white-space: nowrap;
+}
+#searchsubmit:hover,
+.btn-primary[type="submit"]:hover { opacity: 0.9 !important; }
+
+/* ── Sidebar panels ─────────────────────────────────────────── */
+#opac-nav,
+#menu,
+#search-facets {
+  border: 1px solid #dde4f0;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(11,45,107,0.07);
+  margin-bottom: 14px;
+  background: #ffffff;
+}
+#opac-nav h3, #opac-nav h4,
+#menu h3,     #menu h4,
+#search-facets h3, #search-facets h4 {
+  font-size: 13px;
+  margin: 0;
+  text-align: left;
+  font-weight: 700;
+  background: linear-gradient(135deg, #0B2D6B, #1254b0);
+  color: #ffffff;
+  padding: 10px 14px;
+  border-radius: 0;
+  letter-spacing: 0.3px;
+}
+#opac-nav h4 a, #menu h4 a, #search-facets h4 a {
+  background: transparent !important;
+  color: #ffffff !important;
+  border: none !important;
+  border-radius: 0 !important;
+  display: block;
+  font-weight: 700;
+  padding: 0;
+  text-decoration: none;
+}
+#opac-nav ul li a, #menu ul li a {
+  color: #1a3570 !important;
+  font-size: 13px;
+  padding: 8px 14px;
+  display: block;
+  border-bottom: 1px solid #f0f4fa;
+  text-decoration: none;
+  transition: background 0.15s, color 0.15s;
+}
+#opac-nav ul li a:hover, #menu ul li a:hover {
+  background: #eef2fb !important;
+  color: #C8922A !important;
+}
+#search-facets h4 a {
+  background: linear-gradient(135deg, #1a5a7a, #1a7bb8) !important;
+  color: #fff !important;
+}
+
+/* ── Info / stat cards ─────────────────────────────────────── */
+.info-cards { display: flex; flex-wrap: wrap; gap: 16px; justify-content: center; margin: 20px 0; }
+.info-card {
+  flex: 1 1 260px; max-width: 270px;
+  background: #ffffff; border: 1px solid #dde4f0; border-radius: 12px;
+  padding: 18px; box-shadow: 0 4px 12px rgba(11,45,107,0.08);
+  font-family: 'Segoe UI', Calibri, sans-serif;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.info-card:hover { transform: translateY(-4px); box-shadow: 0 8px 20px rgba(11,45,107,0.13); }
+.info-card h3 { margin-bottom: 12px; text-align: center; color: #0B2D6B; font-size: 14px; font-weight: 700; }
+
+/* ── 3D Book Spinner ─────────────────────────────────────────── */
+.na-wrap { width: 100%; max-width: 820px; margin: 24px auto; text-align: center; position: relative; clear: both; }
+.na-title {
+  font-family: "Bookman Old Style", serif;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #003399;
+  margin-bottom: 20px;
+}
+.rotator {
+  width: 100%;
+  min-height: 380px;
+  position: relative;
+  perspective: 1000px;
+  overflow: hidden;
+}
+.spinner {
+  width: 100px;
+  height: 220px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform-style: preserve-3d;
+  transform-origin: center center;
+}
+.book {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform-origin: center center;
+  backface-visibility: visible;
+}
+.book img {
+  width: 120px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 10px 28px rgba(0,0,0,0.4);
+  border: 2px solid rgba(255,255,255,0.15);
+  display: block;
+}
+.na-caption {
+  max-width: 640px;
+  margin: 18px auto 0;
+  padding: 10px 22px;
+  background: linear-gradient(135deg, #e8f0fe, #d4e3fb);
+  border: 1px solid #b8cdf5;
+  border-radius: 40px;
+  font-weight: 700;
+  font-size: 16px;
+  color: #0B2D6B;
+  text-align: center;
+}
+
+/* ── Coverflow (if used) ─────────────────────────────────────── */
+#na-coverflow {
+  display: flex; justify-content: center; align-items: center;
+  perspective: 1200px; height: 240px; position: relative;
+}
+.cf-card {
+  position: absolute;
+  transition: transform 0.5s cubic-bezier(.4,0,.2,1), opacity 0.5s, filter 0.5s;
+  cursor: pointer;
+}
+.cf-card img { width: 120px; height: 180px; object-fit: cover; border-radius: 10px; box-shadow: 0 10px 28px rgba(0,0,0,0.35); }
+
+/* ── Double Marquee (Top Circulated / New Arrivals rows) ─────── */
+.premium-na {
+  max-width: 1100px;
+  margin: 26px auto 40px;
+}
+.na-marquees {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.na-row {
+  overflow: hidden;
+  width: 100%;
+}
+.na-track {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  white-space: nowrap;
+}
+.na-book img {
+  height: 210px;
+  border-radius: 10px;
+  box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+  display: block;
+  transition: transform 0.2s;
+}
+.na-book img:hover { transform: scale(1.05); }
+/* Row 1 scrolls RIGHT — starts at -50%, ends at 0 */
+.na-row--right .na-track { animation: na-scroll-right 30s linear infinite; }
+/* Row 2 scrolls LEFT — starts at 0, ends at -50% */
+.na-row--left  .na-track { animation: na-scroll-left  30s linear infinite; }
+/* Pause on hover so users can click a book */
+.na-row:hover .na-track  { animation-play-state: paused; }
+@keyframes na-scroll-right {
+  0%   { transform: translateX(-50%); }
+  100% { transform: translateX(0); }
+}
+@keyframes na-scroll-left {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@media (max-width: 768px) {
+  .na-book img { height: 170px; }
+  .na-track { gap: 12px; }
+}
+
+/* ── Slideshow ────────────────────────────────────────────── */
+.slideshow-container { max-width: 100%; position: relative; margin: auto; border-radius: 8px; overflow: hidden; }
+.mySlides { display: none; }
+.prev, .next {
+  cursor: pointer; position: absolute; top: 50%; width: auto; margin-top: -22px;
+  padding: 14px 18px; color: white; font-weight: bold; font-size: 16px;
+  transition: 0.3s ease; border-radius: 0 6px 6px 0; background: rgba(11,45,107,0.6);
+}
+.next { right: 0; border-radius: 6px 0 0 6px; }
+.prev:hover, .next:hover { background: rgba(11,45,107,0.9); }
+.dot {
+  cursor: pointer; height: 10px; width: 10px; margin: 0 3px;
+  background-color: rgba(11,45,107,0.3); border-radius: 50%;
+  display: inline-block; transition: background-color 0.4s ease;
+}
+.active, .dot:hover { background-color: #C8922A; }
+.fade { animation-name: fade; animation-duration: 1.2s; }
+@keyframes fade { from { opacity: .5 } to { opacity: 1 } }
+
+/* ── Strip borders off header containers ─────────────────── */
+body > header, body > .header, #banner, .nav-wrapper, #top-bar {
+  border-top: none !important; border-bottom: none !important; box-shadow: none !important;
+}
+
+/* ── New Arrivals centre wrapper ──────────────────────────── */
+.lkrc-home-row { margin-top: 18px; }
+.lkrc-center-col { position: relative; }
+#lkrc-new-arrivals-wrapper { position: relative; max-width: 100%; overflow: hidden; padding: 20px 0 36px; text-align: center; z-index: 1; }
+.lkrc-na-heading { font-size: 22px; font-weight: 700; color: #0B2D6B; margin-bottom: 16px; display: flex; align-items: center; justify-content: center; gap: 8px; }
+#lkrc-new-arrivals-slider { max-width: 100%; margin: 0 auto; }
+#lkrc-new-arrivals-slider img { max-width: 170px; height: auto; border-radius: 8px; box-shadow: 0 6px 18px rgba(0,0,0,0.2); }
+@media (max-width: 1400px) { #lkrc-new-arrivals-slider img { max-width: 150px; } }
+@media (max-width: 1200px) { #lkrc-new-arrivals-slider img { max-width: 130px; } }
+@media (max-width: 768px)  { .lkrc-home-row > [class*="col-"] { margin-bottom: 18px; } .lkrc-na-heading { font-size: 18px; } }
+
+/* ── Modal lock ───────────────────────────────────────────── */
+#loginModal { z-index: 100000 !important; position: fixed !important; }
+body.modal-open #cssmenu, body.modal-open #cssmenu * { pointer-events: none !important; user-select: none !important; }
+body.modal-open #cssmenu > ul > li:hover, body.modal-open #cssmenu > ul > li.hover { background-color: transparent !important; box-shadow: none !important; }
+body.modal-open #cssmenu > ul > li > a:hover { background-color: transparent !important; color: inherit !important; }
+
+/* ── Google CSE ───────────────────────────────────────────── */
+.custom-cse-box {
+  background: linear-gradient(135deg, #eef2fb, #f5f7fd);
+  padding: 16px; margin-bottom: 14px; border-radius: 10px;
+  border: 1px solid #c8d4e8; text-align: center;
+  max-width: 900px; margin-left: auto; margin-right: auto;
+}
+.custom-cse-box h3, .cse-title { font-size: 15px; font-weight: 700; color: #0B2D6B; margin-bottom: 10px; }
+.gcse-searchbox-only, .gsc-control-cse, .gsc-control-wrapper-cse,
+.gsc-search-box, .gsc-input-box, .gsc-input { width: 100% !important; }
+.gsc-search-button { margin-left: 6px !important; }
+
+/* ── EBSCO ────────────────────────────────────────────────── */
+#ebsco-discovery { width: 100%; max-width: 100%; box-sizing: border-box; overflow: hidden; }
+#ebsco-discovery .ebsco-row { width: 100%; max-width: 100%; box-sizing: border-box; }
+#ebsco-discovery input  { flex: 1 1 auto; min-width: 0; max-width: 100%; }
+#ebsco-discovery select, #ebsco-discovery button { flex: 0 0 auto; max-width: 100%; }
+
+/* ── Collection / Stats cards ─────────────────────────────── */
+.card-container { display: flex; flex-wrap: wrap; gap: 18px; justify-content: center; margin: 18px auto; width: 100%; max-width: 100%; box-sizing: border-box; }
+.borrow-card {
+  flex: 1 1 280px; max-width: 320px; background: #ffffff;
+  border: 1px solid #dde4f0; border-radius: 12px; padding: 18px;
+  box-shadow: 0 4px 12px rgba(11,45,107,0.08);
+  font-family: 'Segoe UI', Calibri, sans-serif; box-sizing: border-box;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.borrow-card:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(11,45,107,0.13); }
+.collection-list { list-style: none; padding: 0; margin: 0; }
+.collection-list li { display: flex; justify-content: space-between; padding: 7px 10px; margin-bottom: 5px; background: #f0f4fa; border-radius: 8px; font-size: 13px; color: #1a3570; }
+.styled-select { width: 100%; padding: 9px 12px; border-radius: 8px; border: 1px solid #c8d4e8; font-size: 13px; color: #1a3570; background: #f8faff; }
+.contact-card { width: 100%; max-width: 100%; box-sizing: border-box; margin: 18px 0; padding: 18px; border: 1px solid #dde4f0; border-radius: 12px; background: #ffffff; box-shadow: 0 4px 12px rgba(11,45,107,0.08); font-family: 'Segoe UI', Calibri, sans-serif; }
+.contact-card a { word-break: break-word; color: #1254b0; }
+.nl-card-wrap { flex: 1 1 260px; max-width: 320px; text-align: center; }
+
+/* ── New Arrivals table ───────────────────────────────────── */
+#na-table { width: 100%; border-collapse: collapse; }
+#na-table thead tr { background: linear-gradient(135deg, #0B2D6B, #1254b0); color: #fff; }
+#na-table thead th { text-align: left; padding: 9px 10px; font-size: 13px; font-weight: 600; border-bottom: 2px solid #C8922A; color: #fff; }
+#na-table tbody tr:nth-child(even) { background: #f0f4fa; }
+#na-table tbody tr:hover { background: #e3ebfb; }
+#na-table tbody td { padding: 8px 10px; font-size: 13px; border-bottom: 1px solid #e8edf5; }
+#na-table tbody a { color: #1254b0; font-weight: 600; text-decoration: none; }
+#na-table tbody a:hover { color: #C8922A; text-decoration: underline; }
+
+/* ── LKRC Recommendation Modal ────────────────────────────── */
+#lkrcRecoModal { display: none; position: fixed; inset: 0; background: rgba(11,45,107,0.55); backdrop-filter: blur(3px); z-index: 99999; align-items: center; justify-content: center; }
+#lkrcRecoModal.show { display: flex; }
+.lkrc-modal-box { background: #ffffff; border-radius: 14px; box-shadow: 0 20px 60px rgba(0,0,0,0.3); max-width: 540px; width: 95%; overflow: hidden; position: relative; }
+.lkrc-modal-header { background: linear-gradient(135deg, #0B2D6B, #1254b0); color: #fff; padding: 16px 20px; font-weight: 700; font-size: 16px; display: flex; align-items: center; justify-content: space-between; }
+.lkrc-modal-header::before { content: "🧭"; margin-right: 8px; }
+#lkrcRecoClose { background: transparent; border: none; color: #fff; font-size: 20px; cursor: pointer; line-height: 1; }
+.lkrc-pane { display: none; padding: 20px; }
+.lkrc-pane.active { display: block; }
+.lkrc-choices { display: flex; flex-wrap: wrap; gap: 10px; margin: 14px 0; }
+.lkrc-choices [data-pick] { background: #eef2fb; border: 2px solid #c8d4e8; border-radius: 8px; padding: 9px 16px; font-size: 13px; cursor: pointer; color: #1a3570; transition: all 0.2s; }
+.lkrc-choices [data-pick].selected, .lkrc-choices [data-pick]:hover { background: linear-gradient(135deg, #0B2D6B, #1254b0); border-color: #0B2D6B; color: #fff; }
+.lkrc-next, .lkrc-back, #lkrcGetReco { background: linear-gradient(135deg, #C8922A, #e0a830); color: #fff; border: none; border-radius: 20px; padding: 9px 22px; font-weight: 700; font-size: 13px; cursor: pointer; transition: opacity 0.2s; }
+.lkrc-back { background: linear-gradient(135deg, #7a8399, #9aa0b0); }
+.lkrc-next:disabled { opacity: 0.45; cursor: not-allowed; }
+.lkrc-result-item { padding: 10px 12px; border-bottom: 1px solid #f0f4fa; font-size: 13px; }
+.lkrc-result-item a { color: #1254b0; font-weight: 700; text-decoration: none; }
+.lkrc-result-item a:hover { color: #C8922A; text-decoration: underline; }
+#lkrcRecoResults { max-height: 340px; overflow-y: auto; margin-top: 12px; }
+#lkrcRecoOpen { background: linear-gradient(135deg, #1a6b4f, #239469); color: #fff; border: none; border-radius: 20px; padding: 10px 24px; font-weight: 700; font-size: 14px; cursor: pointer; box-shadow: 0 3px 10px rgba(26,107,79,0.3); transition: opacity 0.2s; }
+#lkrcRecoOpen:hover { opacity: 0.9; }
+.lkrc-steps { display: flex; justify-content: center; gap: 8px; padding: 12px 0; border-bottom: 1px solid #eef2fb; }
+.lkrc-step { width: 28px; height: 28px; background: #eef2fb; border: 2px solid #c8d4e8; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; color: #7a8399; transition: all 0.2s; }
+.lkrc-step.active { background: linear-gradient(135deg, #0B2D6B, #1254b0); border-color: #0B2D6B; color: #fff; }
+
+/* ── Link cards ──────────────────────────────────────────────── */
+.link-cards.premium { display: flex; justify-content: center; gap: 20px; margin: 20px 0 30px; }
+.link-card { background: linear-gradient(135deg, #0a3d91, #0b2a4a); color: #fff !important; padding: 12px 20px; border-radius: 14px; font-family: "Bookman Old Style", serif; font-weight: 700; text-decoration: none; box-shadow: 0 10px 24px rgba(0,0,0,0.2); transition: transform 0.2s; }
+.link-card:hover { transform: translateY(-4px); }
+
+/* ── LKRC: Remove gold highlight from active nav item (Home) ── */
+/* Paste these lines at the very END of OPACUserCSS and Save    */
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.active>a:focus,
+#navmenulist li.active>a,
+#navmenulist li.active>a:hover,
+#navmenulist li.active>a:focus,
+#navmenulist .active>.nav-link,
+#navmenulist .active>.nav-link:hover,
+#navmenulist .nav-item.active>.nav-link,
+.navbar-nav>.active>a,
+.navbar-nav>.active>a:hover,
+.navbar-nav>.active>a:focus {
+  background: transparent !important;
+  background-color: transparent !important;
+  background-image: none !important;
+  border: none !important;
+  border-bottom: none !important;
+  box-shadow: none !important;
+  color: rgba(255,255,255,0.9) !important;
+}
+
+#navmenulist li.active,
+#navmenulist .nav-item.active,
+.navbar-nav li.active {
+  background: transparent !important;
+  background-color: transparent !important;
+}</style>
+    <!-- prettier-ignore-end -->
+
+
+
+
+
+<script>
+    var Koha = {};
+    function _(s) { return s } // dummy function for gettext
+    const is_logged_in = false
+</script>
+
+<script src="/opac-tmpl/bootstrap/js/Gettext_25.0502000.js"></script>
+<script src="/opac-tmpl/bootstrap/js/i18n_25.0502000.js"></script>
+
+<link type="text/css" href="/opac-tmpl/lib/fontawesome/css/fontawesome.min_25.0502000.css" rel="stylesheet">
+<link href="/opac-tmpl/lib/fontawesome/css/brands.min_25.0502000.css" rel="stylesheet" type="text/css">
+<link type="text/css" href="/opac-tmpl/lib/fontawesome/css/solid.min_25.0502000.css" rel="stylesheet">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+    
+
+
+
+
+
+    
+
+<body ID="opac-browser" class="branch-default" >
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<button id="scrolltocontent">Skip to main content</button>
+<!-- prettier-ignore-start -->
+<!-- closed in opac-bottom.inc -->
+<div id="wrapper">
+<!-- prettier-ignore-end -->
+<header id="header-region" class="noprint">
+    <nav class="navbar navbar-expand">
+        <div id="logo">
+            <a class="navbar-brand" href="/cgi-bin/koha/opac-main.pl">
+                
+                    Koha online
+                
+            </a>
+        </div>
+        
+            
+                <div id="cartDetails" class="cart-message">Your cart is empty.</div>
+            
+            <ul id="cart-list-nav" class="navbar-nav">
+                
+                    <li class="nav-item js-show">
+                        <a href="#" class="nav-link" title="Collect items you are interested in" id="cartmenulink" role="button" aria-label="Cart">
+                            <i id="carticon" class="fa fa-shopping-cart fa-fw fa-icon-black" aria-hidden="true"></i> <span class="cartlabel">Cart</span> <span id="basketcount"></span>
+                        </a>
+                    </li>
+                
+                <li class="divider-vertical"></li>
+                
+                    
+                        <li class="nav-item dropdown">
+                            <a
+                                href="/cgi-bin/koha/opac-shelves.pl"
+                                title="Show lists"
+                                class="nav-link dropdown-toggle"
+                                id="listsmenu"
+                                data-bs-toggle="dropdown"
+                                role="button"
+                                aria-label="Show dropdown with detailed list information"
+                                aria-haspopup="true"
+                                aria-expanded="false"
+                                ><i class="fa fa-list fa-fw fa-icon-black" aria-hidden="true"></i> <span class="listslabel">Lists</span>
+                            </a>
+                            <div aria-labelledby="listsmenu" role="menu" class="dropdown-menu">
+                                
+                                    <a class="dropdown-item" href="/cgi-bin/koha/opac-shelves.pl?op=list&amp;public=1" tabindex="0" role="menuitem"><strong>Public lists</strong></a>
+                                    
+                                    
+                                        <a class="dropdown-item" href="/cgi-bin/koha/opac-shelves.pl?op=view&amp;shelfnumber=1&amp;sortfield=title" tabindex="0" role="menuitem"
+                                            >Arnav</a
+                                        >
+                                        
+                                        
+                                    
+                                        <a class="dropdown-item" href="/cgi-bin/koha/opac-shelves.pl?op=view&amp;shelfnumber=6&amp;sortfield=title" tabindex="0" role="menuitem"
+                                            >Vijay</a
+                                        >
+                                        
+                                        
+                                    
+                                        <a class="dropdown-item" href="/cgi-bin/koha/opac-shelves.pl?op=view&amp;shelfnumber=11&amp;sortfield=title" tabindex="0" role="menuitem"
+                                            >Merge</a
+                                        >
+                                        
+                                        
+                                    
+                                        <a class="dropdown-item" href="/cgi-bin/koha/opac-shelves.pl?op=view&amp;shelfnumber=12&amp;sortfield=title" tabindex="0" role="menuitem"
+                                            >Merge 2</a
+                                        >
+                                        
+                                        
+                                    
+                                        <a class="dropdown-item" href="/cgi-bin/koha/opac-shelves.pl?op=view&amp;shelfnumber=13&amp;sortfield=title" tabindex="0" role="menuitem"
+                                            >Merge 3</a
+                                        >
+                                        
+                                        
+                                    
+                                        <a class="dropdown-item" href="/cgi-bin/koha/opac-shelves.pl?op=view&amp;shelfnumber=14&amp;sortfield=title" tabindex="0" role="menuitem"
+                                            >Merge123</a
+                                        >
+                                        
+                                        
+                                    
+                                        <a class="dropdown-item" href="/cgi-bin/koha/opac-shelves.pl?op=view&amp;shelfnumber=23&amp;sortfield=title" tabindex="0" role="menuitem"
+                                            >Gandhi Jayandhi</a
+                                        >
+                                        
+                                        
+                                    
+                                        <a class="dropdown-item" href="/cgi-bin/koha/opac-shelves.pl?op=view&amp;shelfnumber=24&amp;sortfield=title" tabindex="0" role="menuitem"
+                                            >World Open Access Week Book Display</a
+                                        >
+                                        
+                                        
+                                    
+                                        <a class="dropdown-item" href="/cgi-bin/koha/opac-shelves.pl?op=view&amp;shelfnumber=26&amp;sortfield=title" tabindex="0" role="menuitem"
+                                            >Abdul Kalam Birthday</a
+                                        >
+                                        
+                                        
+                                    
+                                        <a class="dropdown-item" href="/cgi-bin/koha/opac-shelves.pl?op=view&amp;shelfnumber=30&amp;sortfield=title" tabindex="0" role="menuitem"
+                                            >Diwali</a
+                                        >
+                                        
+                                        
+                                    
+                                        <a class="dropdown-item listmenulink" href="/cgi-bin/koha/opac-shelves.pl?op=list&amp;public=1" tabindex="0" role="menuitem">View all</a>
+                                    
+                                
+                                
+                                    <div class="dropdown-divider"></div>
+                                
+                                
+                                    <a class="dropdown-item" href="/cgi-bin/koha/opac-shelves.pl?op=list&amp;public=0" tabindex="0" role="menuitem"><strong>Your lists</strong></a>
+                                    
+                                        <a class="dropdown-item" href="/cgi-bin/koha/opac-shelves.pl?op=add_form" tabindex="0" role="menuitem">Log in to create your own lists</a>
+                                    
+                                
+                            </div>
+                            <!-- / .dropdown-menu -->
+                        </li>
+                        <!-- / .nav-item.dropdown -->
+                    
+                
+                
+            </ul>
+            <!-- / .navbar-nav -->
+        
+        
+            
+            
+            <ul id="members" class="navbar-nav">
+                <li class="nav-item dropdown dropdown-menu-end">
+                    
+                        
+                            
+                                <a href="/cgi-bin/koha/opac-user.pl" class="nav-link login-link loginModal-trigger" aria-label="Log in to your account"
+                                    ><i class="fa fa-user fa-fw fa-icon-black fa-fw" aria-hidden="true"></i> <span class="userlabel">Log in to your account</span></a
+                                >
+                            
+                        
+                    
+
+                    
+                </li>
+                <!-- Cookie consent button for non logged-in users -->
+                
+                    <li style="display:none" id="cookieConsentDivider" class="divider-vertical" aria-hidden="true"></li>
+                    <li style="display:none" id="cookieConsentLi" class="nav-item" aria-hidden="true">
+                        <a id="cookieConsentButton" href="#" name="Your cookies" class="nav-link" title="View and amend cookies you have consented to" role="button">
+                            <i class="fa fa-cookie-bite fa-fw fa-icon-black" aria-hidden="true"></i>
+                            <span class="cookieconsentlabel">Your cookies</span>
+                        </a>
+                    </li>
+                
+                
+                    
+                        <li class="divider-vertical"></li>
+                        <li class="nav-item search_history">
+                            <a class="nav-link" href="/cgi-bin/koha/opac-search-history.pl" title="View your search history">
+                                <i class="fa fa-calendar-days fa-fw fa-icon-black" aria-hidden="true"></i>
+                                <span class="search_history_label">Search history</span>
+                            </a>
+                        </li>
+                    
+                
+            </ul>
+        
+    </nav>
+    <!-- /navbar -->
+
+    
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col"> 
+    
+        <div id="opacheader">
+            
+                <div class="en_item">
+                    
+                    <div class="en_body"><!-- 🔹 Header Section -->
+<div class="library-header">
+<div class="header-left"><a href="https://opac.presidencyuniversity.in/" target="_blank" rel="noopener"><img src="https://1.bp.blogspot.com/-IL0sOnnqCkA/XmovtNHtcDI/AAAAAAAA04c/UYIuANuhae0MzbxLmvOeIbNynT6ld-5nQCLcBGAsYHQ/s1600/presidency-university-logo.png" alt="Presidency University Logo" height="90" /></a></div>
+<div class="header-center">
+<h1>LIBRARY AND KNOWLEDGE RESOURCE CENTER (LKRC)</h1>
+<h2>Your Gateway to Knowledge</h2>
+</div>
+</div>
+<!-- 🔹 Navigation Menu -->
+<div id="cssmenu">
+<ul>
+<li><a href="#">Databases</a>
+<ul>
+<li><a href="/opac-tmpl/bootstrap/images/databaseimages/subscribed-databases.html" target="_blank" rel="noopener">Subscribed</a></li>
+<li><a href="/opac-tmpl/bootstrap/images/OADATABASE/OA Databases.html" target="_blank" rel="noopener">Open Access</a></li>
+<li><a href="/opac-tmpl/bootstrap/images/NationalInitiatives/LP.html" target="_blank" rel="noopener">National Initiatives</a></li>
+</ul>
+</li>
+<li><a href="#">Question Papers</a>
+<ul>
+<li><a href="http://182.72.188.194:8080/jspui/handle/123456789/12" target="_blank" rel="noopener">Engineering</a></li>
+<li><a href="http://182.72.188.194:8080/jspui/handle/123456789/5683" target="_blank" rel="noopener">Computer Science and Engineering</a></li>
+<li><a href="http://182.72.188.194:8080/jspui/handle/123456789/1307" target="_blank" rel="noopener">Information Science</a></li>
+<li><a href="http://182.72.188.194:8080/jspui/handle/123456789/18" target="_blank" rel="noopener">Law</a></li>
+<li><a href="http://182.72.188.194:8080/jspui/handle/123456789/19" target="_blank" rel="noopener">Management</a></li>
+<li><a href="http://182.72.188.194:8080/jspui/handle/123456789/1306" target="_blank" rel="noopener">Commerce and Economics</a></li>
+<li><a href="http://182.72.188.194:8080/jspui/handle/123456789/2573" target="_blank" rel="noopener">Media Studies</a></li>
+<li><a href="http://182.72.188.194:8080/jspui/handle/123456789/2668" target="_blank" rel="noopener">Design</a></li>
+</ul>
+</li>
+<li><a href="#">E-Resources</a>
+<ul>
+<li><a href="http://192.168.1.10/opac-tmpl/bootstrap/images/books/E-books.html" target="_blank" rel="noopener">E-Books</a></li>
+<li><a href="https://sites.google.com/view/puloar/home" target="_blank" rel="noopener">PULOAR (Open Resources)</a></li>
+</ul>
+</li>
+<li><a href="#">Research Support</a>
+<ul>
+<li><a href="https://drive.google.com/file/d/1OHMYkH4zt1x3D4WKE_9wR3utDNkHKDWX/view?usp=sharing" target="_blank" rel="noopener">Plagiarism Check</a></li>
+<li><a href="#">Reference Management Softwares</a>
+<ul>
+<li><a href="https://www.zotero.org/" target="_blank" rel="noopener">Zotero</a></li>
+<li><a href="https://www.mendeley.com/" target="_blank" rel="noopener">Mendeley</a></li>
+</ul>
+</li>
+<li><a href="/opac-tmpl/bootstrap/images/RS3/Research_Tools.html" target="_blank" rel="noopener">Skill Enhancement</a></li>
+<li><a href="#">Shodhganga</a>
+<ul>
+<li><a href="https://drive.google.com/file/d/1Wr3YclTcIl8tvkp5AldWAbXobEGJYpas/view?usp=sharing" target="_blank" rel="noopener">Thesis Uploading Format</a></li>
+<li><a href="https://docs.google.com/document/d/18p25N2vdN1kO-Wa18UpCcHdu4_JMumq_/edit?usp=sharing" target="_blank" rel="noopener">Required Fields Format</a></li>
+</ul>
+</li>
+<li><a href="https://opac.presidencyuniversity.in/opac-tmpl/bootstrap/images/ResearchSupport/JF/" target="_blank" rel="noopener">Journal Finder</a></li>
+<li><a href="https://shodhavasar.org/" target="_blank" rel="noopener">Shodhavasar</a></li>
+</ul>
+</li>
+<li><a href="https://drive.google.com/file/d/1iJx-b87lxJ1hrVvdzZxf_g30fGnXuywQ/view?usp=sharing" target="_blank" rel="noopener">Print Journals</a></li>
+<li><a href="#">New Arrivals</a>
+<ul>
+<li><a href="#">Books</a>
+<ul>
+<li><a href="https://drive.google.com/file/d/1gSjbGgKA7SxI5-oek86auabek4vGRluN/view?usp=sharing">December - 2024</a></li>
+<li><a href="https://drive.google.com/file/d/1rR34mwI6dhFevadp2Ac6RiFo4jDubAg2/view?usp=sharing">January - 2025</a></li>
+<li><a href="https://drive.google.com/file/d/11VB5vGd5BNUBFk_YLhADrP-4IeKb914p/view?usp=sharing">February - 2025</a></li>
+<li><a href="https://drive.google.com/file/d/1-2vhbTVFv3YE2eCUtcXif5kyP4S1v2NY/view?usp=sharing">March - 2025</a></li>
+<li><a href="https://drive.google.com/file/d/1eCMrZDlVAHcInFZ_yZZvEfjtuC2lOWE3/view?usp=sharing">April - 2025</a></li>
+<li><a href="https://drive.google.com/file/d/1k4rliZi6t3jxpHl2y6jNNNBnBmy8-XHw/view?usp=sharing">August - 2025</a></li>
+<li><a href="https://drive.google.com/file/d/13RS2lmvsS-NXs9nQplAnGkvUpl1DPPJg/view?usp=sharing">September - 2025</a></li>
+<li><a href="https://drive.google.com/file/d/1aTpOK_wy_CCxiYhGeY96Tg1R1yS3R4h4/view?usp=sharing">October - 2025</a></li>
+<li><a href="https://drive.google.com/file/d/1VxRmavkF7Ydjs0zRDnHVYS5Z69TUBlJH/view?usp=sharing">November - 2025</a></li>
+<li><a href="https://drive.google.com/file/d/15ZNTsBOMmPOs9L_fUU37pc3e6Dc9PEp0/view?usp=sharing">December - 2025</a></li>
+</ul>
+</li>
+<li><a href="#">Journals</a>
+<ul>
+<li><a href="https://drive.google.com/file/d/1QFeGwPxzs5DeQx_FX1TPyv_sG5sUsa7s/view?usp=sharing">December - 2024</a></li>
+<li><a href="https://drive.google.com/file/d/1gPaCDkh57uq0dz1ZXvf_Mt4qwb2H2vje/view?usp=sharing">January - 2025</a></li>
+<li><a href="https://drive.google.com/file/d/180y3XtVt3v0N9C5cg_oHOzInysnA1qYm/view?usp=sharing">February - 2025</a></li>
+<li><a href="https://drive.google.com/file/d/15mmRYIRFlKyXSyEei4XJVNJRkqBjl5db/view?usp=sharing">March - 2025</a></li>
+<li><a href="https://drive.google.com/file/d/1wf-h0Bj5ksMOYsa7DsxfkF2OCCD2kBX9/view?usp=sharing">May - 2025</a></li>
+<li><a href="https://drive.google.com/file/d/1Ji5RHazvoznK1L0aR4kGyQGfISCFx23A/view?usp=sharing">June - 2025</a></li>
+<li><a href="https://drive.google.com/drive/u/1/folders/1WYQ0_7Zx7gyouAD5bLR7nV7WLBBhx9m0">July - 2025</a></li>
+<li><a href="https://drive.google.com/file/d/1A49yh31_McZLbLgeBJW-a7Ui9ll-dDGc/view?usp=sharing">August - 2025</a></li>
+<li><a href="https://drive.google.com/file/d/1B3-Y5yJlfR7C4LyvSJAXGzz-SwVF-NQ7/view?usp=sharing">September - 2025</a></li>
+<li><a href="https://drive.google.com/file/d/13-qtrn40SkAENSfsYhekNb8zSPifgtIu/view?usp=sharing">October - 2025</a></li>
+<li><a href="https://drive.google.com/file/d/1cvOFouhDP3CI7q2UA0UslRHtK9kz0TTX/view?usp=sharing">Novmber - 2025</a></li>
+<li><a href="https://drive.google.com/file/d/1d8s_1VBn65Q2fTlGFKL0MlOweMkqjAkp/view?usp=sharing">December - 2025</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#">Newsletter</a>
+<ul>
+<li><a href="#">2024</a>
+<ul>
+<li><a href="https://drive.google.com/file/d/1CHUMo42HOcT3OPMoN4yQUhttgm0Ee3YM/view?usp=sharing" target="_blank" rel="noopener">September - 2024</a></li>
+<li><a href="https://drive.google.com/file/d/1dG-oroyw2AGnHiE-4f-IpdnxnpI3e7gM/view?usp=sharing" target="_blank" rel="noopener">October - 2024</a></li>
+<li><a href="https://drive.google.com/file/d/1EnC7rTyi3zb777eM4XacicR5u5lRByCF/view?usp=sharing" target="_blank" rel="noopener">November - 2024</a></li>
+<li><a href="https://drive.google.com/file/d/1MYVN1S-jZ2LccFteOb4BSwzhIOW4JlEL/view?usp=sharing" target="_blank" rel="noopener">December - 2024</a></li>
+</ul>
+</li>
+<li><a href="#">2025</a>
+<ul>
+<li><a href="https://drive.google.com/file/d/1S4d2trwYaffuSXHWtvzUzfaZ1kbllAb4/view?usp=sharing">January - 2025</a></li>
+<li><a href="https://drive.google.com/file/d/1uw_vDwtkLsQ_JL1FcK9rwYbddMXTxwCi/view?usp=sharing">February - 2025</a></li>
+<li><a href="https://drive.google.com/file/d/1Noacw0UaYLB1tFKeYj4WUoI42za8Aa_M/view?usp=sharing">March - 2025</a></li>
+<li><a href="https://drive.google.com/file/d/13vguoDCq3ufOLzbFmqLcIpdoasxaMaPA/view?usp=sharing">April - 2025</a></li>
+<li><a href="https://drive.google.com/file/d/1otOfeMNeG7lUam7GISC5YFZLqR0P4HHv/view?usp=sharing">May - 2025</a></li>
+<li><a href="https://drive.google.com/file/d/1SCr-OIFKF8x2ifEj8np4HcOKn_4_6Dg9/view?usp=sharing">June - 2025</a></li>
+<li><a href="https://drive.google.com/file/d/1YMz-uknhrWKt4159Lw2G6n1LbEcI1fLG/view?usp=sharing">July - 2025</a></li>
+<li><a href="https://drive.google.com/file/d/1wBxN7fpd1bfNg-ESsgvuaxh_hdROZvNU/view?usp=sharing">August - 2025</a></li>
+<li><a href="https://drive.google.com/file/d/1zvpuJXglCbLYLRuldh8dZCNf_ugbHoCB/view?usp=sharing">September - 2025</a></li>
+<li><a href="https://drive.google.com/file/d/1zRcDWWb4BhEJO14rTx56i4odyj4Vexyn/view?usp=sharing">October - 2025</a></li>
+<li><a href="https://drive.google.com/file/d/12Mt7pHn04Wqd-XlU7juKF4EWacvixSTW/view?usp=sharing">November - 2025</a></li>
+<li><a href="https://drive.google.com/file/d/1AZhOeVA46tM9flXC0QO-oU2T72S5P2l_/view?usp=sharing">December - 2025</a></li>
+</ul>
+</li>
+<li><a href="#">2026</a>
+<ul>
+<li><a href="https://drive.google.com/file/d/1wYNAeFIsiotvixp_5rxmg5Xl0ooRTWYg/view?usp=sharing">January - 2026</a></li>
+<li><a href="https://drive.google.com/file/d/1o37i6r4sgN1tGlV7J5jlDyvZwqTcuFlR/view?usp=sharing">February - 2026</a></li>
+<li><a href="https://drive.google.com/file/d/1hytSSaGUcBFUTxDCjr6dnM-zvRAli4Cw/view?usp=sharing">March - 2026</a></li>
+<li><a href="https://drive.google.com/file/d/1b_tm9hE5wCTrJuLi5rYg3emG7yRfkRRK/view?usp=sharing">April - 2026</a></li>
+<li><a href="https://drive.google.com/file/d/1GrsNq8yq0deYpw9CPCC1cGb0ZYDAoJUc/view?usp=sharing">June - 2026</a></li>
+<li><a href="https://drive.google.com/file/d/1lamRAK_duXtdCtRH0Glh_iC1DZfSg2_4/view?usp=sharing">August - 2026</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<!-- 🔹 CSS -->
+<style>
+/* Header Section */
+.library-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 20px 40px;
+  border-bottom: 3px solid #0a4d8c;
+}
+
+.header-left { flex: 0 0 auto; }
+
+.library-header img {
+  max-height: 100px;
+  display: block;
+}
+
+.header-center { flex: 1; text-align: center; }
+
+.header-center h1 {
+  font-size: 32px;
+  font-weight: 800;
+  color: #0a4d8c;
+  margin: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+}
+
+.header-center h2 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #c05000;
+  margin: 8px 0 0 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Responsive Header */
+@media (max-width: 768px) {
+  .library-header { flex-direction: column; text-align: center; }
+  .header-left { margin-bottom: 10px; }
+}
+
+/* Navigation Menu */
+#cssmenu {
+  background: #0a4d8c;
+  font-family: "Segoe UI", sans-serif;
+  width: 100%;
+  position: relative;
+  z-index: 2000;
+}
+
+#cssmenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  background: #0a4d8c;
+}
+
+#cssmenu ul li { position: relative; }
+#cssmenu > ul > li { margin: 0 15px; }
+
+#cssmenu ul li a {
+  display: block;
+  padding: 14px 18px;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+#cssmenu ul li a:hover {
+  background: #083567;
+  border-radius: 6px;
+}
+
+/* Dropdown styling */
+#cssmenu ul li ul {
+  display: none;
+  position: absolute;
+  top: 0;       /* side opening */
+  left: 100%;   /* beside parent */
+  min-width: 220px;
+  background: #fff;
+  border-radius: 6px;
+  box-shadow: 0 6px 12px rgba(0,0,0,.15);
+  z-index: 2100;
+  padding: 6px 0;
+}
+
+/* First-level dropdowns open downward */
+#cssmenu > ul > li > ul {
+  top: 100%;
+  left: 0;
+}
+
+/* Show dropdown */
+#cssmenu ul li:hover > ul { display: block; }
+
+#cssmenu ul li ul li a {
+  padding: 10px 16px;
+  color: #333;
+}
+
+#cssmenu ul li ul li a:hover {
+  background: #f4f7fb;
+  color: #0a4d8c;
+}
+</style></div>
+                </div>
+            
+        </div>
+    
+ </div>
+            </div>
+        </div>
+    
+</header>
+<!-- / header-region -->
+
+
+    <div class="container-fluid">
+        
+            <div class="row">
+                <div class="col">
+                    <div id="opac-main-search" class="mastheadsearch">
+                        
+                            <form name="searchform" method="get" action="/cgi-bin/koha/opac-search.pl" id="searchform">
+                                <div class="row gx-2">
+                                    <div class="col-sm-auto order-2 order-sm-2">
+                                        <label for="masthead_search" class="visually-hidden">Search the catalog by:</label>
+                                        <select name="idx" id="masthead_search" class="form-select">
+                                            
+                                                <option value="" data-placeholder="Search the catalog by keyword">Library catalog</option>
+                                            
+                                            
+                                                <option value="ti" data-placeholder="Search the catalog by title">Title</option>
+                                            
+                                            
+                                                <option value="au" data-placeholder="Search the catalog by author">Author</option>
+                                            
+                                            
+                                                <option value="su" data-placeholder="Search the catalog by subject">Subject</option>
+                                            
+                                            
+                                                <option value="nb" data-placeholder="Search the catalog by ISBN">ISBN</option>
+                                            
+                                            
+                                                <option value="ns" data-placeholder="Search the catalog by ISSN">ISSN</option>
+                                            
+                                            
+                                                <option value="se" data-placeholder="Search the catalog by series">Series</option>
+                                            
+                                            
+                                                
+                                                    <option value="callnum" data-placeholder="Search the catalog by call number">Call number</option>
+                                                
+                                            
+                                        </select>
+                                    </div>
+                                    <!-- /.col-sm-auto -->
+
+                                    <div class="col order-4 order-sm-3">
+                                        
+                                            <label for="translControl1" class="visually-hidden">Search the catalog by keyword</label>
+                                            <input type="text" class="transl1 form-control" id="translControl1" name="q" value="" placeholder="Search the catalog by keyword" /><span id="translControl"></span>
+                                        
+                                    </div>
+                                    <!-- /.col -->
+
+                                    
+                                        <div class="col-sm col-md-3 col-lg-2 order-3 order-sm-4">
+                                            <label for="select_library" class="visually-hidden">Search the catalog in:</label>
+                                            <select name="limit" id="select_library" class="form-select">
+                                                <option value="">All libraries</option>
+
+                                                
+                                                    
+                                                        
+                                                            <option value="branch:SOE">Engineering Library</option>
+                                                        
+                                                    
+                                                        
+                                                            <option value="branch:SOL">Law Library</option>
+                                                        
+                                                    
+                                                        
+                                                            <option value="branch:PUL">Library and Knowledge Resource Centre</option>
+                                                        
+                                                    
+                                                        
+                                                            <option value="branch:SOM">Management Library</option>
+                                                        
+                                                    
+                                                
+                                            </select>
+                                            <!-- /#select_library -->
+                                        </div>
+                                        <!-- /.col-sm-auto -->
+                                    
+
+                                    <div class="order-5 col-sm-auto">
+                                        <button type="submit" id="searchsubmit" class="btn btn-primary" title="Search" aria-label="Search">
+                                            <i class="fa fa-search" aria-hidden="true"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- /.form-row -->
+                                <input type="hidden" name="weight_search" value="1" />
+                            </form>
+                         </div
+                    ><!-- /#opac-main-search -->
+                </div>
+                <!-- /.col -->
+            </div>
+            <!-- /.row -->
+        
+
+        <div class="row">
+            <ul class="nav" id="moresearches">
+                <li class="nav-item">
+                    <a href="/cgi-bin/koha/opac-search.pl">Advanced search</a>
+                </li>
+                
+                    <li class="nav-item">
+                        <a href="/cgi-bin/koha/opac-course-reserves.pl">Course reserves</a>
+                    </li>
+                
+                
+                    <li class="nav-item">
+                        <a href="/cgi-bin/koha/opac-browser.pl">Browse by hierarchy</a>
+                    </li>
+                
+                
+                    <li class="nav-item">
+                        <a href="/cgi-bin/koha/opac-authorities-home.pl">Authority search</a>
+                    </li>
+                
+                
+                
+                    <li class="nav-item">
+                        <a href="/cgi-bin/koha/opac-tags.pl">Tag cloud</a>
+                    </li>
+                
+                
+                
+                
+                
+                
+                    <li class="nav-item">
+                        <a id="library_page" href="/cgi-bin/koha/opac-library.pl">
+                            
+                                <span>Libraries</span>
+                            
+                        </a>
+                    </li>
+                
+                
+    
+
+            </ul>
+            <!-- /.nav#moresearches -->
+        </div>
+        <!-- /.row -->
+    </div>
+    <!-- /.container-fluid -->
+
+
+
+    <!-- Login form hidden by default, used for modal window -->
+    <div id="loginModal" class="modal" tabindex="-1" role="dialog" aria-labelledby="modalLoginLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title" id="modalLoginLabel">Log in to your account</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <form action="/cgi-bin/koha/opac-user.pl" method="post" name="auth" id="modalAuth">
+                    <input type="hidden" name="csrf_token" value="8ce3b04b4ea44be827a8b6435ca015460714927d,c0dc8428fb310e7453e070d9c9f9dd175896a4ee,1793253179" />
+
+                    <input type="hidden" name="has-search-query" id="has-search-query" value="" />
+                    <div class="modal-body">
+                        
+                        
+                        
+                            
+                            
+                            <input type="hidden" name="koha_login_context" value="opac" />
+                            <fieldset class="brief">
+                                <div class="local-login">
+                                    
+    <label for="muserid">Card number or username:</label>
+<input type="text" id="muserid" name="login_userid" autocomplete="off" /> <label for="mpassword">Password:</label
+                                    ><input type="password" id="mpassword" name="login_password" autocomplete="off" />
+                                    <fieldset class="action">
+                                        <input type="hidden" name="op" value="cud-login" />
+                                        <input type="submit" class="btn btn-primary" value="Log in" />
+                                    </fieldset>
+                                </div>
+                                
+                                
+                                    <div id="forgotpassword-modal" class="forgotpassword">
+                                        <p><a href="/cgi-bin/koha/opac-password-recovery.pl">Forgot your password?</a></p>
+                                    </div>
+                                
+                                
+                            </fieldset>
+                        
+                    </div>
+                </form>
+                <!-- /#auth -->
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    </div>
+    <!-- /#modalAuth  -->
+
+
+
+
+
+<main class="main">
+    
+    <nav id="breadcrumbs" aria-label="Breadcrumb" class="breadcrumbs">
+        <ol class="breadcrumb">
+            
+            
+                
+    
+        <li class="breadcrumb-item"> 
+                    <a href="/cgi-bin/koha/opac-main.pl" title="Home">Home</a>
+                 </li>
+    
+
+                <li class="breadcrumb-item active">
+            <a href="#" aria-current="page"> 
+            <span>Browse our catalog</span>
+         </a>
+        </li>
+            
+        </ol>
+    </nav>
+
+
+    <div class="container-fluid">
+        <div class="row">
+            
+                <div class="col-lg-2">
+                    <div id="navigation"> 
+
+
+    
+    
+        <div id="OpacNav">
+            
+                <div class="en_item">
+                    
+                    <div class="en_body"><!-- LKRC: Most Checked Out Books — paste as full content of OPACNav --> <!-- Requires Report 180 set to Public in Koha                        -->
+<div id="lkrc-topbooks">
+<div id="lkrc-topbooks-title"><center>Most Checked Out Books</center></div>
+<div id="lkrc-book-display">
+<p style="color: #aaa; font-size: 13px; padding: 10px 0;">Loading&hellip;</p>
+</div>
+</div>
+<!-- CONTACT CARD -->
+<div class="contact-card">
+<h3>📩 Contact Us</h3>
+<p>If you have any queries, feel free to reach out:</p>
+<a href="mailto:library.services@presidencyuniversity.in" class="contact-btn"> library.services@presidencyuniversity.in </a></div></div>
+                </div>
+            
+        </div>
+    
+
+
+
+
+
+
+ </div>
+                </div>
+                
+            
+
+            <div class="col-10 order-first order-md-first order-lg-2">
+                <div id="userbrowser" class="maincontent">
+                    <h1>Browse our catalog</h1>
+
+                    
+                        <div class="warning"
+                            >The browser table is empty. this feature is not fully set-up. See the <a href="https://wiki.koha-community.org/wiki/Opac_browse_feature">Koha Wiki</a> for more information on what it does and how to configure
+                            it.</div
+                        >
+                    
+                </div>
+                <!-- / .userbrowser -->
+            </div>
+            <!-- / .col-10/12 -->
+        </div>
+        <!-- / .row -->
+    </div>
+    <!-- / .container-fluid -->
+</main>
+<!-- / .main -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col"> 
+    
+        <div id="opaccredits">
+            
+                <div class="en_item">
+                    
+                    <div class="en_body"><br />
+<p align="center"><span style="color: #262626;"><b>&copy; Copyright 2017 by Presidency University. All Rights Reserved.</b></span></p>
+<!-- Histats.com  (div with counter) -->
+<div id="histats_counter"></div>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4593902,4,408,270,55,00011111']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4593902&101" alt="web counter free" border="0"></a></noscript><!-- Histats.com  END  --></div>
+                </div>
+            
+                <div class="en_item">
+                    
+                    <div class="en_body"><!-- Google tag (gtag.js) -->
+<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-48XTNPD0KL"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-48XTNPD0KL');
+</script></div>
+                </div>
+            
+        </div>
+    
+ </div>
+            </div>
+        </div>
+    
+    <!-- prettier-ignore-start -->
+    </div> <!-- / #wrapper in masthead.inc -->
+    <!-- prettier-ignore-end -->
+
+    
+
+
+
+
+<!-- CookieConsentedJS code that may run -->
+
+
+<!-- JavaScript includes -->
+<script src="/opac-tmpl/lib/jquery/jquery-3.6.0.min_25.0502000.js"></script>
+<script src="/opac-tmpl/lib/jquery/jquery-migrate-3.3.2.min_25.0502000.js"></script>
+<script src="/opac-tmpl/lib/bootstrap/js/bootstrap.bundle.min_25.0502000.js"></script>
+<script src="/opac-tmpl/lib/fontfaceobserver/fontfaceobserver.min_25.0502000.js"></script>
+<script src="/opac-tmpl/lib/enquire/enquire.min_25.0502000.js"></script>
+<script>
+    let logged_in_user_id = "";
+</script>
+<script src="/opac-tmpl/bootstrap/js/global_25.0502000.js"></script>
+<script src="/opac-tmpl/bootstrap/js/form-submit_25.0502000.js" type="module"></script>
+
+    <script src="/opac-tmpl/bootstrap/js/amazonimages_25.0502000.js"></script>
+
+<script>
+    
+
+    
+        $(window).load(function() {
+            verify_images();
+         });
+    
+    $(".print-large").on("click",function(){
+        window.print();
+        return false;
+    });
+    $(".addtoshelf").on("click",function(e){
+        e.preventDefault();
+        Dopop( this.href );
+    });
+    $("body").on("click", ".addtocart", function(e){
+        e.preventDefault();
+        var biblionumber = $(this).data("biblionumber");
+        addRecord( biblionumber );
+    });
+    $("body").on("click", ".cartRemove", function(e){
+        e.preventDefault();
+        var biblionumber = $(this).data("biblionumber");
+        delSingleRecord( biblionumber );
+    });
+</script>
+
+    <script src="/opac-tmpl/bootstrap/js/basket_25.0502000.js"></script>
+
+
+<script src="/opac-tmpl/bootstrap/js/tags_25.0502000.js"></script>
+
+
+
+
+    <script src="/opac-tmpl/bootstrap/js/localcovers_25.0502000.js"></script>
+
+
+
+
+
+
+<script src="/opac-tmpl/lib/js-cookie/js.cookie-3.0.1.min_25.0502000.js"></script>
+<script src="/opac-tmpl/bootstrap/js/show-password-toggle_25.0502000.js"></script>
+<script>
+    $(document).ready(function () {
+        if ($("#searchsubmit").length) {
+            $(document).on("click", "#searchsubmit", function (e) {
+                Cookies.remove("form_serialized", { path: "/" });
+                Cookies.remove("form_serialized_limits", { path: "/" });
+                Cookies.remove("search_path_code", { path: "/" });
+            });
+        }
+    });
+</script>
+
+
+
+
+<script src="/opac-tmpl/lib/dayjs/dayjs.min_25.0502000.js"></script>
+<script src="/opac-tmpl/lib/dayjs/plugin/timezone_25.0502000.js"></script>
+<script src="/opac-tmpl/lib/dayjs/plugin/utc_25.0502000.js"></script>
+<script>
+    dayjs.extend(window.dayjs_plugin_utc);
+    dayjs.extend(window.dayjs_plugin_timezone);
+</script>
+<!-- js-date-format.inc -->
+<script>
+    (function() {
+        var def_date_format = 'iso';
+        var def_time_format = '12hr';
+        var def_tz = 'Asia/Kolkata';
+
+        var get_date_pattern = function(format) {
+            var date_pattern = 'YYYY-MM-DD';
+            if(format == 'us') date_pattern = 'MM/DD/YYYY';
+            if(format == 'metric') date_pattern = 'DD/MM/YYYY';
+            if(format == 'dmydot') date_pattern = 'DD.MM.YYYY';
+            return date_pattern;
+        };
+
+        var get_time_pattern = function(format) {
+            var time_pattern = 'HH:mm';
+            if(format == '12hr') time_pattern = 'hh:mm a';
+            return time_pattern;
+        };
+
+        /*
+         * A JS equivalent of the KohaDates TT Plugin. Passed an rfc3339 formatted date string,
+         * or JS Date, the function will return a date string formatted as per the koha instance config.
+         * Optionally accepts a dateformat parameter to allow override of the configured output format
+         * as well as a 'withtime' boolean denoting whether to include time or not in the output string.
+         */
+        window.$date = function(value, options) {
+            if(!value) return '';
+            var tz = (options&&options.tz)||def_tz;
+            var m = dayjs(value);
+            if ( ! value.match(/^\d{4}-\d{2}-\d{2}$/ ) ) {
+                m = m.tz(tz);
+            }
+
+            var dateformat = (options&&options.dateformat)||def_date_format;
+            var withtime = (options&&options.withtime)||false;
+
+            if(dateformat=='rfc3339' && withtime) return m.format();
+
+            var timeformat = (options&&options.timeformat)||def_time_format;
+            var date_pattern = get_date_pattern(dateformat);
+            var time_pattern = !withtime?'':' '+get_time_pattern(timeformat);
+
+            return m.format(date_pattern+time_pattern);
+        }
+
+        window.$datetime = function(value, options) {
+            options = options||{};
+            options.withtime = true;
+            return $date(value, options);
+        };
+
+        window.$time = function(value, options) {
+            if(!value) return '';
+            var tz = (options&&options.tz)||def_tz;
+            var m = dayjs(value);
+            if(tz) m = m.tz(tz);
+
+            var dateformat = (options&&options.dateformat);
+            var timeformat = (dateformat=='rfc3339'&&'24hr')||(options&&options.timeformat)||def_time_format;
+
+            return m.format(get_time_pattern(timeformat)+(dateformat=='rfc3339'?':ss'+(!m.isUTC()?'Z':''):''))+(dateformat=='rfc3339' && m.isUTC()?'Z':'');
+        }
+
+    })();
+</script>
+<!-- / js-date-format.inc -->
+
+
+<script>
+    (function () {
+        /**
+         * Format the biblio response from a Koha RESTful API request.
+         * @param  {Object}  biblio  The biblio json object as returned from the Koha RESTful API
+         * @param  {Object}  config  A configuration object
+         *                           Valid keys are: `link`
+         * @return {string}          The formatted HTML string
+         */
+        window.$biblio_to_html = function (biblio, config) {
+            if (biblio === undefined) {
+                return ""; // empty string for no biblio
+            }
+
+            var title = '<span class="biblio-title">';
+            if (biblio.title != null && biblio.title != "") {
+                title += escape_str(biblio.title);
+            } else {
+                title += _("No title");
+            }
+            title += "</span>";
+
+            // add subtitle
+            if (biblio.subtitle != null && biblio.subtitle != "") {
+                title += ' <span class="biblio-subtitle">' + escape_str(biblio.subtitle) + "</span>";
+            }
+
+            // set title as link
+            if (config && config.link) {
+                if (config.link === "marcdetail") {
+                    title = '<a href="/cgi-bin/koha/opac-MARCdetail.pl?biblionumber=' + encodeURIComponent(biblio.biblio_id) + '" class="title">' + title + "</a>";
+                } else if (config.link === "labeled_marc") {
+                    title = '<a href="/cgi-bin/koha/opac-labeledMARCdetail.pl?biblionumber=' + encodeURIComponent(biblio.biblio_id) + '" class="title">' + title + "</a>";
+                } else if (config.link === "isbd") {
+                    title = '<a href="/cgi-bin/koha/opac-ISBDdetail.pl?biblionumber=' + encodeURIComponent(biblio.biblio_id) + '" class="title">' + title + "</a>";
+                } else {
+                    title = '<a href="/cgi-bin/koha/opac-detail.pl?biblionumber=' + encodeURIComponent(biblio.biblio_id) + '" class="title">' + title + "</a>";
+                }
+            }
+
+            // add medium
+            if (biblio.medium != null && biblio.medium != "") {
+                title += ' <span class="biblio-medium">' + escape_str(biblio.medium) + "</span>";
+            }
+
+            // add part numbers/names
+            let part_numbers = typeof biblio.part_number === "string" ? biblio.part_number.split("|") : [];
+            let part_names = typeof biblio.part_name === "string" ? biblio.part_name.split("|") : [];
+            let i = 0;
+            while (part_numbers[i] || part_names[i]) {
+                if (part_numbers[i]) {
+                    title += ' <span class="part-number">' + escape_str(part_numbers[i]) + "</span>";
+                }
+                if (part_names[i]) {
+                    title += ' <span class="part-name">' + escape_str(part_names[i]) + "</span>";
+                }
+                i++;
+            }
+
+            return title;
+        };
+    })();
+</script>
+
+
+
+
+    <script>
+        /* ═══════════════════════════════════════════════════════════════
+   LKRC Complete OPAC Theme — paste at TOP of OPACUserJS
+   Presidency University Library | Koha 25.05
+   ═══════════════════════════════════════════════════════════════ */
+(function ($) {
+"use strict";
+
+var KOHA  = "https://opac.presidencyuniversity.in/cgi-bin/koha";
+var TEAL  = "#1a5a7a", TEAL2 = "#0d3d52", NAVY = "#0B2D6B";
+var GOLD  = "#C8922A", GREEN = "#1a6b4f";
+var GRAD  = "linear-gradient(135deg,"+TEAL+" 0%,"+TEAL2+" 45%,"+NAVY+" 100%)";
+
+/* ── NOTICES ─────────────────────────────────────────────── */
+var NOTICES = [
+  "📢 Library hours: Mon–Fri 8:00 AM – 6:30 PM · 2nd & 4th Sat 8:00 AM – 6:30 PM · Sun & 1st/3rd Sat: Closed",
+  "📚 New arrivals: Over 500 new titles added this semester",
+  "🔔 Reminder: Renew your books online via My Account before the due date",
+  "💻 E-Resources: Access 63,000+ e-books via your institutional login",
+  "📋 Question Papers: Access past exam papers via the Question Papers menu",
+  "📖 LKRC — Presidency University Library · Bengaluru · Karnataka",
+  "🌐 Remote access: Login to My Account to reach e-resources from home",
+  "📝 Research Support: Visit the library for literature review assistance"
+];
+
+/* ── STATS ───────────────────────────────────────────────── */
+var STATS = [
+  {num:"63,574",  label:"Books"},
+  {num:"8,980",   label:"Bound Volumes"},
+  {num:"155",     label:"Print Journals"},
+  {num:"38",      label:"Magazines"},
+  {num:"17",      label:"Databases"},
+  {num:"17",      label:"Newspapers"}
+];
+
+
+/* ═══════════════════════════════════════════════════════════
+   STEP 1 — INJECT CSS  (appended to <head>, loads last,
+            wins over every existing stylesheet)
+   ═══════════════════════════════════════════════════════════ */
+var CSS_TEXT = [
+
+"/* ─── Base ─── */",
+"html body{background:#e9edf3!important;font-family:'Segoe UI',system-ui,sans-serif!important;}",
+
+"/* ─── FULL-WIDTH UNIFORMITY: remove container side gaps ─── */",
+"html body #wrapper,",
+"html body .container-fluid,",
+"html body nav#header>.container,",
+"html body nav#header>.container-fluid,",
+"html body #masthead>.container,",
+"html body #masthead>.container-fluid{",
+"  padding-left:0!important;padding-right:0!important;",
+"  max-width:100%!important;margin-left:0!important;margin-right:0!important;}",
+
+"/* ─── Align inner content padding consistently (24px on each side) ─── */",
+"html body #opac-main-search>.container,",
+"html body #opac-main-search>.container-fluid,",
+"html body #lkrc-ticker>.container,",
+"html body #lkrc-stats>.container{",
+"  padding-left:24px!important;padding-right:24px!important;",
+"  max-width:100%!important;}",
+
+"/* ─── Search hero: stretch full width, no side gaps ─── */",
+"html body #opac-main-search{",
+"  width:100%!important;",
+"  box-sizing:border-box!important;",
+"  margin-left:0!important;margin-right:0!important;",
+"  padding-left:24px!important;padding-right:24px!important;}",
+
+"/* ─── Ticker and stats: full width ─── */",
+"html body #lkrc-ticker,html body #lkrc-stats{",
+"  width:100%!important;box-sizing:border-box!important;",
+"  margin-left:0!important;margin-right:0!important;}",
+
+"/* ─── HEADER: target every possible masthead container ─── */",
+"html body #masthead,",
+"html body #header,",
+"html body nav#header,",
+"html body header,",
+"html body .navbar.navbar-expand-lg,",
+"html body header.navbar,",
+"html body .mastheadcontainer,",
+"html body #mastheadcontainer,",
+"html body .library-header{",
+"  background:linear-gradient(135deg,#1a5a7a 0%,#0d3d52 45%,#0B2D6B 100%)!important;",
+"  box-shadow:0 4px 20px rgba(0,0,0,.35)!important;",
+"  border:none!important;border-bottom:none!important;}",
+
+"/* ─── White header strip (above the navbar) ─── */",
+"html body .navbar-header,",
+"html body .header-wrapper,",
+"html body #header-wrapper,",
+"html body .top-header,",
+"html body #top-header{",
+"  background:linear-gradient(135deg,#1a5a7a 0%,#0d3d52 45%,#0B2D6B 100%)!important;}",
+
+"/* ─── All text & links inside header white ─── */",
+"html body #masthead h1,html body #masthead h2,html body #masthead h3,",
+"html body #masthead h4,html body #masthead h5,html body #masthead p,",
+"html body #masthead span,html body #masthead div,html body #masthead a,",
+"html body #header h1,html body #header h2,html body #header h3,",
+"html body #header h4,html body #header h5,html body #header p,",
+"html body #header span,html body #header div,html body #header a,",
+"html body header h1,html body header h2,html body header p,",
+"html body header span,html body header div,html body header a,",
+"html body .navbar.navbar-expand-lg span,",
+"html body .navbar.navbar-expand-lg a,",
+"html body .navbar.navbar-expand-lg div{color:#fff!important;}",
+
+"/* ─── Logo image → white filter so it shows on teal background ─── */",
+"html body #masthead img,",
+"html body #header img,",
+"html body header img,",
+"html body .navbar-brand img,",
+"html body .navbar-brand img,",
+"html body a.navbar-brand img{",
+"  filter:brightness(0) invert(1)!important;",
+"  opacity:0.95!important;}",
+
+"/* ─── Navbar brand / library name text ─── */",
+"html body .navbar-brand,",
+"html body a.navbar-brand,",
+"html body .navbar-brand *{",
+"  color:#fff!important;",
+"  text-shadow:0 1px 4px rgba(0,0,0,.4)!important;",
+"  font-weight:800!important;}",
+
+"/* ─── Nav links ─── */",
+"html body .navbar-nav .nav-link,",
+"html body .navbar-nav>li>a,",
+"html body #topnav .nav-link,",
+"html body #navmenulist .nav-link{",
+"  color:rgba(255,255,255,.9)!important;font-weight:600!important;",
+"  font-size:13px!important;text-decoration:none!important;",
+"  background:transparent!important;",
+"  border:none!important;",
+"  padding:10px 16px!important;}",
+"html body .navbar-nav .nav-link:hover,",
+"html body #topnav .nav-link:hover,",
+"html body .navbar-nav>li>a:hover{",
+"  color:#C8922A!important;",
+"  background:rgba(255,255,255,.1)!important;}",
+
+"/* ─── Active nav item: SAME look as all other nav items ─── */",
+"html body .navbar-nav .nav-item.active>.nav-link,",
+"html body .navbar-nav .active>.nav-link,",
+"html body .navbar-nav>li.active>a,",
+"html body #topnav .active>.nav-link,",
+"html body #navmenulist .active>.nav-link,",
+"html body .nav-item.active .nav-link,",
+"html body li.active>a{",
+"  background:transparent!important;",
+"  color:rgba(255,255,255,.9)!important;",
+"  border-bottom:none!important;",
+"  border-radius:0!important;",
+"  box-shadow:none!important;}",
+"html body .navbar-nav li.active,",
+"html body #topnav li.active,",
+"html body ul.navbar-nav>li.active{",
+"  background:transparent!important;}",
+
+"/* ─── Dropdown menus ─── */",
+"html body .navbar-nav .dropdown-menu{",
+"  background:#0B2D6B!important;border:1px solid rgba(255,255,255,.15)!important;",
+"  border-top:3px solid #C8922A!important;border-radius:0 0 8px 8px!important;}",
+"html body .navbar-nav .dropdown-item{",
+"  color:rgba(255,255,255,.85)!important;padding:9px 16px!important;font-size:13px!important;}",
+"html body .navbar-nav .dropdown-item:hover{",
+"  color:#C8922A!important;background:rgba(255,255,255,.08)!important;}",
+
+"/* ─── Search hero section ─── */",
+"html body #opac-main-search,",
+"html body .container>#opac-main-search,",
+"html body .container-fluid>#opac-main-search{",
+"  background:linear-gradient(160deg,#1a5a7a 0%,#0d3d52 50%,#0B2D6B 100%)!important;",
+"  padding:40px 24px!important;margin:0!important;}",
+"html body #opac-main-search input[type='text'],",
+"html body #opac-main-search input[type='search']{",
+"  border-radius:10px 0 0 10px!important;border:none!important;",
+"  padding:14px 20px!important;font-size:15px!important;",
+"  background:#fff!important;color:#222!important;}",
+"html body #opac-main-search button[type='submit'],",
+"html body #opac-main-search .btn-primary{",
+"  background:#C8922A!important;border-color:#C8922A!important;",
+"  border-radius:0 10px 10px 0!important;padding:14px 24px!important;",
+"  font-weight:700!important;color:#fff!important;cursor:pointer!important;}",
+"/* ─── Search selects — both field type AND library branch ─── */",
+"html body #opac-main-search select,",
+"html body #opac-main-search .form-select,",
+"html body #opac-main-search select[name='idx'],",
+"html body #opac-main-search select[name='limit'],",
+"html body #opac-main-search select[name='branch'],",
+"html body #opac-main-search select[name='item_type'],",
+"html body form#searchform select,",
+"html body #searchform select{",
+"  background:#0d3d52!important;",
+"  border:2px solid rgba(255,255,255,.5)!important;",
+"  color:#fff!important;",
+"  border-radius:6px!important;",
+"  padding:8px 12px!important;",
+"  font-size:13px!important;",
+"  font-weight:600!important;",
+"  -webkit-appearance:auto!important;",
+"  appearance:auto!important;",
+"  cursor:pointer!important;}",
+"html body #opac-main-search select option,",
+"html body form#searchform select option{",
+"  background:#0B2D6B!important;",
+"  color:#fff!important;",
+"  font-weight:500!important;}",
+"html body #opac-main-search select:focus,",
+"html body form#searchform select:focus{",
+"  outline:2px solid #C8922A!important;",
+"  border-color:#C8922A!important;}",
+"html body #opac-main-search label,",
+"html body #opac-main-search h1,",
+"html body #opac-main-search .lead{color:rgba(255,255,255,.9)!important;}",
+
+"/* ─── Search mode links ─── */",
+"html body #searchmodes a,",
+"html body #opac-main-search .nav-link{",
+"  color:rgba(255,255,255,.78)!important;background:rgba(255,255,255,.1)!important;",
+"  border:1px solid rgba(255,255,255,.22)!important;border-radius:20px!important;",
+"  padding:5px 14px!important;font-size:12px!important;margin:2px!important;",
+"  display:inline-block!important;text-decoration:none!important;}",
+"html body #searchmodes a.current,html body #opac-main-search .nav-link.active{",
+"  background:rgba(255,255,255,.25)!important;color:#fff!important;font-weight:700!important;}",
+
+"/* ─── Breadcrumbs ─── */",
+"html body #breadcrumbs,html body nav[aria-label='breadcrumb']{",
+"  background:#1a5a7a!important;padding:8px 20px!important;}",
+"html body .breadcrumb-item,html body .breadcrumb-item a{color:rgba(255,255,255,.85)!important;font-size:12px!important;}",
+"html body .breadcrumb-item a:hover{color:#C8922A!important;}",
+
+"/* ─── Footer ─── */",
+"html body footer,html body #footer{",
+"  background:linear-gradient(135deg,#0d3d52,#0B2D6B)!important;",
+"  color:rgba(255,255,255,.8)!important;border-top:3px solid #C8922A!important;",
+"  padding:30px 24px!important;margin-top:40px!important;}",
+"html body footer a,html body #footer a{color:#C8922A!important;text-decoration:none!important;}",
+
+"/* ─── Primary buttons ─── */",
+"html body .btn-primary{background:#0B2D6B!important;border-color:#0B2D6B!important;}",
+"html body .btn-primary:hover{background:#1a5a7a!important;border-color:#1a5a7a!important;}",
+
+"/* ─── Ticker ─── */",
+"#lkrc-ticker{background:linear-gradient(90deg,#C8922A,#b87d22,#C8922A);",
+"color:#fff;padding:7px 0;overflow:hidden;white-space:nowrap;",
+"font-size:13px;font-weight:600;letter-spacing:.04em;",
+"box-shadow:0 2px 8px rgba(200,146,42,.3);pointer-events:none;}",
+"#lkrc-ticker-inner{display:inline-block;",
+"animation:lkrc-scroll 150s linear infinite;padding-left:100%;}",
+"@keyframes lkrc-scroll{0%{transform:translateX(0)}100%{transform:translateX(-100%)}}",
+
+"/* ─── Stats bar ─── */",
+"#lkrc-stats{background:#0B2D6B;display:flex;justify-content:center;",
+"align-items:center;flex-wrap:wrap;pointer-events:none;}",
+".lkrc-stat{display:flex;flex-direction:column;align-items:center;",
+"padding:10px 28px;border-right:1px solid rgba(255,255,255,.15);}",
+".lkrc-stat:last-child{border-right:none;}",
+".lkrc-stat-num{font-size:20px;font-weight:800;color:#C8922A;line-height:1;}",
+".lkrc-stat-label{font-size:10px;color:rgba(255,255,255,.7);",
+"text-transform:uppercase;letter-spacing:.06em;margin-top:2px;}",
+
+"/* ─── Library open badge ─── */",
+"#lkrc-open-badge{background:rgba(255,255,255,.15);border:1px solid rgba(255,255,255,.3);",
+"color:#fff!important;font-size:11px;font-weight:700;padding:2px 8px;",
+"border-radius:20px;letter-spacing:.03em;white-space:nowrap;",
+"display:inline-flex;align-items:center;gap:4px;margin-left:10px;",
+"vertical-align:middle;pointer-events:none;line-height:1.4;}",
+
+"/* ─── Compress top utility bar height ─── */",
+"html body #topnav-collapse,html body .navbar-collapse{min-height:0!important;}",
+"html body .navbar.navbar-expand-lg,html body header.navbar{",
+"  padding-top:4px!important;padding-bottom:4px!important;min-height:0!important;}",
+"html body #topbar,html body .top-bar,html body .utility-bar,",
+"html body .navbar-header{",
+"  padding-top:3px!important;padding-bottom:3px!important;",
+"  min-height:0!important;line-height:1.4!important;}",
+
+"/* ─── Most Checked Out Books — single-book fade display ─── */",
+"#lkrc-topbooks{background:#fff;padding:16px;margin:16px 0;",
+"  border-radius:8px;box-shadow:0 2px 12px rgba(0,0,0,.08);}",
+"#lkrc-topbooks-title{color:#0B2D6B;font-size:15px;font-weight:800;",
+"  margin:0 0 12px;padding-bottom:8px;border-bottom:3px solid #C8922A;",
+"  display:flex;align-items:center;gap:6px;}",
+"#lkrc-book-display{position:relative;min-height:280px;}",
+".lkrc-book-slide{position:absolute;top:0;left:0;width:100%;",
+"  opacity:0;transition:opacity .7s ease;pointer-events:none;}",
+".lkrc-book-slide.lkrc-active{opacity:1;pointer-events:auto;}",
+".lkrc-book-cover{display:block;margin:0 auto 10px;",
+"  width:120px;height:175px;object-fit:cover;",
+"  border-radius:4px;box-shadow:0 4px 14px rgba(0,0,0,.18);}",
+".lkrc-book-title{font-size:12.5px;font-weight:700;color:#0B2D6B;",
+"  line-height:1.4;margin-bottom:4px;text-align:center;}",
+".lkrc-book-author{font-size:11px;color:#555;margin-bottom:4px;",
+"  text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}",
+".lkrc-book-count{font-size:10.5px;color:#1a5a7a;font-weight:700;",
+"  text-align:center;margin-bottom:6px;}",
+
+"@media(max-width:768px){",
+"#lkrc-stats{justify-content:flex-start;overflow-x:auto;flex-wrap:nowrap;}",
+".lkrc-stat{min-width:120px;}}"
+
+].join("\n");
+
+var styleEl = document.createElement("style");
+styleEl.textContent = CSS_TEXT;
+document.head.appendChild(styleEl);
+
+/* ═══════════════════════════════════════════════════════════
+   STEP 2 — FORCE STYLES via inline JS
+   setProperty with 'important' beats ALL CSS — guaranteed
+   ═══════════════════════════════════════════════════════════ */
+function applyTeal(el) {
+  if (!el) return;
+  el.style.setProperty("background",    GRAD,                      "important");
+  el.style.setProperty("box-shadow",    "0 4px 20px rgba(0,0,0,.35)", "important");
+  el.style.setProperty("border",        "none",                    "important");
+  el.style.setProperty("border-bottom", "none",                    "important");
+  el.style.setProperty("width",         "100%",                    "important");
+  el.style.setProperty("max-width",     "100%",                    "important");
+  el.style.setProperty("box-sizing",    "border-box",              "important");
+}
+function whiteText(el) {
+  if (!el) return;
+  var nodes = el.querySelectorAll("*");
+  for (var i = 0; i < nodes.length; i++) {
+    var t = nodes[i].tagName;
+    if (t === "IMG") {
+      nodes[i].style.setProperty("filter",  "brightness(0) invert(1)", "important");
+      nodes[i].style.setProperty("opacity", "0.95",                    "important");
+    } else if (!/^(INPUT|SELECT|TEXTAREA|BUTTON|OPTION)$/.test(t)) {
+      nodes[i].style.setProperty("color", "#fff", "important");
+    }
+  }
+}
+
+/* ── Fix active nav: nuclear inline override + MutationObserver guard ── */
+function fixActiveNav() {
+  /* Target every li and a inside ANY nav container — active or not.
+     Inline !important beats every stylesheet rule, including Koha's own CSS. */
+  document.querySelectorAll(
+    "#navmenulist li, #navmenulist a," +
+    "#topnav li, #topnav a," +
+    ".navbar-nav li, .navbar-nav a," +
+    "ul.nav li, ul.nav a"
+  ).forEach(function(el) {
+    el.classList.remove("active");
+    el.style.setProperty("background",       "transparent", "important");
+    el.style.setProperty("background-color", "transparent", "important");
+    if (el.tagName === "A") {
+      el.style.setProperty("border",        "none",                 "important");
+      el.style.setProperty("border-bottom", "none",                 "important");
+      el.style.setProperty("border-radius", "0",                    "important");
+      el.style.setProperty("box-shadow",    "none",                 "important");
+    }
+  });
+}
+
+/* ── MutationObserver: re-run fixActiveNav if Koha re-adds .active ── */
+function watchNav() {
+  var navRoot = document.getElementById("navmenulist") ||
+                document.getElementById("topnav") ||
+                document.querySelector(".navbar-nav");
+  if (!navRoot) return;
+  var obs = new MutationObserver(function(muts) {
+    var needsFix = false;
+    muts.forEach(function(m) {
+      if (m.type === "attributes" &&
+          (m.attributeName === "class" || m.attributeName === "style")) {
+        needsFix = true;
+      }
+    });
+    if (needsFix) { obs.disconnect(); fixActiveNav(); watchNav(); }
+  });
+  obs.observe(navRoot, { subtree: true, attributes: true,
+                          attributeFilter: ["class","style"] });
+}
+
+/* ── Fix full-width layout: remove Bootstrap container side-gaps ── */
+function fixLayout() {
+  /* Remove side-padding from containers inside header/nav */
+  document.querySelectorAll(
+    "#masthead > .container, #header > .container, nav#header > .container," +
+    "#masthead > .container-fluid, #header > .container-fluid, nav#header > .container-fluid"
+  ).forEach(function(el) {
+    el.style.setProperty("max-width",     "100%", "important");
+    el.style.setProperty("padding-left",  "0",    "important");
+    el.style.setProperty("padding-right", "0",    "important");
+  });
+  /* Search section: full width */
+  var srch = document.getElementById("opac-main-search");
+  if (srch) {
+    srch.style.setProperty("width",        "100%",       "important");
+    srch.style.setProperty("max-width",    "100%",       "important");
+    srch.style.setProperty("margin-left",  "0",          "important");
+    srch.style.setProperty("margin-right", "0",          "important");
+    srch.style.setProperty("box-sizing",   "border-box", "important");
+    /* Also clear parent container padding */
+    var p = srch.parentElement;
+    if (p) {
+      p.style.setProperty("padding-left",  "0",    "important");
+      p.style.setProperty("padding-right", "0",    "important");
+      p.style.setProperty("max-width",     "100%", "important");
+    }
+  }
+}
+
+/* Try every known header selector */
+["#masthead","#header","nav#header","header",".navbar.navbar-expand-lg",
+ ".mastheadcontainer","#mastheadcontainer",".library-header","#library-header",
+ ".header-wrapper","#header-wrapper",".top-header","#top-header"
+].forEach(function(sel) {
+  var el = document.querySelector(sel);
+  if (el) { applyTeal(el); whiteText(el); }
+});
+
+/* Walk first 6 body children — catch custom header HTML */
+var bc = document.body.children;
+for (var i = 0; i < Math.min(bc.length, 6); i++) {
+  var ch = bc[i];
+  var tag = ch.tagName.toLowerCase();
+  var id  = (ch.id || "").toLowerCase();
+  var cls = (ch.className || "").toLowerCase();
+  if (tag === "nav" || tag === "header" ||
+      id.indexOf("header") >= 0 || id.indexOf("masthead") >= 0 ||
+      cls.indexOf("header") >= 0 || cls.indexOf("masthead") >= 0 ||
+      cls.indexOf("navbar") >= 0) {
+    applyTeal(ch); whiteText(ch);
+  }
+}
+fixActiveNav();
+fixLayout();
+
+/* ═══════════════════════════════════════════════════════════
+   STEP 3 — DOM READY (ticker · stats · badge · wizard)
+   ═══════════════════════════════════════════════════════════ */
+$(document).ready(function () {
+
+  /* ── Nav fix: run now, at 300ms, 800ms, 1500ms + MutationObserver guard ── */
+  fixActiveNav();
+  fixLayout();
+  watchNav();
+  setTimeout(function(){ fixActiveNav(); fixLayout(); }, 300);
+  setTimeout(function(){ fixActiveNav(); }, 800);
+  setTimeout(function(){ fixActiveNav(); }, 1500);
+
+  /* ── 3a. Library Open/Closed badge ──────────────────────── */
+  var now  = new Date();
+  var h    = now.getHours();
+  var min  = now.getMinutes();
+  var dy   = now.getDay();   /* 0=Sun,1=Mon,...,6=Sat */
+  var date = now.getDate();  /* 1-31 */
+
+  /* Which Saturday occurrence is this? (1st, 2nd, 3rd, 4th) */
+  var satWeek = Math.ceil(date / 7); /* 1 = 1st Sat, 2 = 2nd, 3 = 3rd, 4 = 4th */
+
+  /* Within opening hours? 08:00 – 18:30 */
+  var afterOpen  = (h > 8)  || (h === 8  && min >= 0);
+  var beforeClose = (h < 18) || (h === 18 && min <= 30);
+  var inHours    = afterOpen && beforeClose;
+
+  var open =
+    dy >= 1 && dy <= 5 && inHours          /* Mon–Fri 08:00–18:30 */
+    || (dy === 6                            /* Saturday … */
+        && satWeek !== 1                    /* … not 1st Sat */
+        && satWeek !== 3                    /* … not 3rd Sat */
+        && inHours);                        /* … within hours */
+  /* Sunday (dy===0) and 1st/3rd Saturdays are always closed */
+  var badge = $('<span id="lkrc-open-badge">' +
+    (open ? "🟢 Library Open" : "🔴 Library Closed") + "</span>");
+
+  /* Add badge to logo/brand area */
+  var $brand = $(".navbar-brand, #logo, .library-name, .brand-name").first();
+  if ($brand.length) $brand.append(badge);
+
+  /* ── 3b. Gold Ticker ─────────────────────────────────────── */
+  if (!$("#lkrc-ticker").length) {
+    var tickText = "";
+    for (var t = 0; t < 4; t++) {
+      NOTICES.forEach(function(n) { tickText += n + "\u2003\u00b7\u2003"; });
+    }
+    var $ticker = $(
+      '<div id="lkrc-ticker"><div id="lkrc-ticker-inner">&nbsp;&nbsp;&nbsp;&nbsp;' +
+      tickText + "</div></div>"
+    );
+
+    /* Insert after the first nav/header found */
+    var $after = $("nav#header, #header, header, #masthead").last();
+    if ($after.length) $after.after($ticker);
+    else $("body").prepend($ticker);
+  }
+
+  /* ── 3c. Stats Bar ───────────────────────────────────────── */
+  if (!$("#lkrc-stats").length) {
+    var statsHtml = '<div id="lkrc-stats">';
+    STATS.forEach(function(s) {
+      statsHtml += '<div class="lkrc-stat"><span class="lkrc-stat-num">' + s.num +
+        '</span><span class="lkrc-stat-label">' + s.label + "</span></div>";
+    });
+    statsHtml += "</div>";
+    $("#lkrc-ticker").after(statsHtml);
+  }
+
+
+  /* ── 3d. Also style selects via JS (belt-and-suspenders) ── */
+  $("select", "#opac-main-search, #searchform").each(function(){
+    this.style.setProperty("background","#0d3d52","important");
+    this.style.setProperty("color","#fff","important");
+    this.style.setProperty("border","2px solid rgba(255,255,255,.5)","important");
+    this.style.setProperty("border-radius","6px","important");
+    this.style.setProperty("padding","8px 12px","important");
+    this.style.setProperty("font-size","13px","important");
+    this.style.setProperty("font-weight","600","important");
+    this.style.setProperty("cursor","pointer","important");
+    this.style.setProperty("min-width","120px","important");
+  });
+
+
+  /* ── 3e. Most Checked Out Books carousel (Report ID 180) ──── */
+  var BOOK_INTERVAL = 5000; /* ms per book */
+  var bookIndex     = 0;
+  var bookTimer     = null;
+  var bookSlides    = [];
+
+  /* ── Manual cover map: biblionumber → image URL ─────────────── */
+  var COVER_MAP = {
+    "3455": "https://images-na.ssl-images-amazon.com/images/P/9387572943.01.LZZZZZZZ.jpg",
+    "3640": "https://images-na.ssl-images-amazon.com/images/P/1259029972.01.MZZZZZZZ.jpg",
+    "3664": "https://images-na.ssl-images-amazon.com/images/P/1259025969.01.MZZZZZZZ.jpg",
+    "3738": "https://images-na.ssl-images-amazon.com/images/P/938706784X.01.MZZZZZZZ.jpg",
+    "3803": "https://images-na.ssl-images-amazon.com/images/P/0070145873.01.MZZZZZZZ.jpg",
+    "3812": "https://images-na.ssl-images-amazon.com/images/P/9387432289.01.MZZZZZZZ.jpg",
+    "3878": "https://images-na.ssl-images-amazon.com/images/P/1259003884.01.MZZZZZZZ.jpg",
+    "3933": "https://images-na.ssl-images-amazon.com/images/P/0262035618.01.MZZZZZZZ.jpg",
+    "3941": "https://images-na.ssl-images-amazon.com/images/P/0262015358.01.MZZZZZZZ.jpg",
+    "3944": "https://images-na.ssl-images-amazon.com/images/P/0262018020.01.MZZZZZZZ.jpg",
+    "4627": "https://images-na.ssl-images-amazon.com/images/P/8122436234.01.MZZZZZZZ.jpg",
+    "4730": "https://images-na.ssl-images-amazon.com/images/P/9380070195.01.MZZZZZZZ.jpg"
+  };
+
+  /* Fetch cover — manual map first, then Open Library search */
+  function fetchCover(title, isbn, bib, imgEl) {
+    var fallback  = "/opac-tmpl/bootstrap/images/no-image.png";
+    var cleanIsbn = (isbn || "").replace(/[^0-9Xx]/g, "");
+
+    /* Check manual map first — instant, no API needed */
+    if (bib && COVER_MAP[String(bib)]) {
+      imgEl.onerror = function(){ this.onerror=null; this.src=fallback; };
+      imgEl.src = COVER_MAP[String(bib)];
+      return;
+    }
+
+    function useFallback() {
+      imgEl.onerror = null;
+      imgEl.src = fallback;
+    }
+
+    function tryByIsbn() {
+      imgEl.onerror = function(){ this.onerror=null; useFallback(); };
+      imgEl.src = "https://covers.openlibrary.org/b/isbn/" + cleanIsbn + "-L.jpg";
+    }
+
+    function searchByTitle() {
+      var q = encodeURIComponent(title.replace(/[:.]/g," ").substring(0, 50));
+      $.getJSON(
+        "https://openlibrary.org/search.json?title=" + q + "&limit=1&fields=cover_i,isbn",
+        function(data) {
+          var doc = data && data.docs && data.docs[0];
+          if (doc && doc.cover_i) {
+            imgEl.onerror = function(){ this.onerror=null; useFallback(); };
+            imgEl.src = "https://covers.openlibrary.org/b/id/" + doc.cover_i + "-M.jpg";
+          } else if (doc && doc.isbn && doc.isbn[0]) {
+            cleanIsbn = doc.isbn[0];
+            tryByIsbn();
+          } else {
+            useFallback();
+          }
+        }
+      ).fail(useFallback);
+    }
+
+    /* Start: ISBN takes priority, else search by title */
+    if (cleanIsbn) {
+      imgEl.onerror = function(){ this.onerror=null; searchByTitle(); };
+      imgEl.src = "https://covers.openlibrary.org/b/isbn/" + cleanIsbn + "-L.jpg";
+    } else {
+      searchByTitle();
+    }
+  }
+
+  function showSlide(idx) {
+    $(".lkrc-book-slide").removeClass("lkrc-active");
+    if (bookSlides[idx]) $(bookSlides[idx]).addClass("lkrc-active");
+    bookIndex = idx;
+  }
+
+  function nextSlide() {
+    showSlide((bookIndex + 1) % bookSlides.length);
+  }
+
+  function startBookCarousel() {
+    if (bookTimer) clearInterval(bookTimer);
+    showSlide(0);
+    if (bookSlides.length > 1) {
+      bookTimer = setInterval(nextSlide, BOOK_INTERVAL);
+    }
+  }
+
+  function renderBooks(rows, headers) {
+    function col(names) {
+      for (var i = 0; i < names.length; i++) {
+        for (var j = 0; j < headers.length; j++) {
+          if (String(headers[j]).toLowerCase().indexOf(names[i]) >= 0) return j;
+        }
+      }
+      return -1;
+    }
+    var iBib    = col(["biblio","biblionumber"]); if (iBib   < 0) iBib   = 0;
+    var iTitle  = col(["title"]);                if (iTitle < 0) iTitle = 1;
+    var iAuthor = col(["author"]);
+    var iIsbn   = col(["isbn"]);
+    var iCount  = col(["total_issues","checkout","count","issue","circ"]);
+                                                 if (iCount < 0) iCount = rows[0] ? rows[0].length - 1 : 2;
+
+    var $display = $("#lkrc-book-display");
+    var slidesHtml = "";
+
+    rows.forEach(function(r, idx) {
+      var bib    = String(r[iBib]   || "");
+      var title  = String(r[iTitle] || "");
+      var author = iAuthor >= 0 ? String(r[iAuthor] || "") : "";
+      var isbn   = iIsbn   >= 0 ? String(r[iIsbn]   || "") : "";
+      var count  = iCount  >= 0 ? String(r[iCount]  || "") : "";
+      var link   = bib ? "/cgi-bin/koha/opac-detail.pl?biblionumber=" + bib : "#";
+
+      slidesHtml +=
+        '<div class="lkrc-book-slide" data-bib="' + bib + '" data-title="' + title.replace(/"/g,"&quot;") + '" data-isbn="' + isbn + '"' +
+        ' onclick="location.href=\'' + link + '\'">' +
+        '<img class="lkrc-book-cover" data-bib="' + bib + '" src="/opac-tmpl/bootstrap/images/no-image.png" alt="">' +
+        '<div class="lkrc-book-title">' + $("<span>").text(title).html() + '</div>' +
+        (author ? '<div class="lkrc-book-author">' + $("<span>").text(author).html() + '</div>' : '') +
+        (bib ? '<div class="lkrc-book-count" style="color:#1a5a7a;font-size:10.5px;text-align:center;">🔗 View in Catalog</div>' : '') +
+        '</div>';
+    });
+
+    $display.html(slidesHtml);
+
+    /* Collect slide elements and kick off carousel */
+    bookSlides = $display.find(".lkrc-book-slide").toArray();
+    startBookCarousel();
+
+    /* Fetch covers asynchronously — stagger to avoid rate limits */
+    $display.find(".lkrc-book-slide").each(function(idx) {
+      var $slide = $(this);
+      var imgEl  = $slide.find("img")[0];
+      var t      = $slide.data("title");
+      var isbn   = $slide.data("isbn");
+      var bib    = $slide.data("bib");
+      setTimeout(function(){ fetchCover(t, isbn, bib, imgEl); }, idx * 400);
+    });
+  }
+
+  if ($("#lkrc-topbooks").length) {
+    /* Try svc/report (public reports endpoint — &public=1 is required) */
+    $.ajax({
+      url: "/cgi-bin/koha/svc/report?id=180&public=1",
+      dataType: "text",           /* fetch as text first, parse manually */
+      success: function(raw) {
+        var data;
+        try { data = JSON.parse(raw); } catch(e) { data = null; }
+
+        /* Koha object format: {"header":[...],"rows":[...]} */
+        if (data && data.rows) {
+          renderBooks(data.rows, data.header || data.headers || []);
+          return;
+        }
+        if ($.isArray(data) && data.length) {
+          var first = data[0];
+          /* Detect whether first row is headers (strings) or raw data (has a number) */
+          var hasNumeric = $.isArray(first) && first.some(function(v){ return typeof v === "number"; });
+          if (hasNumeric) {
+            /* No header row — current report: [biblionumber, title, Total_Issues]
+               OR updated report:               [biblionumber, title, author, isbn, Total_Issues] */
+            var syntheticHeaders = first.length >= 5
+              ? ["biblionumber","title","author","isbn","total_issues"]
+              : ["biblionumber","title","total_issues"];
+            renderBooks(data, syntheticHeaders);
+          } else {
+            /* First row is string headers */
+            renderBooks(data.slice(1), first);
+          }
+          return;
+        }
+        /* Fallback: try REST API v1 */
+        $.ajax({
+          url: "/api/v1/reports/180/results",
+          headers: { "Accept": "application/json" },
+          dataType: "text",
+          success: function(raw2) {
+            var d2;
+            try { d2 = JSON.parse(raw2); } catch(e2) { d2 = null; }
+            if (d2 && $.isArray(d2) && d2.length) {
+              /* REST API returns flat array of objects */
+              if (typeof d2[0] === "object" && !$.isArray(d2[0])) {
+                var keys = Object.keys(d2[0]);
+                var rows2 = d2.map(function(o){ return keys.map(function(k){ return o[k]; }); });
+                renderBooks(rows2, keys);
+              } else {
+                renderBooks(d2.slice(1), d2[0]);
+              }
+              return;
+            }
+            $("#lkrc-books-rail").html(
+              '<p style="color:#c00;font-size:13px;padding:8px 0;">' +
+              '⚠ Report 180 returned no usable data. ' +
+              'Check: Reports → Report 180 → Edit → tick <b>Public</b> → Save.</p>');
+          },
+          error: function() {
+            $("#lkrc-books-rail").html(
+              '<p style="color:#c00;font-size:13px;padding:8px 0;">' +
+              '⚠ Cannot reach report 180. ' +
+              'In Koha: Reports → Report 180 → Edit → tick <b>Public</b> → Save.</p>');
+          }
+        });
+      },
+      error: function(xhr) {
+        $("#lkrc-books-rail").html(
+          '<p style="color:#c00;font-size:13px;padding:8px 0;">' +
+          '⚠ Report 180 fetch failed (HTTP ' + xhr.status + '). ' +
+          'Make sure the report is set to <b>Public</b>.</p>');
+      }
+    });
+  }
+
+}); /* end document.ready */
+
+})(jQuery);
+/* ═══ END LKRC THEME ═══ */
+
+    </script>
+
+
+
+
+
+
+</body>
+<!-- prettier-ignore-start -->
+</html>
+<!-- prettier-ignore-end -->
+
+

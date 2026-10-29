@@ -1,0 +1,20 @@
+{
+  "source": "http://182.72.188.194:8080/jspui",
+  "dspace_version": "6.3",
+  "sitemap": "not accessible (advertised sitemap paths resolve to 404)",
+  "rest_api": "redirects to unreachable HTTPS port 8443",
+  "oai_pmh": {
+    "identify_available": true,
+    "list_sets_available": true,
+    "list_records": "noRecordsMatch for all advertised prefixes tested"
+  },
+  "browse_total_reported": 14145,
+  "catalog_items": 14145,
+  "item_detail_pages": 14145,
+  "item_detail_failures": 0,
+  "bitstream_references": 13768,
+  "item_metadata_chunks": 14145,
+  "communities_collections": 242,
+  "oai_sets": 242,
+  "content_note": "Item metadata and public bitstream URLs captured. Repository item files are copyrighted/all rights reserved unless their own item says otherwise; binary files were not bulk-downloaded."
+}
