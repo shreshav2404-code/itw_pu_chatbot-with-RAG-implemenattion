@@ -105,9 +105,12 @@ embed with Qwen3-Embedding → save the FAISS index (`rag_index/`, rebuilt autom
 │   ├── extract_documents.py …       PDF/Office text extraction, chunking, topic tagging
 │   ├── dataset/                     website crawl: pages, chunks, document text, manifests, guides
 │   ├── dataset_sources/             repository, library, CSE regulations PDF, campus map, virtual tour,
-│   │                                campus photos, video frames/transcripts, student interview audio
+│   │                                campus photos, video frames/transcripts, student interview audio,
+│   │                                presidency_360_dataset/ (360° tour scenes, navigation graph, video frames)
 │   └── keshavs_input/               original inputs: teacher + student audio, campus map PDF,
-│                                    CSE regulations PDF, campus videos re-encoded to 720p
+│                                    CSE regulations PDF, campus videos re-encoded to 720p,
+│                                    fee_brochure_2026_27/ (5 fee-structure images), aerial_photos/
+├── presentation/                    project slides (PU-Assist pptpptx.pptx) + PU_Assist_Project_Notes.pdf
 └── tools/                           scripts that turned the pipeline output into upload/pu_corpus.jsonl.gz
     ├── build_upload_bundle.py       merge + clean + dedupe all chunk files → pu_corpus.jsonl.gz
     ├── transcribe_teacher.py        Whisper transcription of the teacher interview
