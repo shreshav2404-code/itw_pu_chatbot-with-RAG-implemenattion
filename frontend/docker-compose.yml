@@ -1,0 +1,13 @@
+# Portainer stack for the PU Assist frontend.
+# In Portainer: Stacks -> Add stack -> Web editor -> paste this file, then fill the three
+# environment variables at the bottom of the page (or replace the ${...} values here).
+services:
+  pu-assist-frontend:
+    image: ${FRONTEND_IMAGE:-pu-assist-frontend:1.0}   # the image you built / pushed (see README)
+    ports:
+      - "8501:8501"
+    environment:
+      BACKEND_URL: ${BACKEND_URL}     # notebook 03, step 7 – e.g. http://10.0.0.12:8000
+      PU_API_KEY: ${PU_API_KEY}       # notebook 03, step 2
+      REQUEST_TIMEOUT: "300"
+    restart: unless-stopped

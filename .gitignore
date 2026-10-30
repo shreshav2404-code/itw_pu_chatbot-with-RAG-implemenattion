@@ -29,3 +29,6 @@ data_pipeline/dataset_sources/jspui/bitstreams_manifest.jsonl
 data_pipeline/dataset_sources/jspui/exam_and_question_paper_items.jsonl
 data_pipeline/dataset_sources/jspui/item_chunks.jsonl
 data_pipeline/dataset_sources/jspui/item_records.jsonl
+
+# Secret created by notebook 03 – never commit it
+api_key.txt

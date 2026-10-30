@@ -19,15 +19,16 @@ the answer and cites `[1] [2]` the sources it used. The knowledge base can be up
 2. [How it works](#how-it-works)
 3. [Repository layout](#repository-layout)
 4. [Quick start on Data Lab JupyterHub](#quick-start-on-data-lab-jupyterhub)
-5. [Running on another GPU machine](#running-on-another-gpu-machine)
-6. [Changing the models](#changing-the-models)
-7. [The data](#the-data)
-8. [Rebuilding the data from scratch](#rebuilding-the-data-from-scratch)
-9. [Raw files not in this repo](#raw-files-not-in-this-repo)
-10. [Results so far](#results-so-far)
-11. [Limitations and responsible use](#limitations-and-responsible-use)
-12. [Roadmap](#roadmap)
-13. [Credits](#credits)
+5. [Web app: backend API + Streamlit frontend](#web-app-backend-api--streamlit-frontend)
+6. [Running on another GPU machine](#running-on-another-gpu-machine)
+7. [Changing the models](#changing-the-models)
+8. [The data](#the-data)
+9. [Rebuilding the data from scratch](#rebuilding-the-data-from-scratch)
+10. [Raw files not in this repo](#raw-files-not-in-this-repo)
+11. [Results so far](#results-so-far)
+12. [Limitations and responsible use](#limitations-and-responsible-use)
+13. [Roadmap](#roadmap)
+14. [Credits](#credits)
 
 ---
 
@@ -45,6 +46,7 @@ the answer and cites `[1] [2]` the sources it used. The knowledge base can be up
 | Follow-up questions | Chat history + query rewriting ("and for MBA?" becomes a full search query) |
 | Official vs unofficial | Every source is labelled (official website / official document / student photo / teacher recording …) |
 | Chat UI in the notebook | `ipywidgets` chat box with **Add image** and **Add voice** buttons (works on the hub without any web proxy) |
+| Web app for students | Streamlit page (Docker container on Portainer) calling a FastAPI backend in notebook 03 – per-student chat history, a GPU queue, an API key, photo upload and microphone recording |
 
 ---
 
@@ -86,9 +88,15 @@ embed with Qwen3-Embedding → save the FAISS index (`rag_index/`, rebuilt autom
 ├── upload/                          ← EVERYTHING you upload to JupyterHub (one folder, flat)
 │   ├── 01_model_setup.ipynb         one-time setup: libraries, model download, text + image test
 │   ├── 02_rag_chatbot.ipynb         the chatbot: index, search, voice, image, chat box, tests
+│   ├── 03_backend_api.ipynb         the same chatbot served as a web API (FastAPI) for the frontend
 │   ├── pu_corpus.jsonl.gz           166,180 cleaned chunks (47.7 MB) – the knowledge base
 │   ├── campus_map.png               campus map shown to the model for "where is …" questions
 │   └── corpus_stats.json            counts per source
+├── frontend/                        the students' web page – Docker image for Data Lab / Portainer
+│   ├── app.py                       Streamlit chat page (text, photo, microphone, sources)
+│   ├── Dockerfile                   python:3.11-slim image, port 8501, runs as non-root
+│   ├── docker-compose.yml           Portainer stack (BACKEND_URL, PU_API_KEY)
+│   └── README.md                    build, push/import and deploy steps, troubleshooting
 ├── data_pipeline/                   how the corpus was collected (scripts + all their outputs)
 │   ├── README.md                    original pipeline notes
 │   ├── unpack_data.py               restores the big .jsonl files from the gzipped copies
@@ -143,6 +151,47 @@ Needs a GPU with **≥ 80 GB** memory for the default model (the Data Lab H200 h
 *"What marks do I need to pass a theory course?"* · *"Can I pay my fees in monthly EMIs?"* ·
 *"Where is the Registrar's office?"* · *"How much people traffic is there on campus during the day?"* ·
 *"What are the working hours of the Learning and Development department?"* · a voice note · a photo of a notice.
+
+> **The Data Lab hub forgets everything when the server stops** (files, the downloaded model, installed
+> libraries). After a restart: upload `upload/` again, run notebook 01 steps 1–4, then notebook 02.
+
+---
+
+## Web app: backend API + Streamlit frontend
+
+Data Lab requires GPU apps to be split into a **backend** (a notebook on Compute, served as an API) and a
+**frontend** (a Docker container deployed with Portainer):
+
+```mermaid
+flowchart LR
+    B["Student's browser"] --> F["frontend/ – Streamlit page<br/>Docker container on Portainer<br/>(no GPU)"]
+    F -- "POST /ask<br/>question + photo + voice<br/>X-API-Key" --> API["upload/03_backend_api.ipynb<br/>FastAPI on the H200"]
+    API --> P["notebook 02's pipeline<br/>search + Qwen3-VL + Whisper"]
+```
+
+**Backend – `upload/03_backend_api.ipynb`.** It does not copy notebook 02's code: it runs 02's setup and pipeline
+cells straight from `02_rag_chatbot.ipynb` (skipping its tests and chat box), so prompt or model changes made in 02
+apply to the API too. It adds what real users need: a separate chat history per student (`session_id`), a queue so
+the GPU answers one question at a time, an API key, and upload limits (image 10 MB, audio 25 MB).
+
+| Endpoint | Input | Output |
+|---|---|---|
+| `GET /health` | – | `status`, `model`, `chunks`, `busy`, `active_sessions` |
+| `POST /ask` | form `question`, `session_id`; files `image`, `audio` (all optional, but a question or voice note is required); header `X-API-Key` | `answer`, `sources` (title, url, kind, cited), `timings`, `session_id`, `heard` |
+| `POST /reset` | form `session_id`; header `X-API-Key` | forgets that student's history |
+
+Run order on the hub: notebook 01 (steps 1–4) → notebook 02 (builds the index) → **shut down 02's kernel** (two
+copies of the model do not fit) → **notebook 03 → Run All**, and keep it running. Step 2 prints the API key,
+step 6 tests the API, step 7 prints the machine's addresses for the frontend's `BACKEND_URL`.
+
+**Frontend – `frontend/`.** A Streamlit chat page (chat history, 📎 photo, microphone recorder, clickable sources,
+online/busy status, new conversation) configured with two environment variables, `BACKEND_URL` and `PU_API_KEY`.
+Build it with `docker build -t pu-assist-frontend:1.0 frontend`, bring the image into Portainer (Docker Hub push,
+image import or build in Portainer) and deploy it as a container or with `frontend/docker-compose.yml` –
+step by step in [`frontend/README.md`](frontend/README.md).
+
+*Status:* both parts were tested end to end on a laptop (with a tiny stand-in model). Running them on Data Lab still
+needs the address at which a Portainer container can reach a notebook on Compute.
 
 ---
 
@@ -388,9 +437,8 @@ No total of *different* people is given — a moving phone camera cannot count t
 
 ## Roadmap
 
-- **Deployment on Data Lab** (planned): the platform requires GPU apps to be split into
-  a **backend** — the notebook on Compute turned into a FastAPI server (`/ask`, `/health`, per-student chat history,
-  a GPU queue, an API key) — and a **frontend** — a Streamlit chat page packaged as a Docker image and deployed with Portainer.
+- **Deployment on Data Lab:** backend (`upload/03_backend_api.ipynb`) and frontend (`frontend/`) are built and
+  tested locally; next is connecting them on Data Lab's network and a persistent folder for the model and index.
 - Faster serving with vLLM (~2–5 s per answer).
 - Hybrid keyword + vector search for course codes and regulation numbers.
 - OCR for the 758 scanned PDFs; scheduled re-crawls.

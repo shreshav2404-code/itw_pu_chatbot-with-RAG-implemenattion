@@ -1,0 +1,12 @@
+[server]
+headless = true
+maxUploadSize = 25          # MB – matches the backend's audio limit
+
+[browser]
+gatherUsageStats = false
+
+[theme]
+primaryColor = "#1f3c88"    # navy
+backgroundColor = "#ffffff"
+secondaryBackgroundColor = "#eef2fb"
+textColor = "#1b1f2a"
