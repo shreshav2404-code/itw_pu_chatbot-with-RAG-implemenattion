@@ -5,7 +5,9 @@ served by notebook 03 on the GPU.  Settings come from environment variables:
   BACKEND_URL      address of notebook 03's API, e.g. http://10.0.0.12:8000
   PU_API_KEY       the key printed by notebook 03
   REQUEST_TIMEOUT  seconds to wait for an answer (default 300)
+  APP_PASSWORD     optional: visitors must type it before they can chat (use it for public links)
 """
+import hmac
 import os
 import uuid
 
@@ -15,6 +17,7 @@ import streamlit as st
 BACKEND_URL = os.environ.get("BACKEND_URL", "http://localhost:8000").rstrip("/")
 API_KEY = os.environ.get("PU_API_KEY", "")
 TIMEOUT = int(os.environ.get("REQUEST_TIMEOUT", "300"))
+APP_PASSWORD = os.environ.get("APP_PASSWORD", "")
 HEADERS = {"X-API-Key": API_KEY}
 AVATAR = "🎓"
 
@@ -24,6 +27,18 @@ ss = st.session_state
 ss.setdefault("session_id", uuid.uuid4().hex)   # one chat history per browser tab on the backend
 ss.setdefault("messages", [])
 ss.setdefault("voice_key", 0)                   # bumping it clears the voice recorder
+ss.setdefault("unlocked", not APP_PASSWORD)
+
+if not ss.unlocked:                             # password screen (only when APP_PASSWORD is set)
+    st.title(f"{AVATAR} PU Assist")
+    st.caption("Presidency University help desk")
+    typed = st.text_input("Password", type="password")
+    if typed:
+        if hmac.compare_digest(typed, APP_PASSWORD):
+            ss.unlocked = True
+            st.rerun()
+        st.error("Wrong password.")
+    st.stop()
 
 
 # ---------------------------------------------------------------- backend calls

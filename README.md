@@ -190,8 +190,11 @@ Build it with `docker build -t pu-assist-frontend:1.0 frontend`, bring the image
 image import or build in Portainer) and deploy it as a container or with `frontend/docker-compose.yml` –
 step by step in [`frontend/README.md`](frontend/README.md).
 
-*Status:* both parts were tested end to end on a laptop (with a tiny stand-in model). Running them on Data Lab still
-needs the address at which a Portainer container can reach a notebook on Compute.
+**Without Portainer (demos):** notebook 03, step 9 runs the same Streamlit page on the hub and opens a public
+Cloudflare quick-tunnel link (`https://….trycloudflare.com`), protected by a password (`APP_PASSWORD`).
+
+*Status:* the API runs on the Data Lab H200 and is reachable inside Data Lab's Docker Swarm network at
+`http://jupyter-<username>:8000`; the frontend was tested end to end on a laptop and as a Docker container.
 
 ---
 

@@ -17,6 +17,10 @@ Features: chat history, text questions, photo of a notice/timetable (📎 in the
 | `BACKEND_URL` | `http://10.0.0.12:8000` | notebook 03, step 7 (an address of the GPU machine + port) |
 | `PU_API_KEY` | `kX3…` | notebook 03, step 2 |
 | `REQUEST_TIMEOUT` | `300` | optional, seconds to wait for an answer |
+| `APP_PASSWORD` | `pu-assist-2026` | optional: visitors must type it before they can chat – set it whenever the page is reachable from the internet |
+
+**Without Portainer:** notebook 03, step 9 runs this same page on the hub and opens a public
+Cloudflare quick-tunnel link (`https://….trycloudflare.com`) protected by `APP_PASSWORD` – handy for demos.
 
 ## Try it on your laptop (optional)
 
