@@ -7,7 +7,7 @@ campus navigation and more — **from the university's own documents, with citat
 It accepts **text, images** (photos of notices, timetables, assignment questions) and **voice notes**
 (English, Hindi, Kannada and ~100 other languages), and runs on the university **Data Lab JupyterHub** GPU (NVIDIA H200).
 
-Instead of fine-tuning, it uses **Retrieval-Augmented Generation (RAG)**: 166,180 cleaned, source-tagged text chunks are
+Instead of fine-tuning, it uses **Retrieval-Augmented Generation (RAG)**: 166,195 cleaned, source-tagged text chunks are
 searched for every question and given to a vision-language model (**Qwen3-VL-30B-A3B-Instruct** by default), which writes
 the answer and cites `[1] [2]` the sources it used. The knowledge base can be updated any time without retraining.
 
@@ -60,7 +60,7 @@ flowchart LR
     Q -. image .-> IMG["Qwen3-VL reads the image<br/>and proposes a search query"]
     RW --> EMB["Qwen3-Embedding-0.6B<br/>question + rewrite (+ image query)"]
     IMG --> EMB
-    EMB --> F["FAISS exact search<br/>166,180 chunks, top 50 per query"]
+    EMB --> F["FAISS exact search<br/>166,195 chunks, top 50 per query"]
     F --> RR["bge-reranker-v2-m3<br/>best 6 passages<br/>max 3 per document, max 3 unofficial"]
     RR --> LLM["Qwen3-VL-30B-A3B<br/>answers from the passages<br/>+ uploaded image + campus map"]
     LLM --> A["Answer with [1] [2] citations<br/>+ source list + timings"]
@@ -89,9 +89,10 @@ embed with Qwen3-Embedding → save the FAISS index (`rag_index/`, rebuilt autom
 │   ├── 01_model_setup.ipynb         one-time setup: libraries, model download, text + image test
 │   ├── 02_rag_chatbot.ipynb         the chatbot: index, search, voice, image, chat box, tests
 │   ├── 03_backend_api.ipynb         the chatbot as a web API (FastAPI) + public links (Cloudflare / Gradio)
-│   ├── pu_corpus.jsonl.gz           166,180 cleaned chunks (47.7 MB) – the knowledge base
+│   ├── pu_corpus.jsonl.gz           166,195 cleaned chunks (47.7 MB) – the knowledge base
 │   ├── campus_map.png               labeled campus map (numbered places + legend): read by the model and shown in chat for "where is …" questions
-│   └── corpus_stats.json            counts per source
+│   ├── corpus_stats.json            counts per source
+│   └── new_docs/                    documents added live with notebook 03 step 11 (already in the corpus)
 ├── frontend/                        the students' web page – Docker image for Data Lab / Portainer
 │   ├── app.py                       Streamlit chat page (text, photo, microphone, sources)
 │   ├── Dockerfile                   python:3.11-slim image, port 8501, runs as non-root
@@ -310,7 +311,7 @@ The bot's behaviour is the `SYSTEM_PROMPT` in step 8; query rewriting is `REWRIT
 | DSpace academic repository | 14,145 item records (question papers, make-up exam papers) — metadata only |
 | Koha library catalogue | public pages + 26 catalogue records (personal data removed by `sanitize_catalog_pii.py`) |
 | Campus map (PDF) | text + a rendered page image (`campus_map.png`) given to the model |
-| 360° virtual campus tour (third-party) | 166 scene/hotspot labels, 142 thumbnails |
+| 360° virtual campus tour (third-party) | 166 scene/hotspot labels, 142 thumbnails; plus `new_docs/campus_360_tour_guide.md` – 101 named places grouped by type, with the places next to each other in the tour (15 chunks) |
 | Campus photos | 80 photos (compressed) with reviewed captions |
 | Campus videos V1 (51 s) and V2 (142 s) | 96 sampled frames with scene captions, 40 speech-transcript segments, people counts at 4 fps |
 | Student interview (audio, ~4 min) | 68 timestamped Whisper transcript segments |
@@ -329,14 +330,14 @@ too-short chunks were removed, broken characters cleaned, and mirrored text in t
 | official_website | 10,610 |
 | official_program_regulation | 660 |
 | user_video (scene captions, speech, people counts) | 160 |
-| campus_tour | 139 |
+| campus_tour (139 tour scenes + 15 from the tour guide) | 154 |
 | user_photo | 80 |
 | user_interview | 68 |
 | library_catalog | 26 |
 | external | 8 |
 | campus_map | 7 |
 | teacher_audio | 4 |
-| **Total** | **166,180** |
+| **Total** | **166,195** |
 
 One JSON object per line:
 
@@ -351,6 +352,14 @@ One JSON object per line:
 ```
 
 Other fields when relevant: `page`, `local_path`, `category`, `start_seconds`/`end_seconds` (audio/video), `n_copies`.
+
+### Adding documents without a rebuild
+
+Upload files (PDF, Word, text, HTML, photos of notices, audio/video) into `pu_bot/new_docs/` on the hub and run
+**notebook 03 step 11** while the API is running. Only the new chunks are embedded and added to the live index (seconds
+for text files), `pu_corpus.jsonl.gz` and the index are saved, and the public link keeps working. Set
+`NEW_SOURCE_CLASS`, `LINKS` (citation link per file) and `REMOVE` (take a file out again) at the top of the cell.
+Download `pu_corpus.jsonl.gz` afterwards – the hub forgets everything when the server stops.
 
 > **Data notice.** The crawl contains text exactly as published on the university's public website and documents,
 > including contact details printed there. Media transcripts are automatic and unverified. If you are listed and want

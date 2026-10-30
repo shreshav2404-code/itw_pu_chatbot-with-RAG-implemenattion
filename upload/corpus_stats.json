@@ -1,5 +1,5 @@
 {
-  "records": 166180,
+  "records": 166195,
   "read": 231591,
   "removed_duplicate_ids": 0,
   "removed_duplicate_text": 65361,
@@ -11,7 +11,7 @@
     "official_website": 10610,
     "official_program_regulation": 660,
     "user_video": 160,
-    "campus_tour": 139,
+    "campus_tour": 154,
     "user_photo": 80,
     "user_interview": 68,
     "library_catalog": 26,
@@ -20,5 +20,6 @@
     "teacher_audio": 4
   },
   "size_mb": 47.7,
-  "added_media_chunks": 28
+  "added_media_chunks": 28,
+  "added_live_chunks": 15
 }
