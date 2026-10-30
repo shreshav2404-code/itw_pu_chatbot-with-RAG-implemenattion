@@ -41,7 +41,7 @@ the answer and cites `[1] [2]` the sources it used. The knowledge base can be up
 | Programme- and batch-aware | Asks for programme/batch when rules differ; prefers the newest regulation (e.g. 2025 over 2019) |
 | Image questions | Qwen3-VL reads the uploaded notice/timetable/assignment, transcribes it, then searches for the related rules |
 | Voice questions | Whisper large-v3-turbo turns a voice note into text (keeps the spoken language) |
-| Campus directions | For "where is …" questions the official campus map image is given to the model automatically |
+| Campus directions | For "where is …" questions the labeled campus map is given to the model automatically and shown under the answer in the chat page |
 | Daytime foot traffic | People counts from two campus videos (when recorded, how busy, most people seen at once) |
 | Follow-up questions | Chat history + query rewriting ("and for MBA?" becomes a full search query) |
 | Official vs unofficial | Every source is labelled (official website / official document / student photo / teacher recording …) |
@@ -90,7 +90,7 @@ embed with Qwen3-Embedding → save the FAISS index (`rag_index/`, rebuilt autom
 │   ├── 02_rag_chatbot.ipynb         the chatbot: index, search, voice, image, chat box, tests
 │   ├── 03_backend_api.ipynb         the chatbot as a web API (FastAPI) + public links (Cloudflare / Gradio)
 │   ├── pu_corpus.jsonl.gz           166,180 cleaned chunks (47.7 MB) – the knowledge base
-│   ├── campus_map.png               campus map shown to the model for "where is …" questions
+│   ├── campus_map.png               labeled campus map (numbered places + legend): read by the model and shown in chat for "where is …" questions
 │   └── corpus_stats.json            counts per source
 ├── frontend/                        the students' web page – Docker image for Data Lab / Portainer
 │   ├── app.py                       Streamlit chat page (text, photo, microphone, sources)
@@ -177,7 +177,8 @@ the GPU answers one question at a time, an API key, and upload limits (image 10 
 | Endpoint | Input | Output |
 |---|---|---|
 | `GET /health` | – | `status`, `model`, `chunks`, `busy`, `active_sessions` |
-| `POST /ask` | form `question`, `session_id`; files `image`, `audio` (all optional, but a question or voice note is required); header `X-API-Key` | `answer`, `sources` (title, url, kind, cited), `timings`, `session_id`, `heard` |
+| `POST /ask` | form `question`, `session_id`; files `image`, `audio` (all optional, but a question or voice note is required); header `X-API-Key` | `answer`, `sources` (title, url, kind, cited), `used_map`, `timings`, `session_id`, `heard` |
+| `GET /map` | header `X-API-Key` | `campus_map.png` – the chat page shows it under answers with `used_map: true` |
 | `POST /reset` | form `session_id`; header `X-API-Key` | forgets that student's history |
 
 Run order on the hub: notebook 01 (steps 1–4) → notebook 02 (builds the index) → **shut down 02's kernel** (two

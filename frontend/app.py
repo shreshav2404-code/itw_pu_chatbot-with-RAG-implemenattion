@@ -78,6 +78,16 @@ def reset_backend():
         pass
 
 
+@st.cache_data(ttl=300, show_spinner=False)
+def campus_map():
+    """The campus map image from the backend, or None if it has none."""
+    try:
+        r = requests.get(f"{BACKEND_URL}/map", headers=HEADERS, timeout=20)
+        return r.content if r.ok else None
+    except requests.RequestException:
+        return None
+
+
 # ---------------------------------------------------------------- rendering
 def show_message(m):
     if m["role"] == "user":
@@ -95,6 +105,11 @@ def show_message(m):
         if m.get("heard"):
             st.caption(f"🎤 Heard: “{m['heard']}”")
         st.markdown(m["text"])
+        if m.get("used_map"):
+            map_png = campus_map()
+            if map_png:
+                with st.expander("🗺 Campus map", expanded=True):
+                    st.image(map_png, width="stretch")
         sources = m.get("sources") or []
         shown = [s for s in sources if s["cited"]] or sources
         if shown:
@@ -164,7 +179,7 @@ if question is not None and (question or audio is not None):
             try:
                 r = ask_backend(question, image, audio)
                 reply = {"role": "assistant", "text": r["answer"], "sources": r["sources"], "timings": r["timings"],
-                         "heard": r["question"] if r.get("heard") else None}
+                         "heard": r["question"] if r.get("heard") else None, "used_map": r.get("used_map", False)}
             except requests.ConnectionError:
                 reply = {"role": "assistant", "error": "The answer server is offline. "
                                                        "(The GPU notebook 03_backend_api must be running.)"}
