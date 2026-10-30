@@ -110,6 +110,8 @@ embed with Qwen3-Embedding → save the FAISS index (`rag_index/`, rebuilt autom
 │   └── keshavs_input/               original inputs: teacher + student audio, campus map PDF,
 │                                    CSE regulations PDF, campus videos re-encoded to 720p,
 │                                    fee_brochure_2026_27/ (5 fee-structure images), aerial_photos/
+├── notebooks_with_outputs/          the 3 notebooks as run on the hub on 30 Oct 2026, with results (secrets removed);
+│                                    a record only – run the copies in upload/
 ├── presentation/                    project slides (PU-Assist pptpptx.pptx) + PU_Assist_Project_Notes.pdf
 └── tools/                           scripts that turned the pipeline output into upload/pu_corpus.jsonl.gz
     ├── build_upload_bundle.py       merge + clean + dedupe all chunk files → pu_corpus.jsonl.gz
@@ -437,15 +439,30 @@ Measured on the Data Lab H200 (NVIDIA H200 NVL, 143 GB):
 
 | Metric | Result |
 |---|---|
-| Model load (Qwen3-VL-30B-A3B, bf16) | 52 s, 62.1 GB GPU memory |
-| Index build (~166k chunks, one time) | 7.6 min (~350 chunks/s) |
-| Search per question (embed + FAISS + rerank) | ~0.3 s |
+| Model load (Qwen3-VL-30B-A3B, bf16) | 52 s on the first run, 11 s on a later run; 62–66 GB GPU memory |
+| Index build (~166k chunks, one time) | 7.6–8.5 min (~330–350 chunks/s) |
+| Search per question (embed + FAISS + rerank) | ~0.3–0.7 s |
+| Time to answer, text question | mostly 5–20 s (longest 27 s), plus ~1–3 s to understand the question |
+| Time to answer when the campus map is used | ~60 s |
 | Retrieval, first version (right source in top 6, 10 test questions) | 8 / 10 |
-| Retrieval with chunk context + query rewriting (13 test questions) | *to be filled from notebook step 9* |
+| Retrieval on the full corpus with chunk context, plain search (13 test questions) | 11 / 13 |
+| Same 13 questions with query rewriting | 11 / 13 |
 
-Diagnosing the misses showed the weak link was the vector search, not the reranker: for *"What marks do I need to pass a
-theory course?"* the correct chunk ranked **#127** with plain search, **#24** with previous-chunk context and **#1** with
-query rewriting — hence both fixes.
+Full run outputs are in [`notebooks_with_outputs/`](notebooks_with_outputs/) (API key, addresses and public links removed).
+Generation speed in tokens per second was not measured.
+
+On a small test sample (2,137 chunks), one question showed the weak link was the vector search, not the reranker: for
+*"What marks do I need to pass a theory course?"* the correct chunk ranked #127 with plain search, #24 with
+previous-chunk context and #1 with query rewriting — hence both fixes. **The full corpus did not repeat this:** that
+question is still a miss there, and query rewriting did not change the 11/13 score.
+
+The two misses, both with and without rewriting:
+
+- *"What is the minimum attendance needed to write the end-term exam?"* – the expected source was not in the top 6, but
+  the answer was still 75 %, from other official sources.
+- *"What marks do I need to pass a theory course?"* – the rewriter added a programme and batch the student never
+  mentioned ("B.Sc. Physics, Batch 2022"), and the answer gave the Bachelor of Physiotherapy rule without asking which
+  programme the student is in. This is a known weakness of the query rewriting.
 
 People counts (automatic, RT-DETR at 4 fps; recorded Thursday 29 Oct 2026, ~11:24–11:28 AM IST):
 
