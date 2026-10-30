@@ -46,7 +46,7 @@ the answer and cites `[1] [2]` the sources it used. The knowledge base can be up
 | Follow-up questions | Chat history + query rewriting ("and for MBA?" becomes a full search query) |
 | Official vs unofficial | Every source is labelled (official website / official document / student photo / teacher recording …) |
 | Chat UI in the notebook | `ipywidgets` chat box with **Add image** and **Add voice** buttons (works on the hub without any web proxy) |
-| Web app for students | Streamlit page (Docker container on Portainer) calling a FastAPI backend in notebook 03 – per-student chat history, a GPU queue, an API key, photo upload and microphone recording |
+| Web app for students | Streamlit page calling a FastAPI backend in notebook 03 – per-student chat history, a GPU queue, an API key, photo upload and microphone recording; opened through a Cloudflare public link, a Gradio share link or a Docker container on Portainer |
 
 ---
 
@@ -88,7 +88,7 @@ embed with Qwen3-Embedding → save the FAISS index (`rag_index/`, rebuilt autom
 ├── upload/                          ← EVERYTHING you upload to JupyterHub (one folder, flat)
 │   ├── 01_model_setup.ipynb         one-time setup: libraries, model download, text + image test
 │   ├── 02_rag_chatbot.ipynb         the chatbot: index, search, voice, image, chat box, tests
-│   ├── 03_backend_api.ipynb         the same chatbot served as a web API (FastAPI) for the frontend
+│   ├── 03_backend_api.ipynb         the chatbot as a web API (FastAPI) + public links (Cloudflare / Gradio)
 │   ├── pu_corpus.jsonl.gz           166,180 cleaned chunks (47.7 MB) – the knowledge base
 │   ├── campus_map.png               campus map shown to the model for "where is …" questions
 │   └── corpus_stats.json            counts per source
@@ -190,11 +190,33 @@ Build it with `docker build -t pu-assist-frontend:1.0 frontend`, bring the image
 image import or build in Portainer) and deploy it as a container or with `frontend/docker-compose.yml` –
 step by step in [`frontend/README.md`](frontend/README.md).
 
-**Without Portainer (demos):** notebook 03, step 9 runs the same Streamlit page on the hub and opens a public
-Cloudflare quick-tunnel link (`https://….trycloudflare.com`), protected by a password (`APP_PASSWORD`).
-
 *Status:* the API runs on the Data Lab H200 and is reachable inside Data Lab's Docker Swarm network at
 `http://jupyter-<username>:8000`; the frontend was tested end to end on a laptop and as a Docker container.
+
+### Ways to open the chatbot
+
+The Data Lab hub has no `jupyter-server-proxy`, so a web page started in a notebook cannot be opened directly.
+These are the options, from quickest to most official:
+
+| # | Way | Where | Link | Who can open it | Status |
+|---|---|---|---|---|---|
+| 1 | **Chat box in the notebook** (ipywidgets) | notebook 02, step 16 | none – inside JupyterLab | only you | ✅ works on the hub |
+| 2 | **Streamlit page + Cloudflare quick tunnel** | notebook 03, step 9 (`MAKE_PUBLIC_LINK = True`) | `https://….trycloudflare.com` | anyone with the link | ✅ works on the hub (used for a class test) |
+| 3 | **Gradio share link** | notebook 03, step 10 (`MAKE_GRADIO_LINK = True`) | `https://….gradio.live` (~1 week) | anyone with the link | tested locally |
+| 4 | **Streamlit page as a Docker container on Portainer** | `frontend/` + notebook 03 | Data Lab's address for the container | students via Data Lab | official route; needs Portainer access |
+| 5 | Gradio page through the hub's proxy | notebook 02, step 17 | `…/user/<you>/proxy/<port>/` | logged-in hub users | ❌ not on this hub (no `jupyter-server-proxy`) |
+
+**Option 2 – step by step:** run notebooks 01 → 02 → shut down 02's kernel → notebook 03 *Run All*; then in step 9
+set `MAKE_PUBLIC_LINK = True` and run that cell. It downloads `frontend/app.py` from this repo, installs Streamlit,
+downloads Cloudflare's `cloudflared`, starts the page next to the API and prints the public link. Stop it with
+`tunnel_proc.terminate(); streamlit_proc.terminate()`.
+
+**Option 3 – step by step:** same notebooks, then in step 10 set `MAKE_GRADIO_LINK = True` and run that cell; it prints
+a `gradio.live` link. Stop it with `gradio_demo.close()`.
+
+Notes for options 2 and 3: the link is public (set `APP_PASSWORD` / `GRADIO_PASSWORD` to require a password), traffic
+passes through Cloudflare's / Gradio's servers (check that Data Lab allows it), the link dies when notebook 03's kernel
+or the hub server stops, and one GPU answers one question at a time, so a whole class waits in a queue.
 
 ---
 
@@ -440,8 +462,9 @@ No total of *different* people is given — a moving phone camera cannot count t
 
 ## Roadmap
 
-- **Deployment on Data Lab:** backend (`upload/03_backend_api.ipynb`) and frontend (`frontend/`) are built and
-  tested locally; next is connecting them on Data Lab's network and a persistent folder for the model and index.
+- **Deployment on Data Lab:** the backend runs on the H200 and the Streamlit page is live through a Cloudflare
+  quick tunnel; next is the official Portainer container (`frontend/`, needs Portainer access) and a persistent
+  folder for the model and index (the hub forgets everything when the server stops).
 - Faster serving with vLLM (~2–5 s per answer).
 - Hybrid keyword + vector search for course codes and regulation numbers.
 - OCR for the 758 scanned PDFs; scheduled re-crawls.
