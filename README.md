@@ -357,8 +357,12 @@ Other fields when relevant: `page`, `local_path`, `category`, `start_seconds`/`e
 
 Upload files (PDF, Word, text, HTML, photos of notices, audio/video) into `pu_bot/new_docs/` on the hub and run
 **notebook 03 step 11** while the API is running. Only the new chunks are embedded and added to the live index (seconds
-for text files), `pu_corpus.jsonl.gz` and the index are saved, and the public link keeps working. Set
-`NEW_SOURCE_CLASS`, `LINKS` (citation link per file) and `REMOVE` (take a file out again) at the top of the cell.
+for text files), `pu_corpus.jsonl.gz` and the index are saved, and the public link keeps working. At the top of the
+cell: `SOURCE_CLASS` (label per file; unlisted files are official documents, the tour guide is listed as the tour),
+`LINKS` (citation link per file) and `REMOVE` (take a file out). To update a file, upload the edited version with the
+same name and run again – its old chunks are replaced. Keep one topic per file (e.g. fees in
+`fee_structure_2026_27.md`, not inside the tour guide) and write facts as full lines
+(`B.Tech Mechanical Engineering – tuition fee 2026–27: ₹… per year`); Markdown headings are copied into each chunk.
 Download `pu_corpus.jsonl.gz` afterwards – the hub forgets everything when the server stops.
 
 > **Data notice.** The crawl contains text exactly as published on the university's public website and documents,
